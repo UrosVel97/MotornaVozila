@@ -1,0 +1,554 @@
+﻿using NHibernate;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MotornaVozila.Entiteti;
+using System.Globalization;
+
+namespace MotornaVozila
+{
+    public partial class btnVratiNezavisnogEkonomistuIAngazovanja : Form
+    {
+        public btnVratiNezavisnogEkonomistuIAngazovanja()
+        {
+            InitializeComponent();
+        }
+
+        private void btnVratiNezavisnogEkonomistu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                ISession s = DataLayer.GetSession();
+
+                NezavisniEkonomista n = s.Load<NezavisniEkonomista>(1111111);
+
+
+                MessageBox.Show(n.Adresa);
+                s.Close();
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+
+        }
+
+        private void btnKreirajNezavisnogEkonomistu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                ISession s = DataLayer.GetSession();
+
+                NezavisniEkonomista n = new NezavisniEkonomista()
+                {
+                    Jmbg = 1234567,
+                    Ime = "Marija",
+                    Prezime = "Rancic",
+                    Adresa = "Marka Kraljevica 33"
+                };
+
+                s.Save(n);
+                s.Flush();
+                s.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnVratiZaposlenog_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                Zaposleni t = s.Load<Zaposleni>(1818181);
+                IList<Zaposleni> z = s.QueryOver<Zaposleni>()
+                                 .List<Zaposleni>();
+
+                foreach (Zaposleni o in z)
+                {
+                    if (o.GetType() == typeof(RadnikTehnickeStruke))
+                    {
+                        RadnikTehnickeStruke rts = (RadnikTehnickeStruke)o;
+                        MessageBox.Show("Radnik tehnicke struke: "+rts.Ime);
+
+                    }
+                    else if (o.GetType() == typeof(RadnikEkonomskeStruke))
+                    {
+                        RadnikEkonomskeStruke res = (RadnikEkonomskeStruke)o;
+                        MessageBox.Show("Radnik ekonomske struke: " + res.Ime);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Neki drugi radnik: " + o.Ime);
+
+
+                    }
+                }
+
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodajZaposlenog_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+               
+
+                NekiDrugiZaposleni n = new NekiDrugiZaposleni()
+                {
+                    Jmbg = 32456713,
+                    Ime = "Valentina",
+                    Prezime = "Markovic",
+                    GodineRadnogStaza = 10,
+                    DatumRodjena = DateTime.ParseExact("22-03-1993", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    DatumZaposlenja = DateTime.ParseExact("22-08-2013", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    StrucnaSprema = "Ima",
+                    FZaposleniZaStalno = "Y",
+                    FZaposleniPoUgovoru = "N",
+                    Plata = 25000,
+                    DatumIstekaUgovora=null
+                };
+
+
+                RadnikTehnickeStruke rts = new RadnikTehnickeStruke()
+                {
+                    Jmbg = 31456713,
+                    Ime = "Vanja",
+                    Prezime = "Simonovic",
+                    GodineRadnogStaza = 11,
+                    DatumRodjena = DateTime.ParseExact("22-03-1995", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    DatumZaposlenja = DateTime.ParseExact("11-11-2015", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    StrucnaSprema = "Ima",
+                    FZaposleniZaStalno = "N",
+                    FZaposleniPoUgovoru = "Y",
+                    DatumIstekaUgovora = DateTime.ParseExact("01-01-2029", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    //TipZaposlenog ="Radnik tehnicke struke"
+               
+                };
+
+                RadnikEkonomskeStruke res = new RadnikEkonomskeStruke()
+                {
+                    Jmbg = 21456713,
+                    Ime = "Miljana",
+                    Prezime = "Maric",
+                    GodineRadnogStaza = 11,
+                    DatumRodjena = DateTime.ParseExact("22-03-1991", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                DatumZaposlenja = DateTime.ParseExact("29-12-2009", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    StrucnaSprema = "Ima",
+                    FZaposleniZaStalno = "N",
+                    FZaposleniPoUgovoru = "Y",
+                    DatumIstekaUgovora = DateTime.ParseExact("22-03-2030", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    //TipZaposlenog = "Radnik ekonomske struke"
+
+                };
+
+                
+                s.Save(n);
+                s.Save(rts);
+                s.Save(res);
+
+                s.Flush();
+                s.Close();
+
+
+
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+              
+        }
+
+        private void btnVratiUvezenoVozilo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IList<UvezenoVozilo> z = s.QueryOver<UvezenoVozilo>()
+                                 .List<UvezenoVozilo>();
+
+                foreach (UvezenoVozilo o in z)
+                {
+                    if (o.GetType() == typeof(VoziloKojeJeProdato))
+                    {
+                        VoziloKojeJeProdato vp = (VoziloKojeJeProdato)o;
+                        MessageBox.Show("Vozilo koje je prodato: " + vp.BrojSasije);
+
+                    }
+                    else if (o.GetType() == typeof(VoziloKojeNijeProdato))
+                    {
+                        VoziloKojeNijeProdato vnp = (VoziloKojeNijeProdato)o;
+                        MessageBox.Show("Vozilo koje nije prodato: " + vnp.BrojSasije);
+
+                    }
+                    else
+                    {
+                        throw new Exception("Greska");
+
+
+                    }
+                }
+
+                s.Close();
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodajUvezenoVozilo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(31456713);
+
+                VoziloKojeJeProdato vp = new VoziloKojeJeProdato()
+                {
+                    BrojSasije = 31456713,
+                    BrojMotora = 5252342,
+                    TipGoriva = "Dizel",
+                    Kubikaza = 3000,
+                    DatumUvoza = DateTime.ParseExact("22-03-1995", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    ModelVozila = "Audi",
+                    FPutnickoVozilo = "Y",
+                    BrojPutnika=5,
+                    FTeretnoVozilo = "Y",
+                    Nosivost = 100,
+                    TipProstora ="Prostrano",
+                    RadnikTehnStruke=rts
+                    
+
+                };
+
+                VoziloKojeNijeProdato vnp = new VoziloKojeNijeProdato()
+                {
+                    BrojSasije = 39456713,
+                    BrojMotora = 5252342,
+                    TipGoriva = "Dizel",
+                    Kubikaza = 3000,
+                    DatumUvoza = DateTime.ParseExact("22-03-1995", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    ModelVozila = "Audi",
+                    FPutnickoVozilo = "N",
+
+                    FTeretnoVozilo = "Y",
+                    Nosivost = 100,
+                    TipProstora = "Prostrano",
+                    RadnikTehnStruke = rts
+
+                };
+
+
+
+
+                s.Save(vp);
+                s.Save(vnp);
+
+                rts.UvezenaVozila.Add(vp);
+                rts.UvezenaVozila.Add(vnp);
+
+                s.Save(rts);
+
+
+                s.Flush();
+                s.Close();
+
+
+
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnVratiSalon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ISession s = DataLayer.GetSession();
+
+                Salon n = s.Load<Salon>(1);
+
+
+                MessageBox.Show(n.Grad);
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodajSalon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ISession s = DataLayer.GetSession();
+
+                Salon n = new Salon()
+                {
+                    Grad = "Pancevo",
+                    Adresa = "Marka Kraljevica 99",
+                    StepenOpremljenostiServisa="Cetvrti",
+                    SefSalona="Miodrag",
+                    SefServisa="Nevena",
+                    FServis="N"
+
+                };
+
+                s.Save(n);
+                s.Flush();
+                s.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnVratiServis_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IList<Salon> salon = s.QueryOver<Salon>()
+                 .List<Salon>();
+
+                foreach(Salon ns in salon)
+                {
+                    if(ns.FServis=="Y")
+                    {
+                        foreach(TipRadova t in ns.TipoviRadova)
+                        {
+                            MessageBox.Show("Salon id: " + ns.Id + " pruza radove: "+t.Tip_Radova);
+                        }
+                    }
+                }
+
+
+                s.Close();
+            }
+
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodajServis_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IList<TipRadova> tipRadova = s.QueryOver<TipRadova>()
+                 .List<TipRadova>();
+
+                Salon novi = new Salon();
+                novi.Adresa = "Hisarska 10";
+                novi.Grad = "Prokuplje";
+                novi.SefSalona = "Natasa";
+                novi.SefServisa = "Borivoje";
+                novi.StepenOpremljenostiServisa = "Drugi";
+                novi.FServis = "Y";
+
+
+
+
+                foreach (TipRadova ns in tipRadova)
+                {
+                    novi.TipoviRadova.Add(ns);
+                    ns.Servis.Add(novi);
+
+                }
+
+                s.Save(novi);
+                s.Flush();
+
+
+                s.Close();
+            }
+
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IList<NezavisniEkonomista> ne = s.QueryOver<NezavisniEkonomista>()
+                 .List<NezavisniEkonomista>();
+
+                foreach (NezavisniEkonomista ns in ne)
+                {
+                    if (ns.Saloni.Count()>0)
+                    {
+                        foreach (Salon t in ns.Saloni)
+                        {
+                            MessageBox.Show("Salon id: " + t.Id + " je angazovao nezavisnog ekonomistu: " + ns.Jmbg);
+                        }
+                    }
+                }
+
+
+                s.Close();
+            }
+
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnKreirajNezEkonomistuIAnga_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IList<Salon> saloni = s.QueryOver<Salon>()
+                 .List<Salon>();
+
+                NezavisniEkonomista ne = new NezavisniEkonomista()
+                {
+                    Jmbg = 5555555,
+                    Ime = "Jovana",
+                    Prezime = "Djokovic",
+                    Adresa = "Vuka Karandzica 33"
+
+
+                };
+
+                foreach (Salon salon in saloni)
+                {
+                    ne.Saloni.Add(salon);
+                    salon.NezavisniEkonomisti.Add(ne);
+
+                }
+
+                //Cuvamo prvo NezavisnogEkonomistu
+                s.Save(ne);
+                s.Flush();
+
+
+                s.Close();
+            }
+
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnVratiVozilaKojaNisuProdataiNjihoveSalone_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IList<UvezenoVozilo> uv = s.QueryOver<UvezenoVozilo>()
+                                       .List<UvezenoVozilo>();
+
+                IList<Salon> saloni = s.QueryOver<Salon>()
+                       .List<Salon>();
+
+
+                foreach (UvezenoVozilo v in uv)
+                {
+                    if(v.GetType()==typeof(VoziloKojeNijeProdato))
+                    {
+                        VoziloKojeNijeProdato np = (VoziloKojeNijeProdato)v;
+                        MessageBox.Show("Vozilo koje nije prodato broj sasije: " + np.BrojSasije + " je izlozen u salonu: " + np.IzlozenUSalonu.Id);
+                    }
+                }
+
+
+                foreach (Salon salon in saloni)
+                {
+                    if (salon.VozilaKojaNisuProdata.Count()>0)
+                    {
+                        foreach(VoziloKojeNijeProdato np in salon.VozilaKojaNisuProdata)
+                        MessageBox.Show("Vozilo koje nije prodato broj sasije: " + np.BrojSasije + " je izlozen u salonu: " + salon.Id);
+                    }
+                }
+
+
+                s.Close();
+
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnKreirajVoziloKojeNijeProdato_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                Salon salon = s.Load<Salon>(3);
+
+                RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(1313131);
+
+                VoziloKojeNijeProdato np = new VoziloKojeNijeProdato()
+                {
+                    BrojSasije = 43242345,
+                    DatumUvoza = DateTime.ParseExact("22-03-2020", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    BrojMotora = 96473435,
+                    TipGoriva = "Dizel",
+                    Kubikaza = 2000,
+                    ModelVozila = "Mercedes",
+                    FPutnickoVozilo = "Y",
+                    BrojPutnika = 5,
+                    FTeretnoVozilo = "N",
+                    RadnikTehnStruke = rts,
+                    IzlozenUSalonu = salon
+
+                };
+
+                rts.UvezenaVozila.Add(np);
+                salon.VozilaKojaNisuProdata.Add(np);
+                s.Save(np);
+                s.Save(rts);
+                s.Save(salon);
+
+                s.Flush();
+                s.Close();
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+    }
+}
