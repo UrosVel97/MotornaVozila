@@ -43,6 +43,11 @@ namespace MotornaVozila
             this.btnKreirajNezEkonomistuIAnga = new System.Windows.Forms.Button();
             this.btnVratiVozilaKojaNisuProdataiNjihoveSalone = new System.Windows.Forms.Button();
             this.btnKreirajVoziloKojeNijeProdato = new System.Windows.Forms.Button();
+            this.btnVratiKupce = new System.Windows.Forms.Button();
+            this.btnDodajKupce = new System.Windows.Forms.Button();
+            this.btnVratiKupovine = new System.Windows.Forms.Button();
+            this.btnDodajKupovinu = new System.Windows.Forms.Button();
+            this.btnVratiProdataVozila = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVratiNezavisnogEkonomistu
@@ -186,11 +191,66 @@ namespace MotornaVozila
             this.btnKreirajVoziloKojeNijeProdato.UseVisualStyleBackColor = true;
             this.btnKreirajVoziloKojeNijeProdato.Click += new System.EventHandler(this.btnKreirajVoziloKojeNijeProdato_Click);
             // 
+            // btnVratiKupce
+            // 
+            this.btnVratiKupce.Location = new System.Drawing.Point(575, 182);
+            this.btnVratiKupce.Name = "btnVratiKupce";
+            this.btnVratiKupce.Size = new System.Drawing.Size(170, 36);
+            this.btnVratiKupce.TabIndex = 14;
+            this.btnVratiKupce.Text = "Vrati kupce";
+            this.btnVratiKupce.UseVisualStyleBackColor = true;
+            this.btnVratiKupce.Click += new System.EventHandler(this.btnVratiKupce_Click);
+            // 
+            // btnDodajKupce
+            // 
+            this.btnDodajKupce.Location = new System.Drawing.Point(575, 226);
+            this.btnDodajKupce.Name = "btnDodajKupce";
+            this.btnDodajKupce.Size = new System.Drawing.Size(170, 33);
+            this.btnDodajKupce.TabIndex = 15;
+            this.btnDodajKupce.Text = "Dodaj kupce";
+            this.btnDodajKupce.UseVisualStyleBackColor = true;
+            this.btnDodajKupce.Click += new System.EventHandler(this.btnDodajKupce_Click);
+            // 
+            // btnVratiKupovine
+            // 
+            this.btnVratiKupovine.Location = new System.Drawing.Point(575, 286);
+            this.btnVratiKupovine.Name = "btnVratiKupovine";
+            this.btnVratiKupovine.Size = new System.Drawing.Size(170, 67);
+            this.btnVratiKupovine.TabIndex = 16;
+            this.btnVratiKupovine.Text = "Vrati sve kupovine i njihove kupce i salone gde je kupljeno";
+            this.btnVratiKupovine.UseVisualStyleBackColor = true;
+            this.btnVratiKupovine.Click += new System.EventHandler(this.btnVratiKupovine_Click);
+            // 
+            // btnDodajKupovinu
+            // 
+            this.btnDodajKupovinu.Location = new System.Drawing.Point(575, 373);
+            this.btnDodajKupovinu.Name = "btnDodajKupovinu";
+            this.btnDodajKupovinu.Size = new System.Drawing.Size(170, 59);
+            this.btnDodajKupovinu.TabIndex = 17;
+            this.btnDodajKupovinu.Text = "Dodaj kupovinu";
+            this.btnDodajKupovinu.UseVisualStyleBackColor = true;
+            this.btnDodajKupovinu.Click += new System.EventHandler(this.btnDodajKupovinu_Click);
+            // 
+            // btnVratiProdataVozila
+            // 
+            this.btnVratiProdataVozila.Location = new System.Drawing.Point(791, 28);
+            this.btnVratiProdataVozila.Name = "btnVratiProdataVozila";
+            this.btnVratiProdataVozila.Size = new System.Drawing.Size(164, 62);
+            this.btnVratiProdataVozila.TabIndex = 18;
+            this.btnVratiProdataVozila.Text = "Vrati sva Vozila koja su prodata i njihove kupovine";
+            this.btnVratiProdataVozila.UseVisualStyleBackColor = true;
+            this.btnVratiProdataVozila.Click += new System.EventHandler(this.btnVratiProdataVozila_Click);
+            // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1178, 556);
+            this.Controls.Add(this.btnVratiProdataVozila);
+            this.Controls.Add(this.btnDodajKupovinu);
+            this.Controls.Add(this.btnVratiKupovine);
+            this.Controls.Add(this.btnDodajKupce);
+            this.Controls.Add(this.btnVratiKupce);
             this.Controls.Add(this.btnKreirajVoziloKojeNijeProdato);
             this.Controls.Add(this.btnVratiVozilaKojaNisuProdataiNjihoveSalone);
             this.Controls.Add(this.btnKreirajNezEkonomistuIAnga);
@@ -227,6 +287,11 @@ namespace MotornaVozila
         private System.Windows.Forms.Button btnKreirajNezEkonomistuIAnga;
         private System.Windows.Forms.Button btnVratiVozilaKojaNisuProdataiNjihoveSalone;
         private System.Windows.Forms.Button btnKreirajVoziloKojeNijeProdato;
+        private System.Windows.Forms.Button btnVratiKupce;
+        private System.Windows.Forms.Button btnDodajKupce;
+        private System.Windows.Forms.Button btnVratiKupovine;
+        private System.Windows.Forms.Button btnDodajKupovinu;
+        private System.Windows.Forms.Button btnVratiProdataVozila;
     }
 }
 

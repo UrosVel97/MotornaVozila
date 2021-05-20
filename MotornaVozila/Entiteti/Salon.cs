@@ -26,11 +26,14 @@ namespace MotornaVozila.Entiteti
 
         public virtual IList<VoziloKojeNijeProdato> VozilaKojaNisuProdata { get; set; }
 
+        public virtual IList<Kupovina> Kupovine { get; set; }
+
         public Salon()
         {
             TipoviRadova = new List<TipRadova>();
             NezavisniEkonomisti = new List<NezavisniEkonomista>();
             VozilaKojaNisuProdata = new List<VoziloKojeNijeProdato>();
+            Kupovine = new List<Kupovina>();
         }
     }
 }

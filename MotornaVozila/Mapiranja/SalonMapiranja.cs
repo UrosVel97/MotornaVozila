@@ -49,6 +49,9 @@ namespace MotornaVozila.Mapiranja
                 //Veza 1:N, Salon : VoziloKojeNijeProdato
                 HasMany(x => x.VozilaKojaNisuProdata).KeyColumn("FK_ID_SALONA_U_KOME_JE_IZLOZEN").LazyLoad().Cascade.All().Inverse();
 
+                //Veza 1:N Salon : Kupovina
+                HasMany(x => x.Kupovine).KeyColumn("FK_ID_SALONA").LazyLoad().Cascade.All().Inverse();
+
             }
             catch (Exception ec)
             {

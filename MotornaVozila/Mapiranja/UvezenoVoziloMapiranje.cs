@@ -56,6 +56,9 @@ namespace MotornaVozila.Mapiranja
         public VoziloKojeJeProdatoMapiranje()
         {
             DiscriminatorValue("Vozilo koje je prodato");
+
+            //mapiranje veze 1:N Kupovina-VoziloKojeJeProdato
+            References(x => x.Kupovina).Column("FK_ID_KUPOVINE").LazyLoad();
         }
     }
 

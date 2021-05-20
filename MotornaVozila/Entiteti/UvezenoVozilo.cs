@@ -33,6 +33,7 @@ namespace MotornaVozila.Entiteti
 
     public class VoziloKojeJeProdato :UvezenoVozilo
     {
+        public virtual Kupovina Kupovina { get; set; }
         public VoziloKojeJeProdato()
         {
 

@@ -550,5 +550,166 @@ namespace MotornaVozila
                 MessageBox.Show(ec.ToString());
             }
         }
+
+        private void btnVratiKupce_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IList<Kupac> k = s.QueryOver<Kupac>()
+                                 .List<Kupac>();
+
+                foreach (Kupac o in k)
+                {
+                    if (o.GetType() == typeof(FizickoLice))
+                    {
+                        FizickoLice fl = (FizickoLice)o;
+                        MessageBox.Show("Naziv fizickog lica: " + fl.LicnoIme+", PIB:"+fl.Pib);
+
+                    }
+                    else if (o.GetType() == typeof(PravnoLice))
+                    {
+                        PravnoLice pl = (PravnoLice)o;
+                        MessageBox.Show("Naziv pravnog lica: " + pl.LicnoIme + ", JMBG:" + pl.Jmbg);
+
+                    }
+                    else
+                    {
+                        throw new Exception("Greska");
+
+
+                    }
+                }
+
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodajKupce_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                FizickoLice fl = new FizickoLice()
+                {
+                    LicnoIme = "kristina",
+                    Prezime = "Dimitrijevic",
+                    Pib = 404040
+                };
+
+                PravnoLice pl = new PravnoLice()
+                {
+                    LicnoIme = "Djordje",
+                    Prezime = "Stanic",
+                    Jmbg = 9783421
+
+                };
+
+                s.Save(fl);
+                s.Save(pl);
+                s.Flush();
+
+
+                s.Close();
+            }
+
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnVratiKupovine_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IList<Kupovina> k = s.QueryOver<Kupovina>()
+                 .List<Kupovina>();
+
+                foreach(Kupovina kup in k)
+                {
+                    MessageBox.Show("Id kupovine: " + kup.Id + ", Ime kupca: " + kup.IdKupca.LicnoIme + ", grad salona: "+kup.IdSalona.Grad); 
+                }
+
+
+                s.Close();
+
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodajKupovinu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                Salon salon = s.Load<Salon>(30);
+                Kupac k = s.Load<Kupac>(11);
+
+                Kupovina kupovina = new Kupovina()
+                {
+                    DatumKupovine = DateTime.ParseExact("11-12-2020", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    IdSalona = salon,
+                    IdKupca = k
+                };
+
+                salon.Kupovine.Add(kupovina);
+
+                k.Kupovine.Add(kupovina);
+
+                s.Save(kupovina);
+                s.Save(salon);
+                s.Save(k);
+
+                s.Flush();
+
+
+
+                s.Close();
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnVratiProdataVozila_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IList<UvezenoVozilo> k = s.QueryOver<UvezenoVozilo>()
+                                    .List<UvezenoVozilo>();
+
+                foreach (UvezenoVozilo o in k)
+                {
+                    if (o.GetType() == typeof(VoziloKojeJeProdato))
+                    {
+                        VoziloKojeJeProdato vp = (VoziloKojeJeProdato)o;
+                        MessageBox.Show("Vozilo koje je prodato: " + vp.BrojSasije + " id kupovine: " + vp.Kupovina.Id + ", Kupac: " + vp.Kupovina.IdKupca.LicnoIme + ", Grad salona:" + vp.Kupovina.IdSalona.Grad);
+
+                    }
+                }
+
+
+
+
+                s.Close();
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
     }
 }
