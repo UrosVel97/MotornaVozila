@@ -34,7 +34,7 @@ namespace MotornaVozila
                 MessageBox.Show(n.Adresa);
                 s.Close();
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -82,7 +82,7 @@ namespace MotornaVozila
                     if (o.GetType() == typeof(RadnikTehnickeStruke))
                     {
                         RadnikTehnickeStruke rts = (RadnikTehnickeStruke)o;
-                        MessageBox.Show("Radnik tehnicke struke: "+rts.Ime);
+                        MessageBox.Show("Radnik tehnicke struke: " + rts.Ime);
 
                     }
                     else if (o.GetType() == typeof(RadnikEkonomskeStruke))
@@ -112,7 +112,7 @@ namespace MotornaVozila
             try
             {
                 ISession s = DataLayer.GetSession();
-               
+
 
                 NekiDrugiZaposleni n = new NekiDrugiZaposleni()
                 {
@@ -126,7 +126,7 @@ namespace MotornaVozila
                     FZaposleniZaStalno = "Y",
                     FZaposleniPoUgovoru = "N",
                     Plata = 25000,
-                    DatumIstekaUgovora=null
+                    DatumIstekaUgovora = null
                 };
 
 
@@ -143,7 +143,7 @@ namespace MotornaVozila
                     FZaposleniPoUgovoru = "Y",
                     DatumIstekaUgovora = DateTime.ParseExact("01-01-2029", "dd-MM-yyyy", CultureInfo.InvariantCulture),
                     //TipZaposlenog ="Radnik tehnicke struke"
-               
+
                 };
 
                 RadnikEkonomskeStruke res = new RadnikEkonomskeStruke()
@@ -153,7 +153,7 @@ namespace MotornaVozila
                     Prezime = "Maric",
                     GodineRadnogStaza = 11,
                     DatumRodjena = DateTime.ParseExact("22-03-1991", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                DatumZaposlenja = DateTime.ParseExact("29-12-2009", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    DatumZaposlenja = DateTime.ParseExact("29-12-2009", "dd-MM-yyyy", CultureInfo.InvariantCulture),
                     StrucnaSprema = "Ima",
                     FZaposleniZaStalno = "N",
                     FZaposleniPoUgovoru = "Y",
@@ -162,7 +162,7 @@ namespace MotornaVozila
 
                 };
 
-                
+
                 s.Save(n);
                 s.Save(rts);
                 s.Save(res);
@@ -173,11 +173,11 @@ namespace MotornaVozila
 
 
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
-              
+
         }
 
         private void btnVratiUvezenoVozilo_Click(object sender, EventArgs e)
@@ -213,7 +213,7 @@ namespace MotornaVozila
 
                 s.Close();
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -236,12 +236,12 @@ namespace MotornaVozila
                     DatumUvoza = DateTime.ParseExact("22-03-1995", "dd-MM-yyyy", CultureInfo.InvariantCulture),
                     ModelVozila = "Audi",
                     FPutnickoVozilo = "Y",
-                    BrojPutnika=5,
+                    BrojPutnika = 5,
                     FTeretnoVozilo = "Y",
                     Nosivost = 100,
-                    TipProstora ="Prostrano",
-                    RadnikTehnStruke=rts
-                    
+                    TipProstora = "Prostrano",
+                    RadnikTehnStruke = rts
+
 
                 };
 
@@ -316,10 +316,10 @@ namespace MotornaVozila
                 {
                     Grad = "Pancevo",
                     Adresa = "Marka Kraljevica 99",
-                    StepenOpremljenostiServisa="Cetvrti",
-                    SefSalona="Miodrag",
-                    SefServisa="Nevena",
-                    FServis="N"
+                    StepenOpremljenostiServisa = "Cetvrti",
+                    SefSalona = "Miodrag",
+                    SefServisa = "Nevena",
+                    FServis = "N"
 
                 };
 
@@ -342,13 +342,13 @@ namespace MotornaVozila
                 IList<Salon> salon = s.QueryOver<Salon>()
                  .List<Salon>();
 
-                foreach(Salon ns in salon)
+                foreach (Salon ns in salon)
                 {
-                    if(ns.FServis=="Y")
+                    if (ns.FServis == "Y")
                     {
-                        foreach(TipRadova t in ns.TipoviRadova)
+                        foreach (TipRadova t in ns.TipoviRadova)
                         {
-                            MessageBox.Show("Salon id: " + ns.Id + " pruza radove: "+t.Tip_Radova);
+                            MessageBox.Show("Salon id: " + ns.Id + " pruza radove: " + t.Tip_Radova);
                         }
                     }
                 }
@@ -357,7 +357,7 @@ namespace MotornaVozila
                 s.Close();
             }
 
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -412,7 +412,7 @@ namespace MotornaVozila
 
                 foreach (NezavisniEkonomista ns in ne)
                 {
-                    if (ns.Saloni.Count()>0)
+                    if (ns.Saloni.Count() > 0)
                     {
                         foreach (Salon t in ns.Saloni)
                         {
@@ -484,7 +484,7 @@ namespace MotornaVozila
 
                 foreach (UvezenoVozilo v in uv)
                 {
-                    if(v.GetType()==typeof(VoziloKojeNijeProdato))
+                    if (v.GetType() == typeof(VoziloKojeNijeProdato))
                     {
                         VoziloKojeNijeProdato np = (VoziloKojeNijeProdato)v;
                         MessageBox.Show("Vozilo koje nije prodato broj sasije: " + np.BrojSasije + " je izlozen u salonu: " + np.IzlozenUSalonu.Id);
@@ -494,10 +494,10 @@ namespace MotornaVozila
 
                 foreach (Salon salon in saloni)
                 {
-                    if (salon.VozilaKojaNisuProdata.Count()>0)
+                    if (salon.VozilaKojaNisuProdata.Count() > 0)
                     {
-                        foreach(VoziloKojeNijeProdato np in salon.VozilaKojaNisuProdata)
-                        MessageBox.Show("Vozilo koje nije prodato broj sasije: " + np.BrojSasije + " je izlozen u salonu: " + salon.Id);
+                        foreach (VoziloKojeNijeProdato np in salon.VozilaKojaNisuProdata)
+                            MessageBox.Show("Vozilo koje nije prodato broj sasije: " + np.BrojSasije + " je izlozen u salonu: " + salon.Id);
                     }
                 }
 
@@ -505,7 +505,7 @@ namespace MotornaVozila
                 s.Close();
 
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -545,7 +545,7 @@ namespace MotornaVozila
                 s.Flush();
                 s.Close();
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -565,7 +565,7 @@ namespace MotornaVozila
                     if (o.GetType() == typeof(FizickoLice))
                     {
                         FizickoLice fl = (FizickoLice)o;
-                        MessageBox.Show("Naziv fizickog lica: " + fl.LicnoIme+", PIB:"+fl.Pib);
+                        MessageBox.Show("Naziv fizickog lica: " + fl.LicnoIme + ", PIB:" + fl.Pib);
 
                     }
                     else if (o.GetType() == typeof(PravnoLice))
@@ -619,7 +619,7 @@ namespace MotornaVozila
                 s.Close();
             }
 
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -633,16 +633,16 @@ namespace MotornaVozila
                 IList<Kupovina> k = s.QueryOver<Kupovina>()
                  .List<Kupovina>();
 
-                foreach(Kupovina kup in k)
+                foreach (Kupovina kup in k)
                 {
-                    MessageBox.Show("Id kupovine: " + kup.Id + ", Ime kupca: " + kup.IdKupca.LicnoIme + ", grad salona: "+kup.IdSalona.Grad); 
+                    MessageBox.Show("Id kupovine: " + kup.Id + ", Ime kupca: " + kup.IdKupca.LicnoIme + ", grad salona: " + kup.IdSalona.Grad);
                 }
 
 
                 s.Close();
 
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -677,7 +677,7 @@ namespace MotornaVozila
 
                 s.Close();
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -704,6 +704,169 @@ namespace MotornaVozila
 
 
 
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodajVoziloKupovini_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                Kupovina k = s.Load<Kupovina>(1);
+
+                RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(1414141);
+
+                VoziloKojeJeProdato vp = new VoziloKojeJeProdato()
+                {
+                    BrojSasije = 32561264,
+                    BrojMotora = 5632624,
+                    DatumUvoza = DateTime.ParseExact("11-12-2020", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    TipGoriva = "Benzinac",
+                    Kubikaza = 5000,
+                    ModelVozila = "Masserati",
+                    FPutnickoVozilo = "Y",
+                    BrojPutnika = 5,
+                    FTeretnoVozilo = "Y",
+                    Nosivost = 15000,
+                    TipProstora = "Prostoran",
+                    RadnikTehnStruke = rts,
+                    Kupovina = k,
+
+
+
+                };
+
+                rts.UvezenaVozila.Add(vp);
+                k.ProdataVozila.Add(vp);
+
+                s.Save(vp);
+                s.Save(rts);
+                s.Save(k);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnVracanjeVozilaPrimljenaNaServis_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                VozilaPrimljenaNaServis vp = s.Load<VozilaPrimljenaNaServis>(6666666);
+                MessageBox.Show("Vozilo sa registarskim brojem " + vp.RegistarskiBroj + " zaposleni koji je primio vozilo je: " + vp.Zaposleni.Ime);
+                Zaposleni z = s.Load<Zaposleni>(1616161);
+                MessageBox.Show("Zaposleni " + z.Ime + "prvo vozilo koje je primio na servis " + z.PrimioVoziloNaServis[0].RegistarskiBroj);
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodajVoziloPrimljenoNaServis_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Zaposleni z = s.Load<Zaposleni>(1313131);
+
+                VozilaPrimljenaNaServis vp = new VozilaPrimljenaNaServis()
+                {
+                    ModelVozila = "Opel",
+                    GodinaProizvodnje = 2000,
+                    OpisProblema = "Ne rade brisaci",
+                    DatumPrijema = DateTime.ParseExact("04-05-2018", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    DatumZavrsetkaRadova = DateTime.ParseExact("15-07-2018", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    Zaposleni = z
+                };
+
+                z.PrimioVoziloNaServis.Add(vp);
+
+                s.Save(vp);
+                s.Save(z);
+                s.Flush();
+
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnVratiVlasnikeIVozila_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IList<Vlasnik> k = s.QueryOver<Vlasnik>()
+                                    .List<Vlasnik>();
+
+                foreach (Vlasnik v in k)
+                {
+                    foreach (VozilaPrimljenaNaServis vp in v.JePoslaoVoziloNaServis)
+                    {
+                        if (v.GetType() == typeof(RegistrovaniKupac))
+                        {
+                            RegistrovaniKupac rk = (RegistrovaniKupac)v;
+                            MessageBox.Show("Id vlasnika: " + v.Id + " je registrovani kupac, Ime mu je " + rk.Kupac.LicnoIme + " je poslao vozilo na servis " + vp.RegistarskiBroj);
+                        }
+                        else
+                        {
+                            NeregistrovaniKupac nk = (NeregistrovaniKupac)v;
+                            MessageBox.Show("Id vlasnika: " + v.Id + " ime vlasnika " + nk.Ime + " je poslao vozilo na servis " + vp.RegistarskiBroj);
+                        }
+                    }
+                }
+
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnDodavanjeVozilaNaServis_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                RegistrovaniKupac rk = s.Load<RegistrovaniKupac>(2);
+                Zaposleni z = s.Load<Zaposleni>(21456713);
+
+                VozilaPrimljenaNaServis v = new VozilaPrimljenaNaServis()
+                {
+                    ModelVozila = "Karavan",
+                    GodinaProizvodnje = 2001,
+                    OpisProblema = "Ne rade kocnice",
+                    DatumPrijema = DateTime.ParseExact("20-10-2005", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    DatumZavrsetkaRadova = DateTime.ParseExact("25-12-2005", "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    Zaposleni = z,
+                    Vlasnik = rk,
+                };
+
+                rk.JePoslaoVoziloNaServis.Add(v);
+                z.PrimioVoziloNaServis.Add(v);
+
+                s.Save(v);
+                s.Save(z);
+                s.Save(rk);
+                s.Flush();
                 s.Close();
             }
             catch(Exception ec)

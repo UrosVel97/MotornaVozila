@@ -36,6 +36,9 @@ namespace MotornaVozila.Mapiranja
                 Map(x => x.FZaposleniZaStalno, "F_ZAPOSLEN_ZA_STALNO");
                 Map(x => x.FZaposleniPoUgovoru, "F_ZAPOSLEN_PO_UGOVORU");
                 Map(x => x.DatumIstekaUgovora, "DATUM_ISTEKA_UGOVORA");
+
+                //Veza 1:N, Zaposleni : VozilaPrimljenaNaServis
+                HasMany(x => x.PrimioVoziloNaServis).KeyColumn("FK_JMBG_ZAPOSLENI").LazyLoad().Cascade.All().Inverse();
             }
             catch(Exception ec)
             {

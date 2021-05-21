@@ -10,7 +10,7 @@ namespace MotornaVozila.Entiteti
     {
         public virtual int Id { get; protected set; }
 
-        public virtual string LicnoIme { get;  set; }
+        public virtual string LicnoIme { get; set; }
 
         public virtual string Prezime { get; set; }
 
@@ -18,9 +18,12 @@ namespace MotornaVozila.Entiteti
 
         public virtual IList<Kupovina> Kupovine { get; set; }
 
+        public virtual IList<RegistrovaniKupac> RegistrovaniKupci { get; set; }
+
         public Kupac()
         {
             Kupovine = new List<Kupovina>();
+            RegistrovaniKupci = new List<RegistrovaniKupac>();
         }
 
     }
@@ -34,7 +37,7 @@ namespace MotornaVozila.Entiteti
         }
     }
 
-    public class PravnoLice:Kupac
+    public class PravnoLice : Kupac
     {
         public virtual int Jmbg { get; set; }
 

@@ -77,6 +77,8 @@
     <Compile Include="Entiteti\Salon.cs" />
     <Compile Include="Entiteti\TipRadova.cs" />
     <Compile Include="Entiteti\UvezenoVozilo.cs" />
+    <Compile Include="Entiteti\Vlasnik.cs" />
+    <Compile Include="Entiteti\VozilaPrimljenaNaServis.cs" />
     <Compile Include="Entiteti\Zaposleni.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -90,6 +92,8 @@
     <Compile Include="Mapiranja\SalonMapiranja.cs" />
     <Compile Include="Mapiranja\TipRadovaMapiranje.cs" />
     <Compile Include="Mapiranja\UvezenoVoziloMapiranje.cs" />
+    <Compile Include="Mapiranja\VlasnikMapiranje.cs" />
+    <Compile Include="Mapiranja\VozilaPrimljenaNaServisMapiranja.cs" />
     <Compile Include="Mapiranja\ZaposleniMapiranja.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

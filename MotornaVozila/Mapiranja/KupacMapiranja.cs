@@ -31,6 +31,9 @@ namespace MotornaVozila.Mapiranja
             //Veza 1:N Kupac : Kupovina
             HasMany(x => x.Kupovine).KeyColumn("FK_ID_KUPCA").LazyLoad().Cascade.All().Inverse();
 
+            //Veza 1:N Kupac : RegistrovaniKupac
+            HasMany(x => x.RegistrovaniKupci).KeyColumn("FK_ID_KUPCA").LazyLoad().Cascade.All().Inverse();
+
         }
     }
 

@@ -25,9 +25,11 @@ namespace MotornaVozila.Entiteti
         public virtual string FZaposleniPoUgovoru { get; set; }
         public virtual DateTime? DatumIstekaUgovora { get; set; }
 
+        public virtual IList<VozilaPrimljenaNaServis> PrimioVoziloNaServis { get; set; }
+
         public Zaposleni()
         {
-
+            PrimioVoziloNaServis = new List<VozilaPrimljenaNaServis>();
         }
     }
 

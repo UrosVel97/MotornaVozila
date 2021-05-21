@@ -48,6 +48,11 @@ namespace MotornaVozila
             this.btnVratiKupovine = new System.Windows.Forms.Button();
             this.btnDodajKupovinu = new System.Windows.Forms.Button();
             this.btnVratiProdataVozila = new System.Windows.Forms.Button();
+            this.btnDodajVoziloKupovini = new System.Windows.Forms.Button();
+            this.btnVracanjeVozilaPrimljenaNaServis = new System.Windows.Forms.Button();
+            this.btnDodajVoziloPrimljenoNaServis = new System.Windows.Forms.Button();
+            this.btnVratiVlasnikeIVozila = new System.Windows.Forms.Button();
+            this.btnDodavanjeVozilaNaServis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVratiNezavisnogEkonomistu
@@ -241,11 +246,67 @@ namespace MotornaVozila
             this.btnVratiProdataVozila.UseVisualStyleBackColor = true;
             this.btnVratiProdataVozila.Click += new System.EventHandler(this.btnVratiProdataVozila_Click);
             // 
+            // btnDodajVoziloKupovini
+            // 
+            this.btnDodajVoziloKupovini.Location = new System.Drawing.Point(791, 96);
+            this.btnDodajVoziloKupovini.Name = "btnDodajVoziloKupovini";
+            this.btnDodajVoziloKupovini.Size = new System.Drawing.Size(164, 73);
+            this.btnDodajVoziloKupovini.TabIndex = 19;
+            this.btnDodajVoziloKupovini.Text = "Kreiraj vozilo koje je prodato i dedeli ga kupovini";
+            this.btnDodajVoziloKupovini.UseVisualStyleBackColor = true;
+            this.btnDodajVoziloKupovini.Click += new System.EventHandler(this.btnDodajVoziloKupovini_Click);
+            // 
+            // btnVracanjeVozilaPrimljenaNaServis
+            // 
+            this.btnVracanjeVozilaPrimljenaNaServis.Location = new System.Drawing.Point(791, 181);
+            this.btnVracanjeVozilaPrimljenaNaServis.Name = "btnVracanjeVozilaPrimljenaNaServis";
+            this.btnVracanjeVozilaPrimljenaNaServis.Size = new System.Drawing.Size(164, 78);
+            this.btnVracanjeVozilaPrimljenaNaServis.TabIndex = 20;
+            this.btnVracanjeVozilaPrimljenaNaServis.Text = "Vracanje vozila primljena na servis i zaposleni koji ih je primio";
+            this.btnVracanjeVozilaPrimljenaNaServis.UseVisualStyleBackColor = true;
+            this.btnVracanjeVozilaPrimljenaNaServis.Click += new System.EventHandler(this.btnVracanjeVozilaPrimljenaNaServis_Click);
+            // 
+            // btnDodajVoziloPrimljenoNaServis
+            // 
+            this.btnDodajVoziloPrimljenoNaServis.Location = new System.Drawing.Point(788, 286);
+            this.btnDodajVoziloPrimljenoNaServis.Name = "btnDodajVoziloPrimljenoNaServis";
+            this.btnDodajVoziloPrimljenoNaServis.Size = new System.Drawing.Size(167, 67);
+            this.btnDodajVoziloPrimljenoNaServis.TabIndex = 21;
+            this.btnDodajVoziloPrimljenoNaServis.Text = "Dodaj vozilo primljeno na servis i dodeli mu zaposlenog";
+            this.btnDodajVoziloPrimljenoNaServis.UseVisualStyleBackColor = true;
+            this.btnDodajVoziloPrimljenoNaServis.Click += new System.EventHandler(this.btnDodajVoziloPrimljenoNaServis_Click);
+            // 
+            // btnVratiVlasnikeIVozila
+            // 
+            this.btnVratiVlasnikeIVozila.Location = new System.Drawing.Point(788, 373);
+            this.btnVratiVlasnikeIVozila.Name = "btnVratiVlasnikeIVozila";
+            this.btnVratiVlasnikeIVozila.Size = new System.Drawing.Size(167, 59);
+            this.btnVratiVlasnikeIVozila.TabIndex = 22;
+            this.btnVratiVlasnikeIVozila.Text = "Vrati vlasnike i njihova vozila koja su poslali na servis";
+            this.btnVratiVlasnikeIVozila.UseVisualStyleBackColor = true;
+            this.btnVratiVlasnikeIVozila.Click += new System.EventHandler(this.btnVratiVlasnikeIVozila_Click);
+            // 
+            // btnDodavanjeVozilaNaServis
+            // 
+            this.btnDodavanjeVozilaNaServis.Location = new System.Drawing.Point(994, 28);
+            this.btnDodavanjeVozilaNaServis.Name = "btnDodavanjeVozilaNaServis";
+            this.btnDodavanjeVozilaNaServis.Size = new System.Drawing.Size(147, 141);
+            this.btnDodavanjeVozilaNaServis.TabIndex = 23;
+            this.btnDodavanjeVozilaNaServis.Text = "Kreiranje novog vozila primljenog na servis i dodeljujemo novog Registrovanog vla" +
+    "snika";
+            this.btnDodavanjeVozilaNaServis.UseVisualStyleBackColor = true;
+            this.btnDodavanjeVozilaNaServis.Click += new System.EventHandler(this.btnDodavanjeVozilaNaServis_Click);
+            // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1178, 556);
+            this.Controls.Add(this.btnDodavanjeVozilaNaServis);
+            this.Controls.Add(this.btnVratiVlasnikeIVozila);
+            this.Controls.Add(this.btnDodajVoziloPrimljenoNaServis);
+            this.Controls.Add(this.btnVracanjeVozilaPrimljenaNaServis);
+            this.Controls.Add(this.btnDodajVoziloKupovini);
             this.Controls.Add(this.btnVratiProdataVozila);
             this.Controls.Add(this.btnDodajKupovinu);
             this.Controls.Add(this.btnVratiKupovine);
@@ -292,6 +353,11 @@ namespace MotornaVozila
         private System.Windows.Forms.Button btnVratiKupovine;
         private System.Windows.Forms.Button btnDodajKupovinu;
         private System.Windows.Forms.Button btnVratiProdataVozila;
+        private System.Windows.Forms.Button btnDodajVoziloKupovini;
+        private System.Windows.Forms.Button btnVracanjeVozilaPrimljenaNaServis;
+        private System.Windows.Forms.Button btnDodajVoziloPrimljenoNaServis;
+        private System.Windows.Forms.Button btnVratiVlasnikeIVozila;
+        private System.Windows.Forms.Button btnDodavanjeVozilaNaServis;
     }
 }
 
