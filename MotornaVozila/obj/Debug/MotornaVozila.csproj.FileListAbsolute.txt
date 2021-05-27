@@ -23,3 +23,4 @@ C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\Moto
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.exe
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.pdb
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.btnVratiNezavisnogEkonomistuIAngazovanja.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajNezavisnogEkonomistu.resources

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MotornaVozila.Entiteti;
 using System.Globalization;
+using MotornaVozila.Forme;
 
 namespace MotornaVozila
 {
@@ -28,10 +29,24 @@ namespace MotornaVozila
 
                 ISession s = DataLayer.GetSession();
 
-                NezavisniEkonomista n = s.Load<NezavisniEkonomista>(1111111);
+                IList<NezavisniEkonomista> nezavisniEkonomista = s.QueryOver<NezavisniEkonomista>()
+                                 .List<NezavisniEkonomista>();
 
 
-                MessageBox.Show(n.Adresa);
+                foreach (NezavisniEkonomista n in nezavisniEkonomista)
+                {
+                    foreach (Salon salon in n.Saloni)
+                    {
+                        MessageBox.Show("Nezavisni ekonomista: " + n.Ime + " " + n.Prezime + " je angazovao Salon sa id-jem: " + salon.Id);
+                    }
+
+                    foreach (TelefonNezavisniEkonomista t in n.Telefoni)
+                    {
+                        MessageBox.Show("Nezavisni ekonomista: " + n.Ime + " " + n.Prezime + " ima broj: " + t.BrojTelefona);
+                    }
+                }
+
+
                 s.Close();
             }
             catch (Exception ec)
@@ -46,20 +61,29 @@ namespace MotornaVozila
             try
             {
 
+                DodajNezavisnogEkonomistu forma = new DodajNezavisnogEkonomistu();
 
-                ISession s = DataLayer.GetSession();
-
-                NezavisniEkonomista n = new NezavisniEkonomista()
+                this.Hide();
+                if (forma.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    Jmbg = 1234567,
-                    Ime = "Marija",
-                    Prezime = "Rancic",
-                    Adresa = "Marka Kraljevica 33"
-                };
+                    
+                    MessageBox.Show("Izaso iz forme");
+                }
+                this.Show();
 
-                s.Save(n);
-                s.Flush();
-                s.Close();
+                //ISession s = DataLayer.GetSession();
+
+                //NezavisniEkonomista n = new NezavisniEkonomista()
+                //{
+                //    Jmbg = 1234567,
+                //    Ime = "Marija",
+                //    Prezime = "Rancic",
+                //    Adresa = "Marka Kraljevica 33"
+                //};
+
+                //s.Save(n);
+                //s.Flush();
+                //s.Close();
 
             }
             catch (Exception ex)
@@ -869,7 +893,7 @@ namespace MotornaVozila
                 s.Flush();
                 s.Close();
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }

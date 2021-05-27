@@ -34,6 +34,11 @@ namespace MotornaVozila.Mapiranja
             //Mapiramo proste atribute podklase ako ih ima
             Map(x => x.Ime, "IME");
             Map(x => x.Prezime, "PREZIME");
+
+            //Veza 1:N, NeregistrovaniKupac : TelefonNeregistrovaniKupac
+            HasMany(x => x.Telefoni).KeyColumn("FK_ID_VLASNIKA").LazyLoad().Cascade.All().Inverse();
+
+
         }
     }
 

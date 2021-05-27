@@ -31,6 +31,9 @@ namespace MotornaVozila.Mapiranja
                         .ChildKeyColumn("FK_ID_SALONA")
                         .Cascade.All()
                         .Inverse();
+
+            //Veza 1:N, NezavisniEkonomista : TelefonNezavisniEkonomista
+            HasMany(x => x.Telefoni).KeyColumn("FK_JMBG_NEZAVISNI_EKONOMISTA").LazyLoad().Cascade.All().Inverse();
         }
     }
 }

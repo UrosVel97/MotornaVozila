@@ -25,19 +25,20 @@ namespace MotornaVozila.Entiteti
         public virtual string Ime { get; set; }
 
         public virtual string Prezime { get; set; }
-
+        public virtual IList<TelefonNeregistrovaniKupac> Telefoni { get; set; }
         public NeregistrovaniKupac()
         {
-
+            Telefoni = new List<TelefonNeregistrovaniKupac>();
         }
     }
 
     public class RegistrovaniKupac : Vlasnik
     {
         public virtual Kupac Kupac { get; set; }
+        
         public RegistrovaniKupac()
         {
-
+            
         }
     }
 

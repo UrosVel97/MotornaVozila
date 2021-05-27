@@ -75,6 +75,8 @@
     <Compile Include="Entiteti\Kupovina.cs" />
     <Compile Include="Entiteti\NezavisniEkonomista.cs" />
     <Compile Include="Entiteti\Salon.cs" />
+    <Compile Include="Entiteti\TelefonNeregistrovaniKupac.cs" />
+    <Compile Include="Entiteti\TelefonNezavisniEkonomista.cs" />
     <Compile Include="Entiteti\TipRadova.cs" />
     <Compile Include="Entiteti\UvezenoVozilo.cs" />
     <Compile Include="Entiteti\Vlasnik.cs" />
@@ -86,10 +88,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajNezavisnogEkonomistu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajNezavisnogEkonomistu.Designer.cs">
+      <DependentUpon>DodajNezavisnogEkonomistu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mapiranja\KupacMapiranja.cs" />
     <Compile Include="Mapiranja\KupovinaMapiranja.cs" />
     <Compile Include="Mapiranja\NezavisniEkonomistaMapiranje.cs" />
     <Compile Include="Mapiranja\SalonMapiranja.cs" />
+    <Compile Include="Mapiranja\TelefonNeregistrovaniKupacMapiranja.cs" />
+    <Compile Include="Mapiranja\TelefonNezavisniEkonomistaMapiranje.cs" />
     <Compile Include="Mapiranja\TipRadovaMapiranje.cs" />
     <Compile Include="Mapiranja\UvezenoVoziloMapiranje.cs" />
     <Compile Include="Mapiranja\VlasnikMapiranje.cs" />
@@ -99,6 +109,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajNezavisnogEkonomistu.resx">
+      <DependentUpon>DodajNezavisnogEkonomistu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

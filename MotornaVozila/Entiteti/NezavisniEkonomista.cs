@@ -12,12 +12,14 @@ namespace MotornaVozila.Entiteti
         public virtual string Ime { get;  set; }
         public virtual string Prezime { get; set; }
         public virtual string Adresa { get; set; }
-
         public virtual IList<Salon> Saloni { get; set; }
+        public virtual IList<TelefonNezavisniEkonomista> Telefoni { get; set; }
 
         public NezavisniEkonomista()
         {
             Saloni = new List<Salon>();
+            Telefoni = new List<TelefonNezavisniEkonomista>();
         }
+
     }
 }
