@@ -40,7 +40,8 @@ namespace MotornaVozila.Mapiranja
                 //mapiranje veze 1:N RadnikTehnickeStruke-UvezenoVozilo
                 References(x => x.RadnikTehnStruke).Column("FK_JMBG_RADNIK_TEHNICKE_STRUKE").LazyLoad();
 
-
+                //Veza 1:N, UvezenoVozilo : Boja
+                HasMany(x => x.Boje).KeyColumn("FK_BROJ_SASIJE").LazyLoad().Cascade.All().Inverse();
             }
             catch (Exception ec)
             {

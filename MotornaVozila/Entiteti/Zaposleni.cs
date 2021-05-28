@@ -44,9 +44,11 @@ namespace MotornaVozila.Entiteti
     public class RadnikTehnickeStruke : Zaposleni
     {
         public virtual IList<UvezenoVozilo> UvezenaVozila { get; set; }
+        public virtual IList<Specijalnost> Specijalnosti{ get; set; }
         public RadnikTehnickeStruke()
         {
             UvezenaVozila = new List<UvezenoVozilo>();
+            Specijalnosti = new List<Specijalnost>();
         }
     }
 

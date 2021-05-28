@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Vodite racuna da kada unosite JMBG da takav vec ne postoji u bazi, takodje sva input polja moraju da imaju vrednost jer nijedna kolona ne moze biti NULL. Samo brojevi telefona mogu imati vrednost NULL.</value>
-  </data>
 </root>

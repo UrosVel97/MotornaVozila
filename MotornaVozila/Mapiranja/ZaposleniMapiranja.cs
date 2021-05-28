@@ -65,6 +65,10 @@ namespace MotornaVozila.Mapiranja
 
             //Veza 1:N, RadnikTehnickeStruke : UvezenoVozilo
             HasMany(x => x.UvezenaVozila).KeyColumn("FK_JMBG_RADNIK_TEHNICKE_STRUKE").LazyLoad().Cascade.All().Inverse();
+
+            //Veza 1:N, RadnikTehnickeStruke : Specijalnost
+            HasMany(x => x.Specijalnosti).KeyColumn("FK_JMBG_ZAPOSLENOG").LazyLoad().Cascade.All().Inverse();
+
         }
     }
 

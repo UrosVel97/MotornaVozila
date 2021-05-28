@@ -99,17 +99,17 @@ namespace MotornaVozila
             // 
             this.btnVratiUvezenoVozilo.Location = new System.Drawing.Point(196, 28);
             this.btnVratiUvezenoVozilo.Name = "btnVratiUvezenoVozilo";
-            this.btnVratiUvezenoVozilo.Size = new System.Drawing.Size(142, 50);
+            this.btnVratiUvezenoVozilo.Size = new System.Drawing.Size(142, 62);
             this.btnVratiUvezenoVozilo.TabIndex = 4;
-            this.btnVratiUvezenoVozilo.Text = "Vrati uvezeno vozilo";
+            this.btnVratiUvezenoVozilo.Text = "Vrati sva uvezena vozila i njihove veze";
             this.btnVratiUvezenoVozilo.UseVisualStyleBackColor = true;
             this.btnVratiUvezenoVozilo.Click += new System.EventHandler(this.btnVratiUvezenoVozilo_Click);
             // 
             // btnDodajUvezenoVozilo
             // 
-            this.btnDodajUvezenoVozilo.Location = new System.Drawing.Point(196, 96);
+            this.btnDodajUvezenoVozilo.Location = new System.Drawing.Point(196, 102);
             this.btnDodajUvezenoVozilo.Name = "btnDodajUvezenoVozilo";
-            this.btnDodajUvezenoVozilo.Size = new System.Drawing.Size(142, 47);
+            this.btnDodajUvezenoVozilo.Size = new System.Drawing.Size(142, 60);
             this.btnDodajUvezenoVozilo.TabIndex = 5;
             this.btnDodajUvezenoVozilo.Text = "Dodaj uvezeno vozilo";
             this.btnDodajUvezenoVozilo.UseVisualStyleBackColor = true;

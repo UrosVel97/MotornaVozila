@@ -23,10 +23,10 @@ namespace MotornaVozila.Entiteti
 
         public virtual RadnikTehnickeStruke RadnikTehnStruke { get; set; }
 
-
+        public virtual IList<Boja> Boje{ get; set; }
         public UvezenoVozilo()
         {
-
+            Boje = new List<Boja>();
         }
 
     }

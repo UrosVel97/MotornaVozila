@@ -63,27 +63,12 @@ namespace MotornaVozila
 
                 DodajNezavisnogEkonomistu forma = new DodajNezavisnogEkonomistu();
 
-                this.Hide();
-                if (forma.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    
-                    MessageBox.Show("Izaso iz forme");
-                }
-                this.Show();
+                this.Visible = false;
+                forma.ShowDialog();
+                this.Visible = true;
 
-                //ISession s = DataLayer.GetSession();
 
-                //NezavisniEkonomista n = new NezavisniEkonomista()
-                //{
-                //    Jmbg = 1234567,
-                //    Ime = "Marija",
-                //    Prezime = "Rancic",
-                //    Adresa = "Marka Kraljevica 33"
-                //};
 
-                //s.Save(n);
-                //s.Flush();
-                //s.Close();
 
             }
             catch (Exception ex)
@@ -106,19 +91,98 @@ namespace MotornaVozila
                     if (o.GetType() == typeof(RadnikTehnickeStruke))
                     {
                         RadnikTehnickeStruke rts = (RadnikTehnickeStruke)o;
-                        MessageBox.Show("Radnik tehnicke struke: " + rts.Ime);
+
+
+                        foreach (Specijalnost spec in rts.Specijalnosti)
+                        {
+                            MessageBox.Show("Radnik tehnicke struke sa jmbg: " + rts.Jmbg + ", ima specijalnost: " + spec.SpecijalnostRadnika);
+
+                        }
+                        if (rts.Specijalnosti.Count == 0)
+                        {
+                            MessageBox.Show("Radnik tehnicke struke sa jmbg: " + rts.Jmbg + " nema specijalnosti");
+                        }
+
+                        foreach (UvezenoVozilo uv in rts.UvezenaVozila)
+                        {
+                            MessageBox.Show("Radnik tehnicke struke sa jmbg: " + rts.Jmbg + ", je uvezo vozilo sa brojem sasije " + uv.BrojSasije + ", model: " + uv.ModelVozila);
+                        }
+                        if (rts.UvezenaVozila.Count == 0)
+                        {
+                            MessageBox.Show("Radnik tehnicke struke sa jmbg: " + rts.Jmbg + " nije vrsio prijem uvezenog vozila");
+                        }
+
+                        foreach (VozilaPrimljenaNaServis vps in rts.PrimioVoziloNaServis)
+                        {
+                            MessageBox.Show("Radnik tehnicke struke sa jmbg: " + rts.Jmbg + ", je primio vozilo na servis sa registrskim brojem" + vps.RegistarskiBroj + ", opis problema: " + vps.OpisProblema);
+                        }
+                        if (rts.PrimioVoziloNaServis.Count == 0)
+                        {
+                            MessageBox.Show("Radnik tehnicke struke sa jmbg: " + rts.Jmbg + " nije primio nijedno vozilo na servis");
+                        }
+
+                        if (rts.FZaposleniZaStalno.Equals("Y"))
+                        {
+                            MessageBox.Show("Radnik tehnicke struke sa jmbg: " + rts.Jmbg + " je zaposlen za stalno i ima platu " + rts.Plata + "din");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Radnik tehnicke struke sa jmbg: " + rts.Jmbg + " je zaposlen po ugovoru do datuma: " + rts.DatumIstekaUgovora.ToString());
+
+                        }
+
 
                     }
                     else if (o.GetType() == typeof(RadnikEkonomskeStruke))
                     {
                         RadnikEkonomskeStruke res = (RadnikEkonomskeStruke)o;
-                        MessageBox.Show("Radnik ekonomske struke: " + res.Ime);
+
+
+                        MessageBox.Show("Radnik ekonomske struke ima jmbg: " + res.Jmbg + ", ime: " + res.Ime + ", prezime: " + res.Prezime + ", datum zaposljenja: " + res.DatumZaposlenja.ToString());
+
+                        foreach (VozilaPrimljenaNaServis vps in res.PrimioVoziloNaServis)
+                        {
+                            MessageBox.Show("Radnik ekonomske struke sa jmbg: " + res.Jmbg + ", je primio vozilo na servis sa registrskim brojem: " + vps.RegistarskiBroj + ", opis problema: " + vps.OpisProblema);
+                        }
+                        if (res.PrimioVoziloNaServis.Count == 0)
+                        {
+                            MessageBox.Show("Radnik ekonomske struke sa jmbg: " + res.Jmbg + " nije primio nijedno vozilo na servis");
+                        }
+
+                        if (res.FZaposleniZaStalno.Equals("Y"))
+                        {
+                            MessageBox.Show("Radnik ekonomske struke sa jmbg: " + res.Jmbg + " je zaposlen za stalno i ima platu " + res.Plata + "din");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Radnik ekonomske struke sa jmbg: " + res.Jmbg + " je zaposlen po ugovoru do datuma: " + res.DatumIstekaUgovora.ToString());
+
+                        }
 
                     }
                     else
                     {
-                        MessageBox.Show("Neki drugi radnik: " + o.Ime);
 
+                        MessageBox.Show("Neki drugi zaposleni sa jmbg: " + o.Jmbg + ", ime: " + o.Ime + ", strucna sprema: " + o.StrucnaSprema);
+
+                        foreach (VozilaPrimljenaNaServis vps in o.PrimioVoziloNaServis)
+                        {
+                            MessageBox.Show("Neki drugi zaposleni sa jmbg: " + o.Jmbg + ", je primio vozilo na servis sa registrskim brojem: " + vps.RegistarskiBroj + ", opis problema: " + vps.OpisProblema);
+                        }
+                        if (o.PrimioVoziloNaServis.Count == 0)
+                        {
+                            MessageBox.Show("Neki drugi zaposleni sa jmbg: " + o.Jmbg + " nije primio nijedno vozilo na servis");
+                        }
+
+                        if (o.FZaposleniZaStalno.Equals("Y"))
+                        {
+                            MessageBox.Show("Neki drugi zaposleni sa jmbg: " + o.Jmbg + " je zaposlen za stalno i ima platu: " + o.Plata + "din");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Neki drugi zaposleni sa jmbg: " + o.Jmbg + " je zaposlen po ugovoru do datuma: " + o.DatumIstekaUgovora.ToString());
+
+                        }
 
                     }
                 }
@@ -133,74 +197,15 @@ namespace MotornaVozila
 
         private void btnDodajZaposlenog_Click(object sender, EventArgs e)
         {
-            try
-            {
-                ISession s = DataLayer.GetSession();
 
+            DodajZaposlenog forma = new DodajZaposlenog();
 
-                NekiDrugiZaposleni n = new NekiDrugiZaposleni()
-                {
-                    Jmbg = 32456713,
-                    Ime = "Valentina",
-                    Prezime = "Markovic",
-                    GodineRadnogStaza = 10,
-                    DatumRodjena = DateTime.ParseExact("22-03-1993", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    DatumZaposlenja = DateTime.ParseExact("22-08-2013", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    StrucnaSprema = "Ima",
-                    FZaposleniZaStalno = "Y",
-                    FZaposleniPoUgovoru = "N",
-                    Plata = 25000,
-                    DatumIstekaUgovora = null
-                };
-
-
-                RadnikTehnickeStruke rts = new RadnikTehnickeStruke()
-                {
-                    Jmbg = 31456713,
-                    Ime = "Vanja",
-                    Prezime = "Simonovic",
-                    GodineRadnogStaza = 11,
-                    DatumRodjena = DateTime.ParseExact("22-03-1995", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    DatumZaposlenja = DateTime.ParseExact("11-11-2015", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    StrucnaSprema = "Ima",
-                    FZaposleniZaStalno = "N",
-                    FZaposleniPoUgovoru = "Y",
-                    DatumIstekaUgovora = DateTime.ParseExact("01-01-2029", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    //TipZaposlenog ="Radnik tehnicke struke"
-
-                };
-
-                RadnikEkonomskeStruke res = new RadnikEkonomskeStruke()
-                {
-                    Jmbg = 21456713,
-                    Ime = "Miljana",
-                    Prezime = "Maric",
-                    GodineRadnogStaza = 11,
-                    DatumRodjena = DateTime.ParseExact("22-03-1991", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    DatumZaposlenja = DateTime.ParseExact("29-12-2009", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    StrucnaSprema = "Ima",
-                    FZaposleniZaStalno = "N",
-                    FZaposleniPoUgovoru = "Y",
-                    DatumIstekaUgovora = DateTime.ParseExact("22-03-2030", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    //TipZaposlenog = "Radnik ekonomske struke"
-
-                };
-
-
-                s.Save(n);
-                s.Save(rts);
-                s.Save(res);
-
-                s.Flush();
-                s.Close();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
 
 
 
-            }
-            catch (Exception ec)
-            {
-                MessageBox.Show(ec.ToString());
-            }
 
         }
 
@@ -218,13 +223,61 @@ namespace MotornaVozila
                     if (o.GetType() == typeof(VoziloKojeJeProdato))
                     {
                         VoziloKojeJeProdato vp = (VoziloKojeJeProdato)o;
-                        MessageBox.Show("Vozilo koje je prodato: " + vp.BrojSasije);
+                        MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + ", model vozila je: " + vp.ModelVozila + ". Id kupovine: " + vp.Kupovina.Id + ", kupljeno datuma: " + vp.Kupovina.DatumKupovine.ToString());
+                        if (vp.FPutnickoVozilo.Equals("Y") && vp.FTeretnoVozilo.Equals("Y"))
+                        {
+                            MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + ", vozilo je i putnicko i teretno vozilo. Broj putnika: " + vp.BrojPutnika + ", Nosivost: " + vp.Nosivost + ", Tip prostora: " + vp.TipProstora);
+
+                        }
+                        else if(vp.FPutnickoVozilo.Equals("Y") && vp.FTeretnoVozilo.Equals("N"))
+                        {
+                            MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + ", vozilo je putnicko. Broj putnika: " + vp.BrojPutnika);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + ", vozilo je teretno. Nosivost: " + vp.Nosivost + ", Tip prostora: " + vp.TipProstora);
+                        }
+
+                        foreach(Boja b in vp.Boje)
+                        {
+                            MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + " je boje " + b.BojaVozila);
+                        }
+
+                        if(vp.Boje.Count==0)
+                        {
+                            MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + " nema boju");
+                        }
+
+
 
                     }
                     else if (o.GetType() == typeof(VoziloKojeNijeProdato))
                     {
                         VoziloKojeNijeProdato vnp = (VoziloKojeNijeProdato)o;
-                        MessageBox.Show("Vozilo koje nije prodato: " + vnp.BrojSasije);
+                        MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", model vozila je: " + vnp.ModelVozila + ". Vozilo je izlozeno u salonu sa id-jem: " + vnp.IzlozenUSalonu.Id + ", Salon se nalazi u gradu: " + vnp.IzlozenUSalonu.Grad);
+                        if (vnp.FPutnickoVozilo.Equals("Y") && vnp.FTeretnoVozilo.Equals("Y"))
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je i putnicko i teretno vozilo. Broj putnika: " + vnp.BrojPutnika + ", Nosivost: " + vnp.Nosivost + ", Tip prostora: " + vnp.TipProstora);
+
+                        }
+                        else if (vnp.FPutnickoVozilo.Equals("Y") && vnp.FTeretnoVozilo.Equals("N"))
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je putnicko. Broj putnika: " + vnp.BrojPutnika);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je teretno. Nosivost: " + vnp.Nosivost + ", Tip prostora: " + vnp.TipProstora);
+                        }
+
+                        foreach (Boja b in vnp.Boje)
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + "je boje " + b.BojaVozila);
+                        }
+
+                        if (vnp.Boje.Count == 0)
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + " nema boju");
+                        }
 
                     }
                     else
@@ -245,69 +298,14 @@ namespace MotornaVozila
 
         private void btnDodajUvezenoVozilo_Click(object sender, EventArgs e)
         {
-            try
-            {
-                ISession s = DataLayer.GetSession();
-
-                RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(31456713);
-
-                VoziloKojeJeProdato vp = new VoziloKojeJeProdato()
-                {
-                    BrojSasije = 31456713,
-                    BrojMotora = 5252342,
-                    TipGoriva = "Dizel",
-                    Kubikaza = 3000,
-                    DatumUvoza = DateTime.ParseExact("22-03-1995", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    ModelVozila = "Audi",
-                    FPutnickoVozilo = "Y",
-                    BrojPutnika = 5,
-                    FTeretnoVozilo = "Y",
-                    Nosivost = 100,
-                    TipProstora = "Prostrano",
-                    RadnikTehnStruke = rts
 
 
-                };
+            DodajUvezenoVozilo forma = new DodajUvezenoVozilo();
 
-                VoziloKojeNijeProdato vnp = new VoziloKojeNijeProdato()
-                {
-                    BrojSasije = 39456713,
-                    BrojMotora = 5252342,
-                    TipGoriva = "Dizel",
-                    Kubikaza = 3000,
-                    DatumUvoza = DateTime.ParseExact("22-03-1995", "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    ModelVozila = "Audi",
-                    FPutnickoVozilo = "N",
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
 
-                    FTeretnoVozilo = "Y",
-                    Nosivost = 100,
-                    TipProstora = "Prostrano",
-                    RadnikTehnStruke = rts
-
-                };
-
-
-
-
-                s.Save(vp);
-                s.Save(vnp);
-
-                rts.UvezenaVozila.Add(vp);
-                rts.UvezenaVozila.Add(vnp);
-
-                s.Save(rts);
-
-
-                s.Flush();
-                s.Close();
-
-
-
-            }
-            catch (Exception ec)
-            {
-                MessageBox.Show(ec.ToString());
-            }
         }
 
         private void btnVratiSalon_Click(object sender, EventArgs e)

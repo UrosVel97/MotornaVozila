@@ -15,7 +15,6 @@ C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\Moto
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\bin\Debug\NHibernate.xml
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\bin\Debug\Remotion.Linq.xml
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\bin\Debug\Remotion.Linq.EagerFetching.xml
-C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.csprojAssemblyReference.cache
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Properties.Resources.resources
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.csproj.GenerateResource.cache
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.csproj.CoreCompileInputs.cache
@@ -24,3 +23,11 @@ C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\Moto
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.pdb
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.btnVratiNezavisnogEkonomistuIAngazovanja.resources
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajNezavisnogEkonomistu.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajZaposlenog.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajRadnikaTehnickeStruke.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajRadnikaEkonomskeStruke.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajDrugogZaposlenog.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajUvezenoVozilo.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajVoziloKojeNijeProdato.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.csprojAssemblyReference.cache
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajVoziloKojeJeProdato.resources

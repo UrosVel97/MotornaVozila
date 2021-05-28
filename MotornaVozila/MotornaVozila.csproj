@@ -71,10 +71,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataLayer.cs" />
+    <Compile Include="Entiteti\Boja.cs" />
     <Compile Include="Entiteti\Kupac.cs" />
     <Compile Include="Entiteti\Kupovina.cs" />
     <Compile Include="Entiteti\NezavisniEkonomista.cs" />
     <Compile Include="Entiteti\Salon.cs" />
+    <Compile Include="Entiteti\Specijalnost.cs" />
     <Compile Include="Entiteti\TelefonNeregistrovaniKupac.cs" />
     <Compile Include="Entiteti\TelefonNezavisniEkonomista.cs" />
     <Compile Include="Entiteti\TipRadova.cs" />
@@ -88,16 +90,60 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajDrugogZaposlenog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajDrugogZaposlenog.Designer.cs">
+      <DependentUpon>DodajDrugogZaposlenog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajNezavisnogEkonomistu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\DodajNezavisnogEkonomistu.Designer.cs">
       <DependentUpon>DodajNezavisnogEkonomistu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajRadnikaEkonomskeStruke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajRadnikaEkonomskeStruke.Designer.cs">
+      <DependentUpon>DodajRadnikaEkonomskeStruke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajRadnikaTehnickeStruke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajRadnikaTehnickeStruke.Designer.cs">
+      <DependentUpon>DodajRadnikaTehnickeStruke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajUvezenoVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajUvezenoVozilo.Designer.cs">
+      <DependentUpon>DodajUvezenoVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajVoziloKojeJeProdato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajVoziloKojeJeProdato.Designer.cs">
+      <DependentUpon>DodajVoziloKojeJeProdato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajVoziloKojeNijeProdato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajVoziloKojeNijeProdato.Designer.cs">
+      <DependentUpon>DodajVoziloKojeNijeProdato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajZaposlenog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajZaposlenog.Designer.cs">
+      <DependentUpon>DodajZaposlenog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapiranja\BojaMapiranje.cs" />
     <Compile Include="Mapiranja\KupacMapiranja.cs" />
     <Compile Include="Mapiranja\KupovinaMapiranja.cs" />
     <Compile Include="Mapiranja\NezavisniEkonomistaMapiranje.cs" />
     <Compile Include="Mapiranja\SalonMapiranja.cs" />
+    <Compile Include="Mapiranja\SpecijalnostMapiranje.cs" />
     <Compile Include="Mapiranja\TelefonNeregistrovaniKupacMapiranja.cs" />
     <Compile Include="Mapiranja\TelefonNezavisniEkonomistaMapiranje.cs" />
     <Compile Include="Mapiranja\TipRadovaMapiranje.cs" />
@@ -110,8 +156,29 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajDrugogZaposlenog.resx">
+      <DependentUpon>DodajDrugogZaposlenog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajNezavisnogEkonomistu.resx">
       <DependentUpon>DodajNezavisnogEkonomistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajRadnikaEkonomskeStruke.resx">
+      <DependentUpon>DodajRadnikaEkonomskeStruke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajRadnikaTehnickeStruke.resx">
+      <DependentUpon>DodajRadnikaTehnickeStruke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajUvezenoVozilo.resx">
+      <DependentUpon>DodajUvezenoVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajVoziloKojeJeProdato.resx">
+      <DependentUpon>DodajVoziloKojeJeProdato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajVoziloKojeNijeProdato.resx">
+      <DependentUpon>DodajVoziloKojeNijeProdato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajZaposlenog.resx">
+      <DependentUpon>DodajZaposlenog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,6 +190,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\MotornaVozila.Entiteti.RadnikTehnickeStruke.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
