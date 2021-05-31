@@ -968,5 +968,10 @@ namespace MotornaVozila
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void btnVratiNezavisnogEkonomistuIAngazovanja_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

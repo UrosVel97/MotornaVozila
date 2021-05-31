@@ -23,7 +23,7 @@ namespace MotornaVozila.Forme
         {
             try
             {
-                ISession s = DataLayer.GetSession();
+              
 
                 NezavisniEkonomista n = new NezavisniEkonomista()
                 {
@@ -44,12 +44,10 @@ namespace MotornaVozila.Forme
                 n.Telefoni.Add(tel);
                 n.Telefoni.Add(tel2);
 
+                DTOManager.SacuvajNezavinsogEkonomistu(n, tel, tel2);
 
-                s.Save(n);
-                s.Save(tel);
-                s.Save(tel2);
-                s.Flush();
-                s.Close();
+
+                
             }
             catch(Exception ec)
             {

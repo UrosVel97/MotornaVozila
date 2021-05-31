@@ -61,41 +61,9 @@ namespace MotornaVozila.Forme
 
             try
             {
-                ISession s = DataLayer.GetSession();
-                NezavisniEkonomista n = s.Load<NezavisniEkonomista>(int.Parse(listView2.SelectedItems[0].Text));
-                n.Saloni = new List<Salon>();
-                IList<Salon> saloni = s.QueryOver<Salon>()
-                                        .List<Salon>();
-                foreach(Salon salon in saloni)
-                {
-                    salon.NezavisniEkonomisti.Remove(n);
-                    s.SaveOrUpdate(salon);
-                    s.Flush();
-                }
-                n.Telefoni = new List<TelefonNezavisniEkonomista>();
-                s.SaveOrUpdate(n);
-                s.Flush();
-
-
-                IList<TelefonNezavisniEkonomista> telefoni = s.QueryOver<TelefonNezavisniEkonomista>()
-                                .Where(x => x.NezavisniEkonomista == n)
-                                .List<TelefonNezavisniEkonomista>();
-
-                foreach(TelefonNezavisniEkonomista t in telefoni)
-                {
-                    s.Delete(t);
-                    s.Flush();
-                }
-
                 
-
-
-                n = s.Load<NezavisniEkonomista>(n.Jmbg);
-                s.Refresh(n);
-                s.Delete(n);
-
-                s.Flush();
-                s.Close();
+                DTOManager.ObrisiNezavisnogEkonomistu(int.Parse(listView2.SelectedItems[0].Text));
+                
             }
             catch (Exception ec)
             {

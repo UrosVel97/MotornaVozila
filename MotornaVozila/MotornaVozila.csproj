@@ -71,6 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataLayer.cs" />
+    <Compile Include="DTOManager.cs" />
+    <Compile Include="DTOs.cs" />
     <Compile Include="Entiteti\Boja.cs" />
     <Compile Include="Entiteti\Kupac.cs" />
     <Compile Include="Entiteti\Kupovina.cs" />

@@ -23,43 +23,23 @@ namespace MotornaVozila.Forme
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
-            {
-                if (listView2.SelectedItems.Count > 0)
-                {
-                    ISession s = DataLayer.GetSession();
-                    vknp = s.Load<VoziloKojeNijeProdato>(int.Parse(listView2.SelectedItems[0].Text));
-                    vknp.Kubikaza++;
-                    vknp.Kubikaza--;
 
-                    s.Close();
-                }
-            }
-            catch (Exception ec)
-            {
-                MessageBox.Show(ec.ToString());
-            }
         }
 
         private void btnObrisi_Click(object sender, EventArgs e)
         {
             try
             {
-                ISession s = DataLayer.GetSession();
 
-                RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(vknp.RadnikTehnStruke.Jmbg);
-                Salon salon = s.Load<Salon>(vknp.IzlozenUSalonu.Id);
 
-                s.Delete(vknp);
+                if (listView2.SelectedItems.Count > 0)
+                {
+                    
+                    DTOManager.ObrisiVoziloKojeNijeProdato(int.Parse(listView2.SelectedItems[0].Text));
 
-                rts.UvezenaVozila.Remove(vknp);
-                salon.VozilaKojaNisuProdata.Remove(vknp);
-                s.Flush();
-                s.SaveOrUpdate(rts);
-                s.SaveOrUpdate(salon);
-                s.Flush();
+                }
 
-                s.Close();
+
             }
             catch (Exception ec)
             {

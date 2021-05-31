@@ -73,14 +73,14 @@ namespace MotornaVozila.Forme
 
             try
             {
-                ISession s = DataLayer.GetSession();
+                
                 n.Ime = txtIme.Text;
                 n.Prezime = txtPrezime.Text;
                 n.Adresa = txtAdresa.Text;
 
-                s.SaveOrUpdate(n);
-                s.Flush();
-                s.Close();
+                DTOManager.AzurirajNezavisnogEkonomistu(n);
+
+                
             }
             catch(Exception ec)
             {

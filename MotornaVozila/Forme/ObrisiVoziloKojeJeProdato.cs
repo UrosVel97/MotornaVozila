@@ -24,23 +24,7 @@ namespace MotornaVozila.Forme
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
-            {
-                if (listView2.SelectedItems.Count > 0)
-                {
-                    ISession s = DataLayer.GetSession();
-                    vkp = s.Load<VoziloKojeJeProdato>(int.Parse(listView2.SelectedItems[0].Text));
-                    vkp.Kubikaza++;
-                    vkp.Kubikaza--;
 
-                    
-                    s.Close();
-                }
-            }
-            catch (Exception ec)
-            {
-                MessageBox.Show(ec.ToString());
-            }
         }
 
         private void btnSnimi_Click(object sender, EventArgs e)
@@ -79,24 +63,12 @@ namespace MotornaVozila.Forme
         {
             try
             {
-                ISession s = DataLayer.GetSession();
-
-                RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(vkp.RadnikTehnStruke.Jmbg);
-                Kupovina k = s.Load<Kupovina>(vkp.Kupovina.Id);
-
-
+                if (listView2.SelectedItems.Count > 0)
+                {
+                    DTOManager.ObrisiVoziloKojeJeProdato(int.Parse(listView2.SelectedItems[0].Text));
+                }
 
                 
-                s.Delete(vkp);
-
-                rts.UvezenaVozila.Remove(vkp);
-                k.ProdataVozila.Remove(vkp);
-                s.Flush();
-                s.SaveOrUpdate(rts);
-                s.SaveOrUpdate(k); 
-                s.Flush();
-               
-                s.Close();
             }
             catch(Exception ec)
             {
