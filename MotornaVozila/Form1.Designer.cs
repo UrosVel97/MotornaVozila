@@ -58,7 +58,6 @@ namespace MotornaVozila
             this.btnModifikujZaposlenog = new System.Windows.Forms.Button();
             this.btnModifikujUvezenoVozilo = new System.Windows.Forms.Button();
             this.btnObrisiUvezenoVozilo = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnVratiSalone = new System.Windows.Forms.Button();
             this.btnDodajSaloon = new System.Windows.Forms.Button();
             this.btnModifikujSalon = new System.Windows.Forms.Button();
@@ -386,17 +385,6 @@ namespace MotornaVozila
             this.btnObrisiUvezenoVozilo.UseVisualStyleBackColor = true;
             this.btnObrisiUvezenoVozilo.Click += new System.EventHandler(this.btnObrisiUvezenoVozilo_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(280, 411);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 21);
-            this.checkBox1.TabIndex = 29;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // btnVratiSalone
             // 
             this.btnVratiSalone.Location = new System.Drawing.Point(588, 34);
@@ -446,7 +434,6 @@ namespace MotornaVozila
             this.Controls.Add(this.btnModifikujSalon);
             this.Controls.Add(this.btnDodajSaloon);
             this.Controls.Add(this.btnVratiSalone);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btnObrisiUvezenoVozilo);
             this.Controls.Add(this.btnModifikujUvezenoVozilo);
             this.Controls.Add(this.btnModifikujZaposlenog);
@@ -480,7 +467,6 @@ namespace MotornaVozila
             this.Name = "btnVratiNezavisnogEkonomistuIAngazovanja";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -515,7 +501,6 @@ namespace MotornaVozila
         private System.Windows.Forms.Button btnModifikujZaposlenog;
         private System.Windows.Forms.Button btnModifikujUvezenoVozilo;
         private System.Windows.Forms.Button btnObrisiUvezenoVozilo;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnVratiSalone;
         private System.Windows.Forms.Button btnDodajSaloon;
         private System.Windows.Forms.Button btnModifikujSalon;
