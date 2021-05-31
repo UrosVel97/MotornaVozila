@@ -86,12 +86,6 @@ namespace MotornaVozila.Forme
             this.DialogResult = DialogResult.OK;
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void DodajVoziloKojeNijeProdato_Load(object sender, EventArgs e)
         {
             this.PopuniListuSalona();
@@ -195,11 +189,6 @@ namespace MotornaVozila.Forme
                 txtNosivost.Visible = false;
                 txtTipProstora.Visible = false;
             }
-        }
-
-        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnDodajBoju_Click(object sender, EventArgs e)

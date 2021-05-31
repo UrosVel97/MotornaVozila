@@ -31,3 +31,15 @@ C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\Moto
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajVoziloKojeNijeProdato.resources
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.csprojAssemblyReference.cache
 C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajVoziloKojeJeProdato.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujNezavisnogEkonomistu.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiNezavisnogEkonomistu.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujRadnikaTehnickeStruke.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujZaposlenog.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujRadnikaEkonomskeStruke.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujDrugogZaposlenog.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVoziloKojeJeProdato.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujUvezenoVozilo.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVoziloKojeNijeProdato.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiUvezenoVozilo.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiVoziloKojeJeProdato.resources
+C:\Users\Uros\Desktop\6_Semestar\Sistemi_Baza_Podataka\Baze_Projekat\Faza_2\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiVoziloKojeNijeProdato.resources

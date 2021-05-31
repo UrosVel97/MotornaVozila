@@ -271,7 +271,7 @@ namespace MotornaVozila
 
                         foreach (Boja b in vnp.Boje)
                         {
-                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + "je boje " + b.BojaVozila);
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + " je boje " + b.BojaVozila);
                         }
 
                         if (vnp.Boje.Count == 0)
@@ -894,6 +894,78 @@ namespace MotornaVozila
             catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void btnModifikujNezavisnogEkonomistu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ModifikujNezavisnogEkonomistu forma = new ModifikujNezavisnogEkonomistu();
+
+                this.Visible = false;
+                forma.ShowDialog();
+                this.Visible = true;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnObrisiNezavisnogEkonomistu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ObrisiNezavisnogEkonomistu forma = new ObrisiNezavisnogEkonomistu();
+
+                this.Visible = false;
+                forma.ShowDialog();
+                this.Visible = true;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnModifikujZaposlenog_Click(object sender, EventArgs e)
+        {
+
+            ModifikujZaposlenog forma = new ModifikujZaposlenog();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+
+            
+        }
+
+        private void btnModifikujUvezenoVozilo_Click(object sender, EventArgs e)
+        {
+            ModifikujUvezenoVozilo forma = new ModifikujUvezenoVozilo();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnObrisiUvezenoVozilo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ObrisiUvezenoVozilo forma = new ObrisiUvezenoVozilo();
+
+                this.Visible = false;
+                forma.ShowDialog();
+                this.Visible = true;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
     }

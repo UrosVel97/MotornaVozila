@@ -53,6 +53,11 @@ namespace MotornaVozila
             this.btnDodajVoziloPrimljenoNaServis = new System.Windows.Forms.Button();
             this.btnVratiVlasnikeIVozila = new System.Windows.Forms.Button();
             this.btnDodavanjeVozilaNaServis = new System.Windows.Forms.Button();
+            this.btnModifikujNezavisnogEkonomistu = new System.Windows.Forms.Button();
+            this.btnObrisiNezavisnogEkonomistu = new System.Windows.Forms.Button();
+            this.btnModifikujZaposlenog = new System.Windows.Forms.Button();
+            this.btnModifikujUvezenoVozilo = new System.Windows.Forms.Button();
+            this.btnObrisiUvezenoVozilo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVratiNezavisnogEkonomistu
@@ -77,7 +82,7 @@ namespace MotornaVozila
             // 
             // btnVratiZaposlenog
             // 
-            this.btnVratiZaposlenog.Location = new System.Drawing.Point(12, 182);
+            this.btnVratiZaposlenog.Location = new System.Drawing.Point(203, 31);
             this.btnVratiZaposlenog.Name = "btnVratiZaposlenog";
             this.btnVratiZaposlenog.Size = new System.Drawing.Size(142, 60);
             this.btnVratiZaposlenog.TabIndex = 2;
@@ -87,7 +92,7 @@ namespace MotornaVozila
             // 
             // btnDodajZaposlenog
             // 
-            this.btnDodajZaposlenog.Location = new System.Drawing.Point(12, 264);
+            this.btnDodajZaposlenog.Location = new System.Drawing.Point(203, 113);
             this.btnDodajZaposlenog.Name = "btnDodajZaposlenog";
             this.btnDodajZaposlenog.Size = new System.Drawing.Size(142, 56);
             this.btnDodajZaposlenog.TabIndex = 3;
@@ -97,7 +102,7 @@ namespace MotornaVozila
             // 
             // btnVratiUvezenoVozilo
             // 
-            this.btnVratiUvezenoVozilo.Location = new System.Drawing.Point(196, 28);
+            this.btnVratiUvezenoVozilo.Location = new System.Drawing.Point(396, 35);
             this.btnVratiUvezenoVozilo.Name = "btnVratiUvezenoVozilo";
             this.btnVratiUvezenoVozilo.Size = new System.Drawing.Size(142, 62);
             this.btnVratiUvezenoVozilo.TabIndex = 4;
@@ -107,7 +112,7 @@ namespace MotornaVozila
             // 
             // btnDodajUvezenoVozilo
             // 
-            this.btnDodajUvezenoVozilo.Location = new System.Drawing.Point(196, 102);
+            this.btnDodajUvezenoVozilo.Location = new System.Drawing.Point(396, 109);
             this.btnDodajUvezenoVozilo.Name = "btnDodajUvezenoVozilo";
             this.btnDodajUvezenoVozilo.Size = new System.Drawing.Size(142, 60);
             this.btnDodajUvezenoVozilo.TabIndex = 5;
@@ -117,7 +122,7 @@ namespace MotornaVozila
             // 
             // btnVratiSalon
             // 
-            this.btnVratiSalon.Location = new System.Drawing.Point(196, 182);
+            this.btnVratiSalon.Location = new System.Drawing.Point(562, 373);
             this.btnVratiSalon.Name = "btnVratiSalon";
             this.btnVratiSalon.Size = new System.Drawing.Size(142, 46);
             this.btnVratiSalon.TabIndex = 6;
@@ -127,7 +132,7 @@ namespace MotornaVozila
             // 
             // btnDodajSalon
             // 
-            this.btnDodajSalon.Location = new System.Drawing.Point(196, 243);
+            this.btnDodajSalon.Location = new System.Drawing.Point(562, 434);
             this.btnDodajSalon.Name = "btnDodajSalon";
             this.btnDodajSalon.Size = new System.Drawing.Size(142, 52);
             this.btnDodajSalon.TabIndex = 7;
@@ -137,7 +142,7 @@ namespace MotornaVozila
             // 
             // btnVratiServis
             // 
-            this.btnVratiServis.Location = new System.Drawing.Point(375, 28);
+            this.btnVratiServis.Location = new System.Drawing.Point(562, 28);
             this.btnVratiServis.Name = "btnVratiServis";
             this.btnVratiServis.Size = new System.Drawing.Size(173, 62);
             this.btnVratiServis.TabIndex = 8;
@@ -147,7 +152,7 @@ namespace MotornaVozila
             // 
             // btnDodajServis
             // 
-            this.btnDodajServis.Location = new System.Drawing.Point(375, 96);
+            this.btnDodajServis.Location = new System.Drawing.Point(562, 96);
             this.btnDodajServis.Name = "btnDodajServis";
             this.btnDodajServis.Size = new System.Drawing.Size(173, 73);
             this.btnDodajServis.TabIndex = 9;
@@ -157,7 +162,7 @@ namespace MotornaVozila
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(375, 182);
+            this.button1.Location = new System.Drawing.Point(562, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 77);
             this.button1.TabIndex = 10;
@@ -167,7 +172,7 @@ namespace MotornaVozila
             // 
             // btnKreirajNezEkonomistuIAnga
             // 
-            this.btnKreirajNezEkonomistuIAnga.Location = new System.Drawing.Point(375, 267);
+            this.btnKreirajNezEkonomistuIAnga.Location = new System.Drawing.Point(562, 267);
             this.btnKreirajNezEkonomistuIAnga.Name = "btnKreirajNezEkonomistuIAnga";
             this.btnKreirajNezEkonomistuIAnga.Size = new System.Drawing.Size(173, 86);
             this.btnKreirajNezEkonomistuIAnga.TabIndex = 11;
@@ -178,7 +183,7 @@ namespace MotornaVozila
             // 
             // btnVratiVozilaKojaNisuProdataiNjihoveSalone
             // 
-            this.btnVratiVozilaKojaNisuProdataiNjihoveSalone.Location = new System.Drawing.Point(572, 28);
+            this.btnVratiVozilaKojaNisuProdataiNjihoveSalone.Location = new System.Drawing.Point(759, 28);
             this.btnVratiVozilaKojaNisuProdataiNjihoveSalone.Name = "btnVratiVozilaKojaNisuProdataiNjihoveSalone";
             this.btnVratiVozilaKojaNisuProdataiNjihoveSalone.Size = new System.Drawing.Size(173, 62);
             this.btnVratiVozilaKojaNisuProdataiNjihoveSalone.TabIndex = 12;
@@ -188,7 +193,7 @@ namespace MotornaVozila
             // 
             // btnKreirajVoziloKojeNijeProdato
             // 
-            this.btnKreirajVoziloKojeNijeProdato.Location = new System.Drawing.Point(572, 96);
+            this.btnKreirajVoziloKojeNijeProdato.Location = new System.Drawing.Point(759, 96);
             this.btnKreirajVoziloKojeNijeProdato.Name = "btnKreirajVoziloKojeNijeProdato";
             this.btnKreirajVoziloKojeNijeProdato.Size = new System.Drawing.Size(173, 73);
             this.btnKreirajVoziloKojeNijeProdato.TabIndex = 13;
@@ -198,7 +203,7 @@ namespace MotornaVozila
             // 
             // btnVratiKupce
             // 
-            this.btnVratiKupce.Location = new System.Drawing.Point(575, 182);
+            this.btnVratiKupce.Location = new System.Drawing.Point(762, 182);
             this.btnVratiKupce.Name = "btnVratiKupce";
             this.btnVratiKupce.Size = new System.Drawing.Size(170, 36);
             this.btnVratiKupce.TabIndex = 14;
@@ -208,7 +213,7 @@ namespace MotornaVozila
             // 
             // btnDodajKupce
             // 
-            this.btnDodajKupce.Location = new System.Drawing.Point(575, 226);
+            this.btnDodajKupce.Location = new System.Drawing.Point(762, 226);
             this.btnDodajKupce.Name = "btnDodajKupce";
             this.btnDodajKupce.Size = new System.Drawing.Size(170, 33);
             this.btnDodajKupce.TabIndex = 15;
@@ -218,7 +223,7 @@ namespace MotornaVozila
             // 
             // btnVratiKupovine
             // 
-            this.btnVratiKupovine.Location = new System.Drawing.Point(575, 286);
+            this.btnVratiKupovine.Location = new System.Drawing.Point(762, 286);
             this.btnVratiKupovine.Name = "btnVratiKupovine";
             this.btnVratiKupovine.Size = new System.Drawing.Size(170, 67);
             this.btnVratiKupovine.TabIndex = 16;
@@ -228,7 +233,7 @@ namespace MotornaVozila
             // 
             // btnDodajKupovinu
             // 
-            this.btnDodajKupovinu.Location = new System.Drawing.Point(575, 373);
+            this.btnDodajKupovinu.Location = new System.Drawing.Point(762, 373);
             this.btnDodajKupovinu.Name = "btnDodajKupovinu";
             this.btnDodajKupovinu.Size = new System.Drawing.Size(170, 59);
             this.btnDodajKupovinu.TabIndex = 17;
@@ -238,7 +243,7 @@ namespace MotornaVozila
             // 
             // btnVratiProdataVozila
             // 
-            this.btnVratiProdataVozila.Location = new System.Drawing.Point(791, 28);
+            this.btnVratiProdataVozila.Location = new System.Drawing.Point(978, 28);
             this.btnVratiProdataVozila.Name = "btnVratiProdataVozila";
             this.btnVratiProdataVozila.Size = new System.Drawing.Size(164, 62);
             this.btnVratiProdataVozila.TabIndex = 18;
@@ -248,7 +253,7 @@ namespace MotornaVozila
             // 
             // btnDodajVoziloKupovini
             // 
-            this.btnDodajVoziloKupovini.Location = new System.Drawing.Point(791, 96);
+            this.btnDodajVoziloKupovini.Location = new System.Drawing.Point(978, 96);
             this.btnDodajVoziloKupovini.Name = "btnDodajVoziloKupovini";
             this.btnDodajVoziloKupovini.Size = new System.Drawing.Size(164, 73);
             this.btnDodajVoziloKupovini.TabIndex = 19;
@@ -258,7 +263,7 @@ namespace MotornaVozila
             // 
             // btnVracanjeVozilaPrimljenaNaServis
             // 
-            this.btnVracanjeVozilaPrimljenaNaServis.Location = new System.Drawing.Point(791, 181);
+            this.btnVracanjeVozilaPrimljenaNaServis.Location = new System.Drawing.Point(978, 181);
             this.btnVracanjeVozilaPrimljenaNaServis.Name = "btnVracanjeVozilaPrimljenaNaServis";
             this.btnVracanjeVozilaPrimljenaNaServis.Size = new System.Drawing.Size(164, 78);
             this.btnVracanjeVozilaPrimljenaNaServis.TabIndex = 20;
@@ -268,7 +273,7 @@ namespace MotornaVozila
             // 
             // btnDodajVoziloPrimljenoNaServis
             // 
-            this.btnDodajVoziloPrimljenoNaServis.Location = new System.Drawing.Point(788, 286);
+            this.btnDodajVoziloPrimljenoNaServis.Location = new System.Drawing.Point(975, 286);
             this.btnDodajVoziloPrimljenoNaServis.Name = "btnDodajVoziloPrimljenoNaServis";
             this.btnDodajVoziloPrimljenoNaServis.Size = new System.Drawing.Size(167, 67);
             this.btnDodajVoziloPrimljenoNaServis.TabIndex = 21;
@@ -278,7 +283,7 @@ namespace MotornaVozila
             // 
             // btnVratiVlasnikeIVozila
             // 
-            this.btnVratiVlasnikeIVozila.Location = new System.Drawing.Point(788, 373);
+            this.btnVratiVlasnikeIVozila.Location = new System.Drawing.Point(975, 373);
             this.btnVratiVlasnikeIVozila.Name = "btnVratiVlasnikeIVozila";
             this.btnVratiVlasnikeIVozila.Size = new System.Drawing.Size(167, 59);
             this.btnVratiVlasnikeIVozila.TabIndex = 22;
@@ -288,7 +293,7 @@ namespace MotornaVozila
             // 
             // btnDodavanjeVozilaNaServis
             // 
-            this.btnDodavanjeVozilaNaServis.Location = new System.Drawing.Point(994, 28);
+            this.btnDodavanjeVozilaNaServis.Location = new System.Drawing.Point(1181, 28);
             this.btnDodavanjeVozilaNaServis.Name = "btnDodavanjeVozilaNaServis";
             this.btnDodavanjeVozilaNaServis.Size = new System.Drawing.Size(147, 141);
             this.btnDodavanjeVozilaNaServis.TabIndex = 23;
@@ -297,11 +302,66 @@ namespace MotornaVozila
             this.btnDodavanjeVozilaNaServis.UseVisualStyleBackColor = true;
             this.btnDodavanjeVozilaNaServis.Click += new System.EventHandler(this.btnDodavanjeVozilaNaServis_Click);
             // 
+            // btnModifikujNezavisnogEkonomistu
+            // 
+            this.btnModifikujNezavisnogEkonomistu.Location = new System.Drawing.Point(12, 170);
+            this.btnModifikujNezavisnogEkonomistu.Name = "btnModifikujNezavisnogEkonomistu";
+            this.btnModifikujNezavisnogEkonomistu.Size = new System.Drawing.Size(142, 78);
+            this.btnModifikujNezavisnogEkonomistu.TabIndex = 24;
+            this.btnModifikujNezavisnogEkonomistu.Text = "Modifikuj nezavisnog ekonomistu";
+            this.btnModifikujNezavisnogEkonomistu.UseVisualStyleBackColor = true;
+            this.btnModifikujNezavisnogEkonomistu.Click += new System.EventHandler(this.btnModifikujNezavisnogEkonomistu_Click);
+            // 
+            // btnObrisiNezavisnogEkonomistu
+            // 
+            this.btnObrisiNezavisnogEkonomistu.Location = new System.Drawing.Point(12, 267);
+            this.btnObrisiNezavisnogEkonomistu.Name = "btnObrisiNezavisnogEkonomistu";
+            this.btnObrisiNezavisnogEkonomistu.Size = new System.Drawing.Size(142, 61);
+            this.btnObrisiNezavisnogEkonomistu.TabIndex = 25;
+            this.btnObrisiNezavisnogEkonomistu.Text = "Obrisi nezavisnog ekonomistu";
+            this.btnObrisiNezavisnogEkonomistu.UseVisualStyleBackColor = true;
+            this.btnObrisiNezavisnogEkonomistu.Click += new System.EventHandler(this.btnObrisiNezavisnogEkonomistu_Click);
+            // 
+            // btnModifikujZaposlenog
+            // 
+            this.btnModifikujZaposlenog.Location = new System.Drawing.Point(203, 189);
+            this.btnModifikujZaposlenog.Name = "btnModifikujZaposlenog";
+            this.btnModifikujZaposlenog.Size = new System.Drawing.Size(142, 59);
+            this.btnModifikujZaposlenog.TabIndex = 26;
+            this.btnModifikujZaposlenog.Text = "Modifikuj zaposlenog";
+            this.btnModifikujZaposlenog.UseVisualStyleBackColor = true;
+            this.btnModifikujZaposlenog.Click += new System.EventHandler(this.btnModifikujZaposlenog_Click);
+            // 
+            // btnModifikujUvezenoVozilo
+            // 
+            this.btnModifikujUvezenoVozilo.Location = new System.Drawing.Point(396, 189);
+            this.btnModifikujUvezenoVozilo.Name = "btnModifikujUvezenoVozilo";
+            this.btnModifikujUvezenoVozilo.Size = new System.Drawing.Size(142, 59);
+            this.btnModifikujUvezenoVozilo.TabIndex = 27;
+            this.btnModifikujUvezenoVozilo.Text = "Modifikuj uvezeno vozilo";
+            this.btnModifikujUvezenoVozilo.UseVisualStyleBackColor = true;
+            this.btnModifikujUvezenoVozilo.Click += new System.EventHandler(this.btnModifikujUvezenoVozilo_Click);
+            // 
+            // btnObrisiUvezenoVozilo
+            // 
+            this.btnObrisiUvezenoVozilo.Location = new System.Drawing.Point(396, 265);
+            this.btnObrisiUvezenoVozilo.Name = "btnObrisiUvezenoVozilo";
+            this.btnObrisiUvezenoVozilo.Size = new System.Drawing.Size(135, 63);
+            this.btnObrisiUvezenoVozilo.TabIndex = 28;
+            this.btnObrisiUvezenoVozilo.Text = "Obrisi uvezeno vozilo";
+            this.btnObrisiUvezenoVozilo.UseVisualStyleBackColor = true;
+            this.btnObrisiUvezenoVozilo.Click += new System.EventHandler(this.btnObrisiUvezenoVozilo_Click);
+            // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 560);
+            this.ClientSize = new System.Drawing.Size(1345, 508);
+            this.Controls.Add(this.btnObrisiUvezenoVozilo);
+            this.Controls.Add(this.btnModifikujUvezenoVozilo);
+            this.Controls.Add(this.btnModifikujZaposlenog);
+            this.Controls.Add(this.btnObrisiNezavisnogEkonomistu);
+            this.Controls.Add(this.btnModifikujNezavisnogEkonomistu);
             this.Controls.Add(this.btnDodavanjeVozilaNaServis);
             this.Controls.Add(this.btnVratiVlasnikeIVozila);
             this.Controls.Add(this.btnDodajVoziloPrimljenoNaServis);
@@ -358,6 +418,11 @@ namespace MotornaVozila
         private System.Windows.Forms.Button btnDodajVoziloPrimljenoNaServis;
         private System.Windows.Forms.Button btnVratiVlasnikeIVozila;
         private System.Windows.Forms.Button btnDodavanjeVozilaNaServis;
+        private System.Windows.Forms.Button btnModifikujNezavisnogEkonomistu;
+        private System.Windows.Forms.Button btnObrisiNezavisnogEkonomistu;
+        private System.Windows.Forms.Button btnModifikujZaposlenog;
+        private System.Windows.Forms.Button btnModifikujUvezenoVozilo;
+        private System.Windows.Forms.Button btnObrisiUvezenoVozilo;
     }
 }
 

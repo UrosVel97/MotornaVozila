@@ -138,6 +138,78 @@
     <Compile Include="Forme\DodajZaposlenog.Designer.cs">
       <DependentUpon>DodajZaposlenog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\ModifikujDrugogZaposlenog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujDrugogZaposlenog.Designer.cs">
+      <DependentUpon>ModifikujDrugogZaposlenog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujNezavisnogEkonomistu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujNezavisnogEkonomistu.Designer.cs">
+      <DependentUpon>ModifikujNezavisnogEkonomistu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujRadnikaEkonomskeStruke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujRadnikaEkonomskeStruke.Designer.cs">
+      <DependentUpon>ModifikujRadnikaEkonomskeStruke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujRadnikaTehnickeStruke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujRadnikaTehnickeStruke.Designer.cs">
+      <DependentUpon>ModifikujRadnikaTehnickeStruke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujVoziloKojeJeProdato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujVoziloKojeJeProdato.Designer.cs">
+      <DependentUpon>ModifikujVoziloKojeJeProdato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujVoziloKojeNijeProdato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujVoziloKojeNijeProdato.Designer.cs">
+      <DependentUpon>ModifikujVoziloKojeNijeProdato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujZaposlenog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujZaposlenog.Designer.cs">
+      <DependentUpon>ModifikujZaposlenog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujUvezenoVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujUvezenoVozilo.Designer.cs">
+      <DependentUpon>ModifikujUvezenoVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiNezavisnogEkonomistu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiNezavisnogEkonomistu.Designer.cs">
+      <DependentUpon>ObrisiNezavisnogEkonomistu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiUvezenoVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiUvezenoVozilo.Designer.cs">
+      <DependentUpon>ObrisiUvezenoVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiVoziloKojeJeProdato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiVoziloKojeJeProdato.Designer.cs">
+      <DependentUpon>ObrisiVoziloKojeJeProdato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiVoziloKojeNijeProdato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiVoziloKojeNijeProdato.Designer.cs">
+      <DependentUpon>ObrisiVoziloKojeNijeProdato.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mapiranja\BojaMapiranje.cs" />
     <Compile Include="Mapiranja\KupacMapiranja.cs" />
     <Compile Include="Mapiranja\KupovinaMapiranja.cs" />
@@ -179,6 +251,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajZaposlenog.resx">
       <DependentUpon>DodajZaposlenog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujDrugogZaposlenog.resx">
+      <DependentUpon>ModifikujDrugogZaposlenog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujNezavisnogEkonomistu.resx">
+      <DependentUpon>ModifikujNezavisnogEkonomistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujRadnikaEkonomskeStruke.resx">
+      <DependentUpon>ModifikujRadnikaEkonomskeStruke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujRadnikaTehnickeStruke.resx">
+      <DependentUpon>ModifikujRadnikaTehnickeStruke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujVoziloKojeJeProdato.resx">
+      <DependentUpon>ModifikujVoziloKojeJeProdato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujVoziloKojeNijeProdato.resx">
+      <DependentUpon>ModifikujVoziloKojeNijeProdato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujZaposlenog.resx">
+      <DependentUpon>ModifikujZaposlenog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujUvezenoVozilo.resx">
+      <DependentUpon>ModifikujUvezenoVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiNezavisnogEkonomistu.resx">
+      <DependentUpon>ObrisiNezavisnogEkonomistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiUvezenoVozilo.resx">
+      <DependentUpon>ObrisiUvezenoVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiVoziloKojeJeProdato.resx">
+      <DependentUpon>ObrisiVoziloKojeJeProdato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiVoziloKojeNijeProdato.resx">
+      <DependentUpon>ObrisiVoziloKojeNijeProdato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
