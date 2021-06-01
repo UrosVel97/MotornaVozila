@@ -275,5 +275,31 @@ namespace MotornaVozila
             }
         }
 
+        public static IList<SalonZaModifikovanje> VratiSaloneZaModifikovanjeDTO()
+        {
+            try
+            {
+                IList<SalonZaModifikovanje> salonZaModifikovanjes = new List<SalonZaModifikovanje>();
+                ISession s = DataLayer.GetSession();
+                IList<Salon> sa = s.QueryOver<Salon>()
+                                .List<Salon>();
+
+                foreach (Salon salon in sa)
+                {
+                    salonZaModifikovanjes.Add(new SalonZaModifikovanje(salon.Id, salon.Grad, salon.Adresa, salon.SefSalona, salon.SefServisa));
+                }
+
+                s.Close();
+
+                return salonZaModifikovanjes;
+
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+                return null;
+            }
+        }
+
     }
 }

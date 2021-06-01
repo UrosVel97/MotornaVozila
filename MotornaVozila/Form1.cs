@@ -1011,5 +1011,12 @@ namespace MotornaVozila
             this.DialogResult = DialogResult.OK;
         }
 
+        private void btnModifikujSalon_Click(object sender, EventArgs e)
+        {
+            ModifikujSalon forma = new ModifikujSalon();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

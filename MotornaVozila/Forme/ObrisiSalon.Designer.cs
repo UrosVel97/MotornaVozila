@@ -30,10 +30,10 @@ namespace MotornaVozila.Forme
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
-            this.label1 = new System.Windows.Forms.Label();
             this.columnId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnGrad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnAdresa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
             this.btnObrisi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,22 +44,13 @@ namespace MotornaVozila.Forme
             this.columnGrad,
             this.columnAdresa});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(23, 72);
+            this.listView1.Location = new System.Drawing.Point(17, 58);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(495, 125);
+            this.listView1.Size = new System.Drawing.Size(372, 102);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Izaberite salon koji zelite da obrisete";
             // 
             // columnId
             // 
@@ -76,11 +67,23 @@ namespace MotornaVozila.Forme
             this.columnAdresa.Text = "Adresa";
             this.columnAdresa.Width = 233;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(264, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Izaberite salon koji zelite da obrisete";
+            // 
             // btnObrisi
             // 
-            this.btnObrisi.Location = new System.Drawing.Point(186, 244);
+            this.btnObrisi.Location = new System.Drawing.Point(140, 198);
+            this.btnObrisi.Margin = new System.Windows.Forms.Padding(2);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(132, 76);
+            this.btnObrisi.Size = new System.Drawing.Size(99, 62);
             this.btnObrisi.TabIndex = 2;
             this.btnObrisi.Text = "Obrisi";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -88,12 +91,13 @@ namespace MotornaVozila.Forme
             // 
             // ObrisiSalon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 342);
+            this.ClientSize = new System.Drawing.Size(408, 278);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ObrisiSalon";
             this.Text = "ObrisiSalon";
             this.Load += new System.EventHandler(this.ObrisiSalon_Load);

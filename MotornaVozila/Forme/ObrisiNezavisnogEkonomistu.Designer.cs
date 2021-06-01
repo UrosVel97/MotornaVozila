@@ -41,7 +41,7 @@ namespace MotornaVozila.Forme
             // columnAdresa
             // 
             this.columnAdresa.Text = "Adresa";
-            this.columnAdresa.Width = 321;
+            this.columnAdresa.Width = 250;
             // 
             // columnPrezime
             // 
@@ -66,9 +66,10 @@ namespace MotornaVozila.Forme
             this.columnPrezime,
             this.columnAdresa});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(32, 63);
+            this.listView2.Location = new System.Drawing.Point(11, 52);
+            this.listView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(765, 185);
+            this.listView2.Size = new System.Drawing.Size(608, 166);
             this.listView2.TabIndex = 73;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -76,17 +77,19 @@ namespace MotornaVozila.Forme
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 17);
+            this.label1.Location = new System.Drawing.Point(20, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(760, 74);
+            this.label1.Size = new System.Drawing.Size(570, 60);
             this.label1.TabIndex = 72;
             this.label1.Text = "Izaberite nezavisnog ekonomistu koga zelite da obrisete";
             // 
             // btnObrisi
             // 
-            this.btnObrisi.Location = new System.Drawing.Point(305, 305);
+            this.btnObrisi.Location = new System.Drawing.Point(239, 267);
+            this.btnObrisi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(183, 99);
+            this.btnObrisi.Size = new System.Drawing.Size(137, 60);
             this.btnObrisi.TabIndex = 61;
             this.btnObrisi.Text = "Obrisi";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -94,12 +97,13 @@ namespace MotornaVozila.Forme
             // 
             // ObrisiNezavisnogEkonomistu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 457);
+            this.ClientSize = new System.Drawing.Size(643, 371);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnObrisi);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ObrisiNezavisnogEkonomistu";
             this.Text = "ObrisiNezavisnogekonomistu";
             this.Load += new System.EventHandler(this.ObrisiNezavisnogEkonomistu_Load);
