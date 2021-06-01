@@ -8,7 +8,7 @@ namespace MotornaVozila.Entiteti
 {
     public class TipRadova
     {
-        public virtual string Tip_Radova { get; protected set; }
+        public virtual string Tip_Radova { get;  set; }
         public virtual IList<Salon> Servis { get; set; }
 
         public TipRadova()

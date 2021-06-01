@@ -404,6 +404,7 @@ namespace MotornaVozila
             this.btnDodajSaloon.TabIndex = 31;
             this.btnDodajSaloon.Text = "Dodaj salon";
             this.btnDodajSaloon.UseVisualStyleBackColor = true;
+            this.btnDodajSaloon.Click += new System.EventHandler(this.btnDodajSaloon_Click);
             // 
             // btnModifikujSalon
             // 
@@ -422,8 +423,9 @@ namespace MotornaVozila
             this.btnIzbrisiSalon.Name = "btnIzbrisiSalon";
             this.btnIzbrisiSalon.Size = new System.Drawing.Size(141, 62);
             this.btnIzbrisiSalon.TabIndex = 33;
-            this.btnIzbrisiSalon.Text = "Izbrisi salon";
+            this.btnIzbrisiSalon.Text = "Obrisi salon";
             this.btnIzbrisiSalon.UseVisualStyleBackColor = true;
+            this.btnIzbrisiSalon.Click += new System.EventHandler(this.btnIzbrisiSalon_Click);
             // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 

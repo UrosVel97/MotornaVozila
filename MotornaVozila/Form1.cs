@@ -973,5 +973,43 @@ namespace MotornaVozila
         {
 
         }
+
+        private void btnDodajSaloon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DodajSalon forma = new DodajSalon();
+
+                this.Visible = false;
+                forma.ShowDialog();
+                this.Visible = true;
+                this.DialogResult = DialogResult.OK;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnIzbrisiSalon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ObrisiSalon forma = new ObrisiSalon();
+
+                this.Visible = false;
+                forma.ShowDialog();
+                this.Visible = true;
+                this.DialogResult = DialogResult.OK;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            this.DialogResult = DialogResult.OK;
+        }
+
     }
 }

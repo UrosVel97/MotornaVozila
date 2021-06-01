@@ -116,6 +116,12 @@
     <Compile Include="Forme\DodajRadnikaTehnickeStruke.Designer.cs">
       <DependentUpon>DodajRadnikaTehnickeStruke.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajSalon.Designer.cs">
+      <DependentUpon>DodajSalon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajUvezenoVozilo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,12 @@
     <Compile Include="Forme\ObrisiNezavisnogEkonomistu.Designer.cs">
       <DependentUpon>ObrisiNezavisnogEkonomistu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\ObrisiSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiSalon.Designer.cs">
+      <DependentUpon>ObrisiSalon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\ObrisiUvezenoVozilo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +254,9 @@
     <EmbeddedResource Include="Forme\DodajRadnikaTehnickeStruke.resx">
       <DependentUpon>DodajRadnikaTehnickeStruke.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajSalon.resx">
+      <DependentUpon>DodajSalon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajUvezenoVozilo.resx">
       <DependentUpon>DodajUvezenoVozilo.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ObrisiNezavisnogEkonomistu.resx">
       <DependentUpon>ObrisiNezavisnogEkonomistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiSalon.resx">
+      <DependentUpon>ObrisiSalon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ObrisiUvezenoVozilo.resx">
       <DependentUpon>ObrisiUvezenoVozilo.cs</DependentUpon>
