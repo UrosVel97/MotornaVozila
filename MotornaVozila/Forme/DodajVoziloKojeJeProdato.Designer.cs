@@ -70,8 +70,8 @@ namespace MotornaVozila.Forme
             // 
             // btnDodajBoju
             // 
-            this.btnDodajBoju.Location = new System.Drawing.Point(238, 440);
-            this.btnDodajBoju.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajBoju.Location = new System.Drawing.Point(230, 436);
+            this.btnDodajBoju.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajBoju.Name = "btnDodajBoju";
             this.btnDodajBoju.Size = new System.Drawing.Size(76, 27);
             this.btnDodajBoju.TabIndex = 62;
@@ -111,7 +111,7 @@ namespace MotornaVozila.Forme
             // txtUnesiBoju
             // 
             this.txtUnesiBoju.Location = new System.Drawing.Point(95, 440);
-            this.txtUnesiBoju.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUnesiBoju.Margin = new System.Windows.Forms.Padding(2);
             this.txtUnesiBoju.Name = "txtUnesiBoju";
             this.txtUnesiBoju.Size = new System.Drawing.Size(122, 20);
             this.txtUnesiBoju.TabIndex = 60;
@@ -120,7 +120,7 @@ namespace MotornaVozila.Forme
             // 
             this.listBoxBoje.FormattingEnabled = true;
             this.listBoxBoje.Location = new System.Drawing.Point(95, 475);
-            this.listBoxBoje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxBoje.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxBoje.Name = "listBoxBoje";
             this.listBoxBoje.Size = new System.Drawing.Size(122, 69);
             this.listBoxBoje.TabIndex = 59;
@@ -138,7 +138,7 @@ namespace MotornaVozila.Forme
             // dtDatumUvoza
             // 
             this.dtDatumUvoza.Location = new System.Drawing.Point(95, 250);
-            this.dtDatumUvoza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtDatumUvoza.Margin = new System.Windows.Forms.Padding(2);
             this.dtDatumUvoza.Name = "dtDatumUvoza";
             this.dtDatumUvoza.Size = new System.Drawing.Size(122, 20);
             this.dtDatumUvoza.TabIndex = 57;
@@ -151,7 +151,7 @@ namespace MotornaVozila.Forme
             this.columnPrezime});
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(342, 276);
-            this.listView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView2.Margin = new System.Windows.Forms.Padding(2);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(377, 154);
             this.listView2.TabIndex = 56;
@@ -180,7 +180,7 @@ namespace MotornaVozila.Forme
             this.columnDatumKupovine});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(342, 102);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(377, 154);
             this.listView1.TabIndex = 53;
@@ -199,7 +199,7 @@ namespace MotornaVozila.Forme
             // btnSnimi
             // 
             this.btnSnimi.Location = new System.Drawing.Point(477, 475);
-            this.btnSnimi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSnimi.Margin = new System.Windows.Forms.Padding(2);
             this.btnSnimi.Name = "btnSnimi";
             this.btnSnimi.Size = new System.Drawing.Size(108, 48);
             this.btnSnimi.TabIndex = 51;
@@ -210,7 +210,7 @@ namespace MotornaVozila.Forme
             // txtTipProstora
             // 
             this.txtTipProstora.Location = new System.Drawing.Point(95, 410);
-            this.txtTipProstora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTipProstora.Margin = new System.Windows.Forms.Padding(2);
             this.txtTipProstora.Name = "txtTipProstora";
             this.txtTipProstora.Size = new System.Drawing.Size(122, 20);
             this.txtTipProstora.TabIndex = 50;
@@ -237,7 +237,7 @@ namespace MotornaVozila.Forme
             // txtNosivost
             // 
             this.txtNosivost.Location = new System.Drawing.Point(95, 380);
-            this.txtNosivost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNosivost.Margin = new System.Windows.Forms.Padding(2);
             this.txtNosivost.Name = "txtNosivost";
             this.txtNosivost.Size = new System.Drawing.Size(122, 20);
             this.txtNosivost.TabIndex = 48;
@@ -255,7 +255,7 @@ namespace MotornaVozila.Forme
             // txtBrojPutnika
             // 
             this.txtBrojPutnika.Location = new System.Drawing.Point(95, 350);
-            this.txtBrojPutnika.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrojPutnika.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojPutnika.Name = "txtBrojPutnika";
             this.txtBrojPutnika.Size = new System.Drawing.Size(122, 20);
             this.txtBrojPutnika.TabIndex = 46;
@@ -283,7 +283,7 @@ namespace MotornaVozila.Forme
             // 
             this.checkTeretno.AutoSize = true;
             this.checkTeretno.Location = new System.Drawing.Point(95, 319);
-            this.checkTeretno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkTeretno.Margin = new System.Windows.Forms.Padding(2);
             this.checkTeretno.Name = "checkTeretno";
             this.checkTeretno.Size = new System.Drawing.Size(93, 17);
             this.checkTeretno.TabIndex = 43;
@@ -295,7 +295,7 @@ namespace MotornaVozila.Forme
             // 
             this.checkPutnicko.AutoSize = true;
             this.checkPutnicko.Location = new System.Drawing.Point(95, 289);
-            this.checkPutnicko.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkPutnicko.Margin = new System.Windows.Forms.Padding(2);
             this.checkPutnicko.Name = "checkPutnicko";
             this.checkPutnicko.Size = new System.Drawing.Size(98, 17);
             this.checkPutnicko.TabIndex = 42;
@@ -306,7 +306,7 @@ namespace MotornaVozila.Forme
             // txtModel
             // 
             this.txtModel.Location = new System.Drawing.Point(95, 220);
-            this.txtModel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(2);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(122, 20);
             this.txtModel.TabIndex = 41;
@@ -324,7 +324,7 @@ namespace MotornaVozila.Forme
             // txtKubikaza
             // 
             this.txtKubikaza.Location = new System.Drawing.Point(95, 190);
-            this.txtKubikaza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKubikaza.Margin = new System.Windows.Forms.Padding(2);
             this.txtKubikaza.Name = "txtKubikaza";
             this.txtKubikaza.Size = new System.Drawing.Size(122, 20);
             this.txtKubikaza.TabIndex = 39;
@@ -342,7 +342,7 @@ namespace MotornaVozila.Forme
             // txtTipGoriva
             // 
             this.txtTipGoriva.Location = new System.Drawing.Point(95, 160);
-            this.txtTipGoriva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTipGoriva.Margin = new System.Windows.Forms.Padding(2);
             this.txtTipGoriva.Name = "txtTipGoriva";
             this.txtTipGoriva.Size = new System.Drawing.Size(122, 20);
             this.txtTipGoriva.TabIndex = 37;
@@ -360,7 +360,7 @@ namespace MotornaVozila.Forme
             // txtBrojMotora
             // 
             this.txtBrojMotora.Location = new System.Drawing.Point(95, 130);
-            this.txtBrojMotora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrojMotora.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojMotora.Name = "txtBrojMotora";
             this.txtBrojMotora.Size = new System.Drawing.Size(122, 20);
             this.txtBrojMotora.TabIndex = 35;
@@ -378,7 +378,7 @@ namespace MotornaVozila.Forme
             // txtBrojSasije
             // 
             this.txtBrojSasije.Location = new System.Drawing.Point(95, 100);
-            this.txtBrojSasije.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrojSasije.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojSasije.Name = "txtBrojSasije";
             this.txtBrojSasije.Size = new System.Drawing.Size(122, 20);
             this.txtBrojSasije.TabIndex = 33;
@@ -429,7 +429,7 @@ namespace MotornaVozila.Forme
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBrojSasije);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DodajVoziloKojeJeProdato";
             this.Text = "DodajVoziloKojeJeProdato";
             this.Load += new System.EventHandler(this.DodajVoziloKojeJeProdato_Load);

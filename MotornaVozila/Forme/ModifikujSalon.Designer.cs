@@ -56,7 +56,7 @@
             // checkObavlja
             // 
             this.checkObavlja.AutoSize = true;
-            this.checkObavlja.Location = new System.Drawing.Point(543, 253);
+            this.checkObavlja.Location = new System.Drawing.Point(520, 250);
             this.checkObavlja.Margin = new System.Windows.Forms.Padding(2);
             this.checkObavlja.Name = "checkObavlja";
             this.checkObavlja.Size = new System.Drawing.Size(96, 17);
@@ -78,7 +78,7 @@
             // 
             // txtSefServisa
             // 
-            this.txtSefServisa.Location = new System.Drawing.Point(144, 364);
+            this.txtSefServisa.Location = new System.Drawing.Point(130, 360);
             this.txtSefServisa.Margin = new System.Windows.Forms.Padding(2);
             this.txtSefServisa.Name = "txtSefServisa";
             this.txtSefServisa.Size = new System.Drawing.Size(152, 20);
@@ -88,7 +88,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(26, 365);
+            this.label5.Location = new System.Drawing.Point(20, 360);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 15);
@@ -104,7 +104,7 @@
             this.columnSefSalona,
             this.columnSefServisa});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(23, 60);
+            this.listView2.Location = new System.Drawing.Point(22, 60);
             this.listView2.Margin = new System.Windows.Forms.Padding(2);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(766, 165);
@@ -141,18 +141,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 16);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label1.Location = new System.Drawing.Point(20, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 20);
+            this.label1.Size = new System.Drawing.Size(328, 22);
             this.label1.TabIndex = 122;
             this.label1.Text = "Izaberite salon koji zelite da modifikujete";
             // 
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(391, 338);
+            this.label13.Location = new System.Drawing.Point(367, 330);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(95, 39);
@@ -163,16 +163,16 @@
             // listBoxTipRadova
             // 
             this.listBoxTipRadova.FormattingEnabled = true;
-            this.listBoxTipRadova.Location = new System.Drawing.Point(521, 338);
+            this.listBoxTipRadova.Location = new System.Drawing.Point(504, 337);
             this.listBoxTipRadova.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxTipRadova.Name = "listBoxTipRadova";
-            this.listBoxTipRadova.Size = new System.Drawing.Size(169, 95);
+            this.listBoxTipRadova.Size = new System.Drawing.Size(169, 69);
             this.listBoxTipRadova.TabIndex = 120;
             this.listBoxTipRadova.Visible = false;
             // 
             // btnDodajTipRadova
             // 
-            this.btnDodajTipRadova.Location = new System.Drawing.Point(705, 298);
+            this.btnDodajTipRadova.Location = new System.Drawing.Point(688, 297);
             this.btnDodajTipRadova.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajTipRadova.Name = "btnDodajTipRadova";
             this.btnDodajTipRadova.Size = new System.Drawing.Size(100, 29);
@@ -186,7 +186,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(391, 304);
+            this.label12.Location = new System.Drawing.Point(367, 300);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 15);
@@ -197,7 +197,7 @@
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(384, 241);
+            this.label9.Location = new System.Drawing.Point(367, 240);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(155, 42);
@@ -206,7 +206,7 @@
             // 
             // txtSefSalona
             // 
-            this.txtSefSalona.Location = new System.Drawing.Point(144, 324);
+            this.txtSefSalona.Location = new System.Drawing.Point(130, 320);
             this.txtSefSalona.Margin = new System.Windows.Forms.Padding(2);
             this.txtSefSalona.Name = "txtSefSalona";
             this.txtSefSalona.Size = new System.Drawing.Size(152, 20);
@@ -216,7 +216,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 324);
+            this.label4.Location = new System.Drawing.Point(19, 320);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 15);
@@ -225,7 +225,7 @@
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Location = new System.Drawing.Point(144, 280);
+            this.txtAdresa.Location = new System.Drawing.Point(130, 280);
             this.txtAdresa.Margin = new System.Windows.Forms.Padding(2);
             this.txtAdresa.Name = "txtAdresa";
             this.txtAdresa.Size = new System.Drawing.Size(152, 20);
@@ -235,7 +235,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 281);
+            this.label3.Location = new System.Drawing.Point(19, 280);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 15);
@@ -244,7 +244,7 @@
             // 
             // txtGrad
             // 
-            this.txtGrad.Location = new System.Drawing.Point(144, 241);
+            this.txtGrad.Location = new System.Drawing.Point(130, 240);
             this.txtGrad.Margin = new System.Windows.Forms.Padding(2);
             this.txtGrad.Name = "txtGrad";
             this.txtGrad.Size = new System.Drawing.Size(152, 20);
@@ -254,7 +254,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 241);
+            this.label2.Location = new System.Drawing.Point(20, 240);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 15);
@@ -263,7 +263,7 @@
             // 
             // txtTipRadova
             // 
-            this.txtTipRadova.Location = new System.Drawing.Point(521, 303);
+            this.txtTipRadova.Location = new System.Drawing.Point(504, 302);
             this.txtTipRadova.Margin = new System.Windows.Forms.Padding(2);
             this.txtTipRadova.Name = "txtTipRadova";
             this.txtTipRadova.Size = new System.Drawing.Size(169, 20);

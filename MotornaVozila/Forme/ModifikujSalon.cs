@@ -128,11 +128,11 @@ namespace MotornaVozila.Forme
 
                 //foreach (string tip in listBoxTipRadova.Items)
                 //{
-                //    if (!this.ProveriTip(szm.TipoviRadova, tip))
+                //    if (!this.ProveriTipRadova(szm.TipoviRadova, tip))
                 //    {
                 //        TipRadova t = new TipRadova();
                 //        t.Tip_Radova = tip;
-                //        t.Servis = (IList<Salon>)szm;
+                //        t.Salon = szm;
                 //        szm.TipoviRadova.Add(t);
                 //        s.Save(t);
                 //        s.Save(szm);
@@ -150,9 +150,9 @@ namespace MotornaVozila.Forme
             this.DialogResult = DialogResult.OK;
         }
 
-        private bool ProveriTip(IList<TipRadova> tipRadovas, string tip)
+        private bool ProveriTipRadova(IList<TipRadova> tipovi, string tip)
         {
-            foreach (TipRadova t in tipRadovas)
+            foreach (TipRadova t in tipovi)
             {
                 if (t.Tip_Radova.Equals(tip))
                     return true;

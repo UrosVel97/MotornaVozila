@@ -85,9 +85,10 @@ namespace MotornaVozila.Forme
             this.columnModel,
             this.columnTipGoriva});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(26, 66);
+            this.listView2.Location = new System.Drawing.Point(20, 54);
+            this.listView2.Margin = new System.Windows.Forms.Padding(2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(1131, 188);
+            this.listView2.Size = new System.Drawing.Size(849, 154);
             this.listView2.TabIndex = 96;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -101,36 +102,39 @@ namespace MotornaVozila.Forme
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 16);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label1.Location = new System.Drawing.Point(16, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(367, 25);
+            this.label1.Size = new System.Drawing.Size(336, 22);
             this.label1.TabIndex = 95;
             this.label1.Text = "Izaberite vozilo koje zelite da modifikujete";
             // 
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(528, 496);
+            this.label13.Location = new System.Drawing.Point(374, 371);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(127, 48);
+            this.label13.Size = new System.Drawing.Size(82, 39);
             this.label13.TabIndex = 94;
             this.label13.Text = "Lista boja vozila";
             // 
             // listBoxBojeVozila
             // 
             this.listBoxBojeVozila.FormattingEnabled = true;
-            this.listBoxBojeVozila.ItemHeight = 16;
-            this.listBoxBojeVozila.Location = new System.Drawing.Point(702, 496);
+            this.listBoxBojeVozila.Location = new System.Drawing.Point(473, 371);
+            this.listBoxBojeVozila.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxBojeVozila.Name = "listBoxBojeVozila";
-            this.listBoxBojeVozila.Size = new System.Drawing.Size(224, 84);
+            this.listBoxBojeVozila.Size = new System.Drawing.Size(169, 69);
             this.listBoxBojeVozila.TabIndex = 93;
             // 
             // btnDodajBoju
             // 
-            this.btnDodajBoju.Location = new System.Drawing.Point(993, 429);
+            this.btnDodajBoju.Location = new System.Drawing.Point(660, 330);
+            this.btnDodajBoju.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajBoju.Name = "btnDodajBoju";
-            this.btnDodajBoju.Size = new System.Drawing.Size(133, 36);
+            this.btnDodajBoju.Size = new System.Drawing.Size(100, 29);
             this.btnDodajBoju.TabIndex = 92;
             this.btnDodajBoju.Text = "Dodaj boju";
             this.btnDodajBoju.UseVisualStyleBackColor = true;
@@ -138,26 +142,29 @@ namespace MotornaVozila.Forme
             // 
             // txtBojaVozila
             // 
-            this.txtBojaVozila.Location = new System.Drawing.Point(702, 436);
+            this.txtBojaVozila.Location = new System.Drawing.Point(473, 335);
+            this.txtBojaVozila.Margin = new System.Windows.Forms.Padding(2);
             this.txtBojaVozila.Name = "txtBojaVozila";
-            this.txtBojaVozila.Size = new System.Drawing.Size(224, 22);
+            this.txtBojaVozila.Size = new System.Drawing.Size(169, 20);
             this.txtBojaVozila.TabIndex = 91;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(528, 436);
+            this.label12.Location = new System.Drawing.Point(374, 335);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 18);
+            this.label12.Size = new System.Drawing.Size(66, 15);
             this.label12.TabIndex = 90;
             this.label12.Text = "Boja vozila";
             // 
             // txtBrojPutnika
             // 
-            this.txtBrojPutnika.Location = new System.Drawing.Point(970, 381);
+            this.txtBrojPutnika.Location = new System.Drawing.Point(717, 290);
+            this.txtBrojPutnika.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojPutnika.Name = "txtBrojPutnika";
-            this.txtBrojPutnika.Size = new System.Drawing.Size(201, 22);
+            this.txtBrojPutnika.Size = new System.Drawing.Size(152, 20);
             this.txtBrojPutnika.TabIndex = 87;
             this.txtBrojPutnika.Visible = false;
             // 
@@ -165,9 +172,10 @@ namespace MotornaVozila.Forme
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(866, 385);
+            this.label10.Location = new System.Drawing.Point(631, 290);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 18);
+            this.label10.Size = new System.Drawing.Size(72, 15);
             this.label10.TabIndex = 86;
             this.label10.Text = "Broj putnika";
             this.label10.Visible = false;
@@ -175,104 +183,116 @@ namespace MotornaVozila.Forme
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(528, 305);
+            this.label9.Location = new System.Drawing.Point(374, 230);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(141, 71);
+            this.label9.Size = new System.Drawing.Size(106, 58);
             this.label9.TabIndex = 85;
             this.label9.Text = "Da li je vozilo putnicko ili teretno?";
             // 
             // txtModel
             // 
-            this.txtModel.Location = new System.Drawing.Point(219, 394);
+            this.txtModel.Location = new System.Drawing.Point(130, 310);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(2);
             this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(201, 22);
+            this.txtModel.Size = new System.Drawing.Size(152, 20);
             this.txtModel.TabIndex = 82;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(62, 394);
+            this.label4.Location = new System.Drawing.Point(17, 310);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 18);
+            this.label4.Size = new System.Drawing.Size(42, 15);
             this.label4.TabIndex = 81;
             this.label4.Text = "Model";
             // 
             // txtBrojMotora
             // 
-            this.txtBrojMotora.Location = new System.Drawing.Point(219, 340);
+            this.txtBrojMotora.Location = new System.Drawing.Point(130, 270);
+            this.txtBrojMotora.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojMotora.Name = "txtBrojMotora";
             this.txtBrojMotora.ReadOnly = true;
-            this.txtBrojMotora.Size = new System.Drawing.Size(201, 22);
+            this.txtBrojMotora.Size = new System.Drawing.Size(152, 20);
             this.txtBrojMotora.TabIndex = 80;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(62, 341);
+            this.label3.Location = new System.Drawing.Point(17, 270);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 18);
+            this.label3.Size = new System.Drawing.Size(71, 15);
             this.label3.TabIndex = 79;
             this.label3.Text = "Broj motora";
             // 
             // txtBrojSasije
             // 
-            this.txtBrojSasije.Location = new System.Drawing.Point(219, 292);
+            this.txtBrojSasije.Location = new System.Drawing.Point(130, 230);
+            this.txtBrojSasije.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojSasije.Name = "txtBrojSasije";
             this.txtBrojSasije.ReadOnly = true;
-            this.txtBrojSasije.Size = new System.Drawing.Size(201, 22);
+            this.txtBrojSasije.Size = new System.Drawing.Size(152, 20);
             this.txtBrojSasije.TabIndex = 78;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(62, 292);
+            this.label2.Location = new System.Drawing.Point(17, 230);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 18);
+            this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 77;
             this.label2.Text = "Broj sasije";
             // 
             // txtTipGoriva
             // 
-            this.txtTipGoriva.Location = new System.Drawing.Point(219, 443);
+            this.txtTipGoriva.Location = new System.Drawing.Point(130, 350);
+            this.txtTipGoriva.Margin = new System.Windows.Forms.Padding(2);
             this.txtTipGoriva.Name = "txtTipGoriva";
-            this.txtTipGoriva.Size = new System.Drawing.Size(201, 22);
+            this.txtTipGoriva.Size = new System.Drawing.Size(152, 20);
             this.txtTipGoriva.TabIndex = 98;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(62, 444);
+            this.label5.Location = new System.Drawing.Point(17, 350);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 18);
+            this.label5.Size = new System.Drawing.Size(60, 15);
             this.label5.TabIndex = 97;
             this.label5.Text = "Tip goriva";
             // 
             // txtKubikaza
             // 
-            this.txtKubikaza.Location = new System.Drawing.Point(219, 491);
+            this.txtKubikaza.Location = new System.Drawing.Point(130, 390);
+            this.txtKubikaza.Margin = new System.Windows.Forms.Padding(2);
             this.txtKubikaza.Name = "txtKubikaza";
-            this.txtKubikaza.Size = new System.Drawing.Size(201, 22);
+            this.txtKubikaza.Size = new System.Drawing.Size(152, 20);
             this.txtKubikaza.TabIndex = 100;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(62, 492);
+            this.label6.Location = new System.Drawing.Point(17, 390);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 18);
+            this.label6.Size = new System.Drawing.Size(58, 15);
             this.label6.TabIndex = 99;
             this.label6.Text = "Kubikaza";
             // 
             // txtNosivost
             // 
-            this.txtNosivost.Location = new System.Drawing.Point(970, 304);
+            this.txtNosivost.Location = new System.Drawing.Point(717, 230);
+            this.txtNosivost.Margin = new System.Windows.Forms.Padding(2);
             this.txtNosivost.Name = "txtNosivost";
-            this.txtNosivost.Size = new System.Drawing.Size(201, 22);
+            this.txtNosivost.Size = new System.Drawing.Size(152, 20);
             this.txtNosivost.TabIndex = 102;
             this.txtNosivost.Visible = false;
             // 
@@ -280,18 +300,20 @@ namespace MotornaVozila.Forme
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(866, 308);
+            this.label7.Location = new System.Drawing.Point(631, 230);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 18);
+            this.label7.Size = new System.Drawing.Size(53, 15);
             this.label7.TabIndex = 101;
             this.label7.Text = "Nosivost";
             this.label7.Visible = false;
             // 
             // txtTipProstora
             // 
-            this.txtTipProstora.Location = new System.Drawing.Point(970, 342);
+            this.txtTipProstora.Location = new System.Drawing.Point(717, 260);
+            this.txtTipProstora.Margin = new System.Windows.Forms.Padding(2);
             this.txtTipProstora.Name = "txtTipProstora";
-            this.txtTipProstora.Size = new System.Drawing.Size(201, 22);
+            this.txtTipProstora.Size = new System.Drawing.Size(152, 20);
             this.txtTipProstora.TabIndex = 104;
             this.txtTipProstora.Visible = false;
             // 
@@ -299,18 +321,20 @@ namespace MotornaVozila.Forme
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(866, 346);
+            this.label8.Location = new System.Drawing.Point(631, 261);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 18);
+            this.label8.Size = new System.Drawing.Size(72, 15);
             this.label8.TabIndex = 103;
             this.label8.Text = "Tip prostora";
             this.label8.Visible = false;
             // 
             // btnSnimi
             // 
-            this.btnSnimi.Location = new System.Drawing.Point(481, 593);
+            this.btnSnimi.Location = new System.Drawing.Point(339, 454);
+            this.btnSnimi.Margin = new System.Windows.Forms.Padding(2);
             this.btnSnimi.Name = "btnSnimi";
-            this.btnSnimi.Size = new System.Drawing.Size(188, 56);
+            this.btnSnimi.Size = new System.Drawing.Size(141, 46);
             this.btnSnimi.TabIndex = 105;
             this.btnSnimi.Text = "Snimi";
             this.btnSnimi.UseVisualStyleBackColor = true;
@@ -319,9 +343,10 @@ namespace MotornaVozila.Forme
             // checkBoxTeretno
             // 
             this.checkBoxTeretno.AutoSize = true;
-            this.checkBoxTeretno.Location = new System.Drawing.Point(692, 306);
+            this.checkBoxTeretno.Location = new System.Drawing.Point(494, 231);
+            this.checkBoxTeretno.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxTeretno.Name = "checkBoxTeretno";
-            this.checkBoxTeretno.Size = new System.Drawing.Size(120, 21);
+            this.checkBoxTeretno.Size = new System.Drawing.Size(93, 17);
             this.checkBoxTeretno.TabIndex = 106;
             this.checkBoxTeretno.Text = "Teretno vozilo";
             this.checkBoxTeretno.UseVisualStyleBackColor = true;
@@ -330,9 +355,10 @@ namespace MotornaVozila.Forme
             // checkBoxPutnicko
             // 
             this.checkBoxPutnicko.AutoSize = true;
-            this.checkBoxPutnicko.Location = new System.Drawing.Point(692, 342);
+            this.checkBoxPutnicko.Location = new System.Drawing.Point(494, 265);
+            this.checkBoxPutnicko.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxPutnicko.Name = "checkBoxPutnicko";
-            this.checkBoxPutnicko.Size = new System.Drawing.Size(124, 21);
+            this.checkBoxPutnicko.Size = new System.Drawing.Size(98, 17);
             this.checkBoxPutnicko.TabIndex = 107;
             this.checkBoxPutnicko.Text = "Putnicko vozilo";
             this.checkBoxPutnicko.UseVisualStyleBackColor = true;
@@ -340,9 +366,9 @@ namespace MotornaVozila.Forme
             // 
             // ModifikujVoziloKojeJeProdato
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 677);
+            this.ClientSize = new System.Drawing.Size(889, 520);
             this.Controls.Add(this.checkBoxPutnicko);
             this.Controls.Add(this.checkBoxTeretno);
             this.Controls.Add(this.btnSnimi);
@@ -370,6 +396,7 @@ namespace MotornaVozila.Forme
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBrojSasije);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModifikujVoziloKojeJeProdato";
             this.Text = "ModifikujVoziloKojeJeProdato";
             this.Load += new System.EventHandler(this.ModifikujVoziloKojeJeProdato_Load);

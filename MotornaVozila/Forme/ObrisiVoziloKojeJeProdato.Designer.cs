@@ -40,9 +40,10 @@ namespace MotornaVozila.Forme
             // 
             // btnObrisi
             // 
-            this.btnObrisi.Location = new System.Drawing.Point(337, 348);
+            this.btnObrisi.Location = new System.Drawing.Point(279, 252);
+            this.btnObrisi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(188, 56);
+            this.btnObrisi.Size = new System.Drawing.Size(141, 46);
             this.btnObrisi.TabIndex = 132;
             this.btnObrisi.Text = "Obrisi";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@ namespace MotornaVozila.Forme
             this.columnModel,
             this.columnTipGoriva});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(23, 82);
+            this.listView2.Location = new System.Drawing.Point(17, 67);
+            this.listView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(878, 188);
+            this.listView2.Size = new System.Drawing.Size(660, 154);
             this.listView2.TabIndex = 123;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -67,41 +69,43 @@ namespace MotornaVozila.Forme
             // columnBrojSasije
             // 
             this.columnBrojSasije.Text = "Broj sasije";
-            this.columnBrojSasije.Width = 126;
+            this.columnBrojSasije.Width = 135;
             // 
             // columnBrojMotora
             // 
             this.columnBrojMotora.Text = "Broj motora";
-            this.columnBrojMotora.Width = 158;
+            this.columnBrojMotora.Width = 148;
             // 
             // columnModel
             // 
             this.columnModel.Text = "Model";
-            this.columnModel.Width = 197;
+            this.columnModel.Width = 165;
             // 
             // columnTipGoriva
             // 
             this.columnTipGoriva.Text = "Tip goriva";
-            this.columnTipGoriva.Width = 321;
+            this.columnTipGoriva.Width = 176;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 32);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label1.Location = new System.Drawing.Point(14, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 25);
+            this.label1.Size = new System.Drawing.Size(305, 22);
             this.label1.TabIndex = 122;
             this.label1.Text = "Izaberite vozilo koje zelite da obrisete";
             // 
             // ObrisiVoziloKojeJeProdato
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 498);
+            this.ClientSize = new System.Drawing.Size(711, 347);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ObrisiVoziloKojeJeProdato";
             this.Text = "ObrisiVoziloKojeJeProdato";
             this.Load += new System.EventHandler(this.ObrisiVoziloKojeJeProdato_Load);

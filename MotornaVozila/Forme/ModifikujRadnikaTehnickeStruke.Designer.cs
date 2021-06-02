@@ -70,15 +70,15 @@ namespace MotornaVozila.Forme
             // 
             this.listBoxSpecijalnosti.FormattingEnabled = true;
             this.listBoxSpecijalnosti.Location = new System.Drawing.Point(160, 501);
-            this.listBoxSpecijalnosti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxSpecijalnosti.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxSpecijalnosti.Name = "listBoxSpecijalnosti";
             this.listBoxSpecijalnosti.Size = new System.Drawing.Size(169, 69);
             this.listBoxSpecijalnosti.TabIndex = 72;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(370, 461);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(342, 461);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 71;
@@ -89,7 +89,7 @@ namespace MotornaVozila.Forme
             // txtSpecijalnost
             // 
             this.txtSpecijalnost.Location = new System.Drawing.Point(160, 466);
-            this.txtSpecijalnost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSpecijalnost.Margin = new System.Windows.Forms.Padding(2);
             this.txtSpecijalnost.Name = "txtSpecijalnost";
             this.txtSpecijalnost.Size = new System.Drawing.Size(169, 20);
             this.txtSpecijalnost.TabIndex = 70;
@@ -108,7 +108,7 @@ namespace MotornaVozila.Forme
             // dtDatumIstekaUgovora
             // 
             this.dtDatumIstekaUgovora.Location = new System.Drawing.Point(319, 430);
-            this.dtDatumIstekaUgovora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtDatumIstekaUgovora.Margin = new System.Windows.Forms.Padding(2);
             this.dtDatumIstekaUgovora.Name = "dtDatumIstekaUgovora";
             this.dtDatumIstekaUgovora.Size = new System.Drawing.Size(151, 20);
             this.dtDatumIstekaUgovora.TabIndex = 68;
@@ -127,7 +127,7 @@ namespace MotornaVozila.Forme
             // txtPlata
             // 
             this.txtPlata.Location = new System.Drawing.Point(376, 359);
-            this.txtPlata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPlata.Margin = new System.Windows.Forms.Padding(2);
             this.txtPlata.Name = "txtPlata";
             this.txtPlata.Size = new System.Drawing.Size(152, 20);
             this.txtPlata.TabIndex = 66;
@@ -158,7 +158,7 @@ namespace MotornaVozila.Forme
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(151, 404);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(140, 19);
             this.radioButton3.TabIndex = 63;
@@ -172,7 +172,7 @@ namespace MotornaVozila.Forme
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(151, 355);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(128, 19);
             this.radioButton2.TabIndex = 62;
@@ -184,7 +184,7 @@ namespace MotornaVozila.Forme
             // txtPrezime
             // 
             this.txtPrezime.Location = new System.Drawing.Point(106, 310);
-            this.txtPrezime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrezime.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrezime.Name = "txtPrezime";
             this.txtPrezime.Size = new System.Drawing.Size(152, 20);
             this.txtPrezime.TabIndex = 53;
@@ -203,7 +203,7 @@ namespace MotornaVozila.Forme
             // txtIme
             // 
             this.txtIme.Location = new System.Drawing.Point(106, 270);
-            this.txtIme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIme.Margin = new System.Windows.Forms.Padding(2);
             this.txtIme.Name = "txtIme";
             this.txtIme.Size = new System.Drawing.Size(152, 20);
             this.txtIme.TabIndex = 51;
@@ -222,7 +222,7 @@ namespace MotornaVozila.Forme
             // txtJmbg
             // 
             this.txtJmbg.Location = new System.Drawing.Point(106, 230);
-            this.txtJmbg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtJmbg.Margin = new System.Windows.Forms.Padding(2);
             this.txtJmbg.Name = "txtJmbg";
             this.txtJmbg.ReadOnly = true;
             this.txtJmbg.Size = new System.Drawing.Size(152, 20);
@@ -242,7 +242,7 @@ namespace MotornaVozila.Forme
             // btnSnimi
             // 
             this.btnSnimi.Location = new System.Drawing.Point(230, 583);
-            this.btnSnimi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSnimi.Margin = new System.Windows.Forms.Padding(2);
             this.btnSnimi.Name = "btnSnimi";
             this.btnSnimi.Size = new System.Drawing.Size(182, 33);
             this.btnSnimi.TabIndex = 46;
@@ -270,7 +270,7 @@ namespace MotornaVozila.Forme
             this.columnDatumZaposlenja});
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(16, 55);
-            this.listView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView2.Margin = new System.Windows.Forms.Padding(2);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(684, 154);
             this.listView2.TabIndex = 75;
@@ -324,7 +324,7 @@ namespace MotornaVozila.Forme
             this.Controls.Add(this.txtJmbg);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSnimi);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModifikujRadnikaTehnickeStruke";
             this.Text = "ModifikujRadnikaTehnickeStruke";
             this.Load += new System.EventHandler(this.ModifikujRadnikaTehnickeStruke_Load);

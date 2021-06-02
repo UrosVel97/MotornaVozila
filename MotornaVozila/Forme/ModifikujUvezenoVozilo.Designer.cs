@@ -31,13 +31,15 @@ namespace MotornaVozila.Forme
         {
             this.btnModifikujProdatoVozilo = new System.Windows.Forms.Button();
             this.btnModifikujVoziloKojeNijeProdato = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnModifikujProdatoVozilo
             // 
-            this.btnModifikujProdatoVozilo.Location = new System.Drawing.Point(357, 58);
+            this.btnModifikujProdatoVozilo.Location = new System.Drawing.Point(159, 200);
+            this.btnModifikujProdatoVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModifikujProdatoVozilo.Name = "btnModifikujProdatoVozilo";
-            this.btnModifikujProdatoVozilo.Size = new System.Drawing.Size(175, 86);
+            this.btnModifikujProdatoVozilo.Size = new System.Drawing.Size(131, 70);
             this.btnModifikujProdatoVozilo.TabIndex = 0;
             this.btnModifikujProdatoVozilo.Text = "Modifikuj vozilo koje je prodato";
             this.btnModifikujProdatoVozilo.UseVisualStyleBackColor = true;
@@ -45,24 +47,39 @@ namespace MotornaVozila.Forme
             // 
             // btnModifikujVoziloKojeNijeProdato
             // 
-            this.btnModifikujVoziloKojeNijeProdato.Location = new System.Drawing.Point(357, 204);
+            this.btnModifikujVoziloKojeNijeProdato.Location = new System.Drawing.Point(159, 80);
+            this.btnModifikujVoziloKojeNijeProdato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModifikujVoziloKojeNijeProdato.Name = "btnModifikujVoziloKojeNijeProdato";
-            this.btnModifikujVoziloKojeNijeProdato.Size = new System.Drawing.Size(175, 97);
+            this.btnModifikujVoziloKojeNijeProdato.Size = new System.Drawing.Size(131, 70);
             this.btnModifikujVoziloKojeNijeProdato.TabIndex = 1;
             this.btnModifikujVoziloKojeNijeProdato.Text = "Modifikuj vozilo koje nije prodato";
             this.btnModifikujVoziloKojeNijeProdato.UseVisualStyleBackColor = true;
             this.btnModifikujVoziloKojeNijeProdato.Click += new System.EventHandler(this.btnModifikujVoziloKojeNijeProdato_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label2.Location = new System.Drawing.Point(70, 22);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(336, 22);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Izaberite koje vozilo zelite da modifikujete";
+            // 
             // ModifikujUvezenoVozilo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 515);
+            this.ClientSize = new System.Drawing.Size(451, 351);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnModifikujVoziloKojeNijeProdato);
             this.Controls.Add(this.btnModifikujProdatoVozilo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ModifikujUvezenoVozilo";
             this.Text = "ModifkujUvezenoVozilo";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,5 +87,6 @@ namespace MotornaVozila.Forme
 
         private System.Windows.Forms.Button btnModifikujProdatoVozilo;
         private System.Windows.Forms.Button btnModifikujVoziloKojeNijeProdato;
+        private System.Windows.Forms.Label label2;
     }
 }
