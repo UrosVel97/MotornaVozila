@@ -27,6 +27,7 @@ namespace MotornaVozila.Forme
             try
             {
                 this.PopuniListuSalona();
+                this.PopuniListuTipovaRadova();
             }
             catch (Exception ex)
             {
@@ -59,17 +60,47 @@ namespace MotornaVozila.Forme
                     txtAdresa.Text = szm.Adresa;
                     txtSefSalona.Text = szm.SefSalona;
                     txtSefServisa.Text = szm.SefServisa;
-                    checkObavlja.Checked = (szm.FServis.Equals("Y") ? true : false);
+                    checkObavlja.Checked = szm.FServis.Equals("Y");
 
-                    listBoxTipRadova.Items.Clear();
-                    foreach (TipRadova tip in szm.TipoviRadova)
+                    if (checkObavlja.Checked)
                     {
-                        listBoxTipRadova.Items.Add(tip.Tip_Radova);
+                        var tipoviRadova = szm.TipoviRadova.Select(_ => _.Tip_Radova).ToList();
+
+                        for (int i = 0; i < checkedListBoxListaTipRadova.Items.Count; i++)
+                        {
+                            var tipRada = checkedListBoxListaTipRadova.Items[i].ToString();
+                            var tipPostoji = tipoviRadova.Contains(tipRada);
+                            checkedListBoxListaTipRadova.SetItemChecked(i, tipPostoji);
+                        }
                     }
-                    listBoxTipRadova.Refresh();
 
                     s.Close();
                 }
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        private void PopuniListuTipovaRadova()
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IList<TipRadova> tipRadova = s.QueryOver<TipRadova>()
+                                              .List<TipRadova>();
+
+                checkedListBoxListaTipRadova.Items.Clear();
+                foreach (TipRadova t in tipRadova)
+                {
+                    checkedListBoxListaTipRadova.Items.Add(t.Tip_Radova);
+                }
+                checkedListBoxListaTipRadova.Refresh();
+
+                s.Close();
+
             }
             catch (Exception ec)
             {
@@ -81,33 +112,13 @@ namespace MotornaVozila.Forme
         {
             if (checkObavlja.Checked)
             {
-                label12.Visible = true;
                 label13.Visible = true;
-                txtTipRadova.Visible = true;
-                listBoxTipRadova.Visible = true;
-                btnDodajTipRadova.Visible = true;
+                checkedListBoxListaTipRadova.Visible = true;
             }
             else
             {
-                label12.Visible = false;
                 label13.Visible = false;
-                txtTipRadova.Visible = false;
-                listBoxTipRadova.Visible = false;
-                btnDodajTipRadova.Visible = false;
-            }
-        }
-
-        private void btnDodajTipRadova_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                listBoxTipRadova.Items.Add(txtTipRadova.Text);
-                listBoxTipRadova.Refresh();
-                txtTipRadova.Text = "";
-            }
-            catch (Exception ec)
-            {
-                MessageBox.Show(ec.ToString());
+                checkedListBoxListaTipRadova.Visible = false;
             }
         }
 
@@ -126,19 +137,6 @@ namespace MotornaVozila.Forme
                 s.SaveOrUpdate(szm);
                 s.Flush();
 
-                //foreach (string tip in listBoxTipRadova.Items)
-                //{
-                //    if (!this.ProveriTipRadova(szm.TipoviRadova, tip))
-                //    {
-                //        TipRadova t = new TipRadova();
-                //        t.Tip_Radova = tip;
-                //        t.Salon = szm;
-                //        szm.TipoviRadova.Add(t);
-                //        s.Save(t);
-                //        s.Save(szm);
-                //        s.Flush();
-                //    }
-                //}
                 s.Close();
             }
 
@@ -148,16 +146,6 @@ namespace MotornaVozila.Forme
             }
 
             this.DialogResult = DialogResult.OK;
-        }
-
-        private bool ProveriTipRadova(IList<TipRadova> tipovi, string tip)
-        {
-            foreach (TipRadova t in tipovi)
-            {
-                if (t.Tip_Radova.Equals(tip))
-                    return true;
-            }
-            return false;
         }
     }
 }

@@ -25,13 +25,10 @@ namespace MotornaVozila
         {
             try
             {
-
-
                 ISession s = DataLayer.GetSession();
 
                 IList<NezavisniEkonomista> nezavisniEkonomista = s.QueryOver<NezavisniEkonomista>()
                                  .List<NezavisniEkonomista>();
-
 
                 foreach (NezavisniEkonomista n in nezavisniEkonomista)
                 {
@@ -229,7 +226,7 @@ namespace MotornaVozila
                             MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + ", vozilo je i putnicko i teretno vozilo. Broj putnika: " + vp.BrojPutnika + ", Nosivost: " + vp.Nosivost + ", Tip prostora: " + vp.TipProstora);
 
                         }
-                        else if(vp.FPutnickoVozilo.Equals("Y") && vp.FTeretnoVozilo.Equals("N"))
+                        else if (vp.FPutnickoVozilo.Equals("Y") && vp.FTeretnoVozilo.Equals("N"))
                         {
                             MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + ", vozilo je putnicko. Broj putnika: " + vp.BrojPutnika);
                         }
@@ -238,53 +235,19 @@ namespace MotornaVozila
                             MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + ", vozilo je teretno. Nosivost: " + vp.Nosivost + ", Tip prostora: " + vp.TipProstora);
                         }
 
-                        foreach(Boja b in vp.Boje)
+                        foreach (Boja b in vp.Boje)
                         {
                             MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + " je boje " + b.BojaVozila);
                         }
 
-                        if(vp.Boje.Count==0)
+                        if (vp.Boje.Count == 0)
                         {
                             MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + " nema boju");
                         }
-
-
-
-                    }
-                    else if (o.GetType() == typeof(VoziloKojeNijeProdato))
-                    {
-                        VoziloKojeNijeProdato vnp = (VoziloKojeNijeProdato)o;
-                        MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", model vozila je: " + vnp.ModelVozila + ". Vozilo je izlozeno u salonu sa id-jem: " + vnp.IzlozenUSalonu.Id + ", Salon se nalazi u gradu: " + vnp.IzlozenUSalonu.Grad);
-                        if (vnp.FPutnickoVozilo.Equals("Y") && vnp.FTeretnoVozilo.Equals("Y"))
-                        {
-                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je i putnicko i teretno vozilo. Broj putnika: " + vnp.BrojPutnika + ", Nosivost: " + vnp.Nosivost + ", Tip prostora: " + vnp.TipProstora);
-
-                        }
-                        else if (vnp.FPutnickoVozilo.Equals("Y") && vnp.FTeretnoVozilo.Equals("N"))
-                        {
-                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je putnicko. Broj putnika: " + vnp.BrojPutnika);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je teretno. Nosivost: " + vnp.Nosivost + ", Tip prostora: " + vnp.TipProstora);
-                        }
-
-                        foreach (Boja b in vnp.Boje)
-                        {
-                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + " je boje " + b.BojaVozila);
-                        }
-
-                        if (vnp.Boje.Count == 0)
-                        {
-                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + " nema boju");
-                        }
-
                     }
                     else
                     {
                         throw new Exception("Greska");
-
-
                     }
                 }
 
@@ -941,7 +904,7 @@ namespace MotornaVozila
             forma.ShowDialog();
             this.Visible = true;
 
-            
+
         }
 
         private void btnModifikujUvezenoVozilo_Click(object sender, EventArgs e)
@@ -1021,7 +984,61 @@ namespace MotornaVozila
 
         private void btnVratiSalone_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ISession s = DataLayer.GetSession();
 
+                IList<Salon> m = s.QueryOver<Salon>()
+                                 .List<Salon>();
+
+                ISession t = DataLayer.GetSession();
+
+                IList<UvezenoVozilo> z = t.QueryOver<UvezenoVozilo>()
+                                 .List<UvezenoVozilo>();
+
+                foreach (Salon o in m)
+                {
+                    foreach (NezavisniEkonomista ne in o.NezavisniEkonomisti)
+                    {
+                        foreach (TelefonNezavisniEkonomista tne in ne.Telefoni)
+                        {
+                            MessageBox.Show("Salon: " + o.Id + " je angazovao nezavisnog ekonomistu " + ne.Ime + " " + ne.Prezime + " kontakt telefon " + tne.BrojTelefona);
+                        }
+                    }
+
+                    foreach (TipRadova tp in o.TipoviRadova)
+                    {
+                        if (o.FServis == "Y")
+                        {
+                            MessageBox.Show("Salon " + o.Id + ", sef salona je " + o.SefSalona + " ima servis ciji je sef " + o.SefServisa + " i servis obavlja: " + tp.Tip_Radova);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Salon " + o.Id + " u gradu: " + o.Grad + " " + o.Adresa + ", sef salona je " + o.SefSalona + " i stepen opremljenosti salona je: " + o.StepenOpremljenostiServisa);
+                        }
+                    }
+
+                    foreach (Kupovina k in o.Kupovine)
+                    {
+                        MessageBox.Show("Salon: " + o.Id + " je " + k.DatumKupovine + " izvrsion kupovinu.");
+                    }
+
+                    foreach (UvezenoVozilo u in z)
+                    {
+                        if(u.GetType() == typeof(VoziloKojeNijeProdato))
+                        {
+                            VoziloKojeNijeProdato vknp = (VoziloKojeNijeProdato)u;
+                            MessageBox.Show("Vozilo " + vknp.BrojSasije + " " + vknp.ModelVozila + " je izlozeno u salonu? " /*+ vknp.IzlozenUSalonu*/);
+                        }
+                    }
+                }
+
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
         }
     }
 }

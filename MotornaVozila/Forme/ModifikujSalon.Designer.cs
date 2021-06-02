@@ -40,9 +40,6 @@
             this.columnSefServisa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.listBoxTipRadova = new System.Windows.Forms.ListBox();
-            this.btnDodajTipRadova = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtSefSalona = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,7 +47,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtGrad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTipRadova = new System.Windows.Forms.TextBox();
+            this.checkedListBoxListaTipRadova = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // checkObavlja
@@ -152,47 +149,13 @@
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(367, 330);
+            this.label13.Location = new System.Drawing.Point(367, 296);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(95, 39);
             this.label13.TabIndex = 121;
             this.label13.Text = "Lista tip radova";
             this.label13.Visible = false;
-            // 
-            // listBoxTipRadova
-            // 
-            this.listBoxTipRadova.FormattingEnabled = true;
-            this.listBoxTipRadova.Location = new System.Drawing.Point(504, 337);
-            this.listBoxTipRadova.Margin = new System.Windows.Forms.Padding(2);
-            this.listBoxTipRadova.Name = "listBoxTipRadova";
-            this.listBoxTipRadova.Size = new System.Drawing.Size(169, 69);
-            this.listBoxTipRadova.TabIndex = 120;
-            this.listBoxTipRadova.Visible = false;
-            // 
-            // btnDodajTipRadova
-            // 
-            this.btnDodajTipRadova.Location = new System.Drawing.Point(688, 297);
-            this.btnDodajTipRadova.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDodajTipRadova.Name = "btnDodajTipRadova";
-            this.btnDodajTipRadova.Size = new System.Drawing.Size(100, 29);
-            this.btnDodajTipRadova.TabIndex = 119;
-            this.btnDodajTipRadova.Text = "Dodaj tip radova";
-            this.btnDodajTipRadova.UseVisualStyleBackColor = true;
-            this.btnDodajTipRadova.Visible = false;
-            this.btnDodajTipRadova.Click += new System.EventHandler(this.btnDodajTipRadova_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(367, 300);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 15);
-            this.label12.TabIndex = 117;
-            this.label12.Text = "Tip radova";
-            this.label12.Visible = false;
             // 
             // label9
             // 
@@ -261,20 +224,22 @@
             this.label2.TabIndex = 108;
             this.label2.Text = "Grad";
             // 
-            // txtTipRadova
+            // checkedListBoxListaTipRadova
             // 
-            this.txtTipRadova.Location = new System.Drawing.Point(504, 302);
-            this.txtTipRadova.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTipRadova.Name = "txtTipRadova";
-            this.txtTipRadova.Size = new System.Drawing.Size(169, 20);
-            this.txtTipRadova.TabIndex = 118;
-            this.txtTipRadova.Visible = false;
+            this.checkedListBoxListaTipRadova.CheckOnClick = true;
+            this.checkedListBoxListaTipRadova.FormattingEnabled = true;
+            this.checkedListBoxListaTipRadova.Location = new System.Drawing.Point(520, 296);
+            this.checkedListBoxListaTipRadova.Name = "checkedListBoxListaTipRadova";
+            this.checkedListBoxListaTipRadova.Size = new System.Drawing.Size(186, 94);
+            this.checkedListBoxListaTipRadova.TabIndex = 134;
+            this.checkedListBoxListaTipRadova.Visible = false;
             // 
             // ModifikujSalon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 478);
+            this.Controls.Add(this.checkedListBoxListaTipRadova);
             this.Controls.Add(this.checkObavlja);
             this.Controls.Add(this.btnSnimi);
             this.Controls.Add(this.txtSefServisa);
@@ -282,10 +247,6 @@
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.listBoxTipRadova);
-            this.Controls.Add(this.btnDodajTipRadova);
-            this.Controls.Add(this.txtTipRadova);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtSefSalona);
             this.Controls.Add(this.label4);
@@ -314,9 +275,6 @@
         private System.Windows.Forms.ColumnHeader columnSefServisa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ListBox listBoxTipRadova;
-        private System.Windows.Forms.Button btnDodajTipRadova;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtSefSalona;
         private System.Windows.Forms.Label label4;
@@ -324,6 +282,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtGrad;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtTipRadova;
+        private System.Windows.Forms.CheckedListBox checkedListBoxListaTipRadova;
     }
 }
