@@ -986,15 +986,13 @@ namespace MotornaVozila
         {
             try
             {
+
                 ISession s = DataLayer.GetSession();
 
                 IList<Salon> m = s.QueryOver<Salon>()
                                  .List<Salon>();
 
-                ISession t = DataLayer.GetSession();
 
-                IList<UvezenoVozilo> z = t.QueryOver<UvezenoVozilo>()
-                                 .List<UvezenoVozilo>();
 
                 foreach (Salon o in m)
                 {
@@ -1020,16 +1018,15 @@ namespace MotornaVozila
 
                     foreach (Kupovina k in o.Kupovine)
                     {
-                        MessageBox.Show("Salon: " + o.Id + " je " + k.DatumKupovine + " izvrsion kupovinu.");
+                        MessageBox.Show("Salon: " + o.Id + " je datuma: " + k.DatumKupovine + " izvrsio kupovinu.");
                     }
 
-                    foreach (UvezenoVozilo u in z)
+                    foreach (VoziloKojeNijeProdato vknp in o.VozilaKojaNisuProdata)
                     {
-                        if(u.GetType() == typeof(VoziloKojeNijeProdato))
-                        {
-                            VoziloKojeNijeProdato vknp = (VoziloKojeNijeProdato)u;
-                            MessageBox.Show("Vozilo " + vknp.BrojSasije + " " + vknp.ModelVozila + " je izlozeno u salonu? " /*+ vknp.IzlozenUSalonu*/);
-                        }
+
+                        
+                        MessageBox.Show("Vozilo " + vknp.BrojSasije + " " + vknp.ModelVozila + " je izlozeno u salonu: " + o.Grad);
+
                     }
                 }
 

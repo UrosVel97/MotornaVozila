@@ -60,19 +60,7 @@ namespace MotornaVozila.Forme
                     txtAdresa.Text = szm.Adresa;
                     txtSefSalona.Text = szm.SefSalona;
                     txtSefServisa.Text = szm.SefServisa;
-                    checkObavlja.Checked = szm.FServis.Equals("Y");
-
-                    if (checkObavlja.Checked)
-                    {
-                        var tipoviRadova = szm.TipoviRadova.Select(_ => _.Tip_Radova).ToList();
-
-                        for (int i = 0; i < checkedListBoxListaTipRadova.Items.Count; i++)
-                        {
-                            var tipRada = checkedListBoxListaTipRadova.Items[i].ToString();
-                            var tipPostoji = tipoviRadova.Contains(tipRada);
-                            checkedListBoxListaTipRadova.SetItemChecked(i, tipPostoji);
-                        }
-                    }
+                    
 
                     s.Close();
                 }
@@ -92,12 +80,7 @@ namespace MotornaVozila.Forme
                 IList<TipRadova> tipRadova = s.QueryOver<TipRadova>()
                                               .List<TipRadova>();
 
-                checkedListBoxListaTipRadova.Items.Clear();
-                foreach (TipRadova t in tipRadova)
-                {
-                    checkedListBoxListaTipRadova.Items.Add(t.Tip_Radova);
-                }
-                checkedListBoxListaTipRadova.Refresh();
+                
 
                 s.Close();
 
@@ -110,16 +93,7 @@ namespace MotornaVozila.Forme
 
         private void checkBoxTeretno_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkObavlja.Checked)
-            {
-                label13.Visible = true;
-                checkedListBoxListaTipRadova.Visible = true;
-            }
-            else
-            {
-                label13.Visible = false;
-                checkedListBoxListaTipRadova.Visible = false;
-            }
+            
         }
 
         private void btnSnimi_Click(object sender, EventArgs e)
@@ -132,7 +106,7 @@ namespace MotornaVozila.Forme
                 szm.Adresa = txtAdresa.Text;
                 szm.SefSalona = txtSefSalona.Text;
                 szm.SefServisa = txtSefServisa.Text;
-                szm.FServis = (checkObavlja.Checked ? "Y" : "N");
+                
 
                 s.SaveOrUpdate(szm);
                 s.Flush();
@@ -146,6 +120,11 @@ namespace MotornaVozila.Forme
             }
 
             this.DialogResult = DialogResult.OK;
+        }
+
+        private void checkedListBoxListaTipRadova_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

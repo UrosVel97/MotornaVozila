@@ -138,3 +138,4 @@ C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.c
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.exe
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.pdb
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujSalon.resources
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujSalon.resources
