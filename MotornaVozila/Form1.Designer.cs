@@ -224,6 +224,7 @@ namespace MotornaVozila
             this.btnVratiKupovine.TabIndex = 34;
             this.btnVratiKupovine.Text = "Vrati kupovine";
             this.btnVratiKupovine.UseVisualStyleBackColor = true;
+            this.btnVratiKupovine.Click += new System.EventHandler(this.btnVratiKupovine_Click_1);
             // 
             // s
             // 
