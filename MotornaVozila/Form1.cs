@@ -1041,6 +1041,7 @@ namespace MotornaVozila
         private void btnVratiKupovine_Click_1(object sender, EventArgs e)
         {
             /*
+             
             1. Commit
             2. Pull 
             3. Push
