@@ -44,6 +44,10 @@ namespace MotornaVozila
             this.btnDodajSaloon = new System.Windows.Forms.Button();
             this.btnModifikujSalon = new System.Windows.Forms.Button();
             this.btnIzbrisiSalon = new System.Windows.Forms.Button();
+            this.btnVratiKupovine = new System.Windows.Forms.Button();
+            this.s = new System.Windows.Forms.Button();
+            this.btnModifikujKupovinu = new System.Windows.Forms.Button();
+            this.btnIzbrisiKupovinu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVratiNezavisnogEkonomistu
@@ -211,11 +215,55 @@ namespace MotornaVozila
             this.btnIzbrisiSalon.UseVisualStyleBackColor = true;
             this.btnIzbrisiSalon.Click += new System.EventHandler(this.btnIzbrisiSalon_Click);
             // 
+            // btnVratiKupovine
+            // 
+            this.btnVratiKupovine.Location = new System.Drawing.Point(768, 27);
+            this.btnVratiKupovine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVratiKupovine.Name = "btnVratiKupovine";
+            this.btnVratiKupovine.Size = new System.Drawing.Size(147, 66);
+            this.btnVratiKupovine.TabIndex = 34;
+            this.btnVratiKupovine.Text = "Vrati kupovine";
+            this.btnVratiKupovine.UseVisualStyleBackColor = true;
+            // 
+            // s
+            // 
+            this.s.Location = new System.Drawing.Point(768, 126);
+            this.s.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.s.Name = "s";
+            this.s.Size = new System.Drawing.Size(147, 66);
+            this.s.TabIndex = 35;
+            this.s.Text = "Dodaj kupovinu";
+            this.s.UseVisualStyleBackColor = true;
+            // 
+            // btnModifikujKupovinu
+            // 
+            this.btnModifikujKupovinu.Location = new System.Drawing.Point(768, 223);
+            this.btnModifikujKupovinu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnModifikujKupovinu.Name = "btnModifikujKupovinu";
+            this.btnModifikujKupovinu.Size = new System.Drawing.Size(147, 66);
+            this.btnModifikujKupovinu.TabIndex = 36;
+            this.btnModifikujKupovinu.Text = "Modifikuj kupovinu";
+            this.btnModifikujKupovinu.UseVisualStyleBackColor = true;
+            // 
+            // btnIzbrisiKupovinu
+            // 
+            this.btnIzbrisiKupovinu.Location = new System.Drawing.Point(768, 321);
+            this.btnIzbrisiKupovinu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIzbrisiKupovinu.Name = "btnIzbrisiKupovinu";
+            this.btnIzbrisiKupovinu.Size = new System.Drawing.Size(147, 66);
+            this.btnIzbrisiKupovinu.TabIndex = 37;
+            this.btnIzbrisiKupovinu.Text = "Obrisi kupovinu";
+            this.btnIzbrisiKupovinu.UseVisualStyleBackColor = true;
+            // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1664, 564);
+            this.ClientSize = new System.Drawing.Size(1672, 569);
+            this.Controls.Add(this.btnIzbrisiKupovinu);
+            this.Controls.Add(this.btnModifikujKupovinu);
+            this.Controls.Add(this.s);
+            this.Controls.Add(this.btnVratiKupovine);
             this.Controls.Add(this.btnIzbrisiSalon);
             this.Controls.Add(this.btnModifikujSalon);
             this.Controls.Add(this.btnDodajSaloon);
@@ -256,6 +304,10 @@ namespace MotornaVozila
         private System.Windows.Forms.Button btnDodajSaloon;
         private System.Windows.Forms.Button btnModifikujSalon;
         private System.Windows.Forms.Button btnIzbrisiSalon;
+        private System.Windows.Forms.Button btnVratiKupovine;
+        private System.Windows.Forms.Button s;
+        private System.Windows.Forms.Button btnModifikujKupovinu;
+        private System.Windows.Forms.Button btnIzbrisiKupovinu;
     }
 }
 
