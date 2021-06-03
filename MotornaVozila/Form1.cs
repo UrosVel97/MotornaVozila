@@ -1037,5 +1037,10 @@ namespace MotornaVozila
                 MessageBox.Show(ec.ToString());
             }
         }
+
+        private void btnVratiKupovine_Click_1(object sender, EventArgs e)
+        {
+            // 123
+        }
     }
 }
