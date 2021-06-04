@@ -46,17 +46,19 @@ namespace MotornaVozila.Forme
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(18, 44);
+            this.label1.Location = new System.Drawing.Point(14, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 55);
+            this.label1.Size = new System.Drawing.Size(100, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kog datuma je izvrsena kupovina";
             // 
             // dtDatumKupovine
             // 
-            this.dtDatumKupovine.Location = new System.Drawing.Point(187, 60);
+            this.dtDatumKupovine.Location = new System.Drawing.Point(140, 29);
+            this.dtDatumKupovine.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtDatumKupovine.Name = "dtDatumKupovine";
-            this.dtDatumKupovine.Size = new System.Drawing.Size(242, 22);
+            this.dtDatumKupovine.Size = new System.Drawing.Size(182, 20);
             this.dtDatumKupovine.TabIndex = 1;
             // 
             // listView1
@@ -66,9 +68,10 @@ namespace MotornaVozila.Forme
             this.columnIme,
             this.columnPrezime});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(187, 139);
+            this.listView1.Location = new System.Drawing.Point(140, 103);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(437, 164);
+            this.listView1.Size = new System.Drawing.Size(371, 134);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -81,26 +84,28 @@ namespace MotornaVozila.Forme
             // columnIme
             // 
             this.columnIme.Text = "Ime";
-            this.columnIme.Width = 122;
+            this.columnIme.Width = 131;
             // 
             // columnPrezime
             // 
             this.columnPrezime.Text = "Prezime";
-            this.columnPrezime.Width = 228;
+            this.columnPrezime.Width = 122;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(18, 139);
+            this.label2.Location = new System.Drawing.Point(14, 103);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 55);
+            this.label2.Size = new System.Drawing.Size(100, 45);
             this.label2.TabIndex = 3;
             this.label2.Text = "Izaberite kupca koji je izvrsio kupovinu";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(18, 334);
+            this.label3.Location = new System.Drawing.Point(14, 271);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 55);
+            this.label3.Size = new System.Drawing.Size(100, 45);
             this.label3.TabIndex = 5;
             this.label3.Text = "Izaberite salon u kome je izvrsena kupovina";
             // 
@@ -111,9 +116,10 @@ namespace MotornaVozila.Forme
             this.columnGrad,
             this.columnAdresa});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(187, 334);
+            this.listView2.Location = new System.Drawing.Point(140, 271);
+            this.listView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(437, 162);
+            this.listView2.Size = new System.Drawing.Size(371, 134);
             this.listView2.TabIndex = 4;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -121,23 +127,24 @@ namespace MotornaVozila.Forme
             // columnIdSalona
             // 
             this.columnIdSalona.Text = "Id";
-            this.columnIdSalona.Width = 75;
+            this.columnIdSalona.Width = 101;
             // 
             // columnGrad
             // 
             this.columnGrad.Text = "Grad";
-            this.columnGrad.Width = 128;
+            this.columnGrad.Width = 125;
             // 
             // columnAdresa
             // 
             this.columnAdresa.Text = "Adresa";
-            this.columnAdresa.Width = 224;
+            this.columnAdresa.Width = 138;
             // 
             // btnSnimi
             // 
-            this.btnSnimi.Location = new System.Drawing.Point(187, 562);
+            this.btnSnimi.Location = new System.Drawing.Point(221, 431);
+            this.btnSnimi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSnimi.Name = "btnSnimi";
-            this.btnSnimi.Size = new System.Drawing.Size(195, 79);
+            this.btnSnimi.Size = new System.Drawing.Size(116, 50);
             this.btnSnimi.TabIndex = 6;
             this.btnSnimi.Text = "Snimi";
             this.btnSnimi.UseVisualStyleBackColor = true;
@@ -145,9 +152,9 @@ namespace MotornaVozila.Forme
             // 
             // DodajKupovinu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 667);
+            this.ClientSize = new System.Drawing.Size(522, 493);
             this.Controls.Add(this.btnSnimi);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listView2);
@@ -155,6 +162,7 @@ namespace MotornaVozila.Forme
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.dtDatumKupovine);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DodajKupovinu";
             this.Text = "DodajKupovinu";
             this.Load += new System.EventHandler(this.DodajKupovinu_Load);

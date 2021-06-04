@@ -42,9 +42,10 @@ namespace MotornaVozila.Forme
             this.columnId,
             this.columnDatum});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(226, 52);
+            this.listView2.Location = new System.Drawing.Point(165, 30);
+            this.listView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(500, 164);
+            this.listView2.Size = new System.Drawing.Size(415, 134);
             this.listView2.TabIndex = 3;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -52,27 +53,29 @@ namespace MotornaVozila.Forme
             // columnId
             // 
             this.columnId.Text = "Id";
-            this.columnId.Width = 118;
+            this.columnId.Width = 124;
             // 
             // columnDatum
             // 
             this.columnDatum.Text = "Datum kupovine";
-            this.columnDatum.Width = 351;
+            this.columnDatum.Width = 267;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 52);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label1.Location = new System.Drawing.Point(9, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 98);
+            this.label1.Size = new System.Drawing.Size(152, 80);
             this.label1.TabIndex = 4;
             this.label1.Text = "Izaberite kupovinu koju zelite da izbrisete";
             // 
             // btnObrisi
             // 
-            this.btnObrisi.Location = new System.Drawing.Point(266, 283);
+            this.btnObrisi.Location = new System.Drawing.Point(210, 192);
+            this.btnObrisi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(228, 108);
+            this.btnObrisi.Size = new System.Drawing.Size(117, 51);
             this.btnObrisi.TabIndex = 5;
             this.btnObrisi.Text = "Obrisi";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -80,12 +83,13 @@ namespace MotornaVozila.Forme
             // 
             // ObrisiKupovinu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 286);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ObrisiKupovinu";
             this.Text = "ObrisiKupovinu";
             this.Load += new System.EventHandler(this.ObrisiKupovinu_Load);

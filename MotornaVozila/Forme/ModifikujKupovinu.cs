@@ -41,7 +41,7 @@ namespace MotornaVozila.Forme
                 {
                     foreach (VoziloKojeJeProdato vp in k.ProdataVozila)
                     {
-                        ListViewItem item = new ListViewItem(new string[] { k.DatumKupovine.ToString(), k.IdKupca.LicnoIme + " " + k.IdKupca.Prezime, vp.ModelVozila, k.IdSalona.Grad + " " + k.IdSalona.Adresa, vp.DatumUvoza.ToString() });
+                        ListViewItem item = new ListViewItem(new string[] { k.Id.ToString(), k.DatumKupovine.ToString(), k.IdKupca.LicnoIme + " " + k.IdKupca.Prezime, vp.ModelVozila, k.IdSalona.Grad + " " + k.IdSalona.Adresa, vp.DatumUvoza.ToString() });
 
                         listView2.Items.Add(item);
                     }
@@ -74,6 +74,28 @@ namespace MotornaVozila.Forme
             {
                 MessageBox.Show(ec.ToString());
             }
+        }
+
+        private void btnSnimi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                k.DatumKupovine = DateTime.ParseExact(dtDatumKupovine.Value.ToString("dd-MM-yyyy"), "dd-MM-yyyy", CultureInfo.InvariantCulture);
+
+                s.SaveOrUpdate(k);
+                s.Flush();
+
+                s.Close();
+            }
+
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

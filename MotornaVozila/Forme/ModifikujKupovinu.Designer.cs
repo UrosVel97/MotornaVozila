@@ -31,14 +31,15 @@ namespace MotornaVozila.Forme
         {
             this.columnDatumKupovine = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView2 = new System.Windows.Forms.ListView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtDatumKupovine = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btnSnimi = new System.Windows.Forms.Button();
+            this.columnIdKupovina = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnKupac = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnModel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnSalon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnDatumUvoza = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtDatumKupovine = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnSnimi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // columnDatumKupovine
@@ -49,6 +50,7 @@ namespace MotornaVozila.Forme
             // listView2
             // 
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnIdKupovina,
             this.columnDatumKupovine,
             this.columnKupac,
             this.columnModel,
@@ -58,11 +60,35 @@ namespace MotornaVozila.Forme
             this.listView2.Location = new System.Drawing.Point(21, 56);
             this.listView2.Margin = new System.Windows.Forms.Padding(2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(684, 154);
+            this.listView2.Size = new System.Drawing.Size(727, 154);
             this.listView2.TabIndex = 96;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
+            // 
+            // columnIdKupovina
+            // 
+            this.columnIdKupovina.Text = "Id kupovine";
+            // 
+            // columnKupac
+            // 
+            this.columnKupac.Text = "Kupac";
+            this.columnKupac.Width = 104;
+            // 
+            // columnModel
+            // 
+            this.columnModel.Text = "Model vozila";
+            this.columnModel.Width = 101;
+            // 
+            // columnSalon
+            // 
+            this.columnSalon.Text = "Salon";
+            this.columnSalon.Width = 125;
+            // 
+            // columnDatumUvoza
+            // 
+            this.columnDatumUvoza.Text = "Datum uvoza vozila";
+            this.columnDatumUvoza.Width = 159;
             // 
             // label1
             // 
@@ -96,39 +122,20 @@ namespace MotornaVozila.Forme
             // 
             // btnSnimi
             // 
-            this.btnSnimi.Location = new System.Drawing.Point(247, 359);
+            this.btnSnimi.Location = new System.Drawing.Point(278, 314);
             this.btnSnimi.Margin = new System.Windows.Forms.Padding(2);
             this.btnSnimi.Name = "btnSnimi";
             this.btnSnimi.Size = new System.Drawing.Size(182, 33);
             this.btnSnimi.TabIndex = 76;
             this.btnSnimi.Text = "Snimi";
             this.btnSnimi.UseVisualStyleBackColor = true;
-            // 
-            // columnKupac
-            // 
-            this.columnKupac.Text = "Kupac";
-            this.columnKupac.Width = 104;
-            // 
-            // columnModel
-            // 
-            this.columnModel.Text = "Model vozila";
-            this.columnModel.Width = 101;
-            // 
-            // columnSalon
-            // 
-            this.columnSalon.Text = "Salon";
-            this.columnSalon.Width = 125;
-            // 
-            // columnDatumUvoza
-            // 
-            this.columnDatumUvoza.Text = "Datum uvoza vozila";
-            this.columnDatumUvoza.Width = 159;
+            this.btnSnimi.Click += new System.EventHandler(this.btnSnimi_Click);
             // 
             // ModifikujKupovinu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 415);
+            this.ClientSize = new System.Drawing.Size(783, 379);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtDatumKupovine);
@@ -153,5 +160,6 @@ namespace MotornaVozila.Forme
         private System.Windows.Forms.ColumnHeader columnModel;
         private System.Windows.Forms.ColumnHeader columnSalon;
         private System.Windows.Forms.ColumnHeader columnDatumUvoza;
+        private System.Windows.Forms.ColumnHeader columnIdKupovina;
     }
 }
