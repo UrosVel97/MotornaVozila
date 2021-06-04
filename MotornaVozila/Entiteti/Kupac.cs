@@ -20,17 +20,22 @@ namespace MotornaVozila.Entiteti
 
         public virtual IList<RegistrovaniKupac> RegistrovaniKupci { get; set; }
 
+        public virtual IList<TelefonKupac> Telefoni{ get; set; }
+
+
+
         public Kupac()
         {
             Kupovine = new List<Kupovina>();
             RegistrovaniKupci = new List<RegistrovaniKupac>();
+            Telefoni = new List<TelefonKupac>();
         }
 
     }
 
     public class FizickoLice : Kupac
     {
-        public virtual int Pib { get; set; }
+        public virtual int Jmbg { get; set; }
         public FizickoLice()
         {
 
@@ -39,7 +44,7 @@ namespace MotornaVozila.Entiteti
 
     public class PravnoLice : Kupac
     {
-        public virtual int Jmbg { get; set; }
+        public virtual int Pib { get; set; }
 
         public PravnoLice()
         {

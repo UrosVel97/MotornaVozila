@@ -48,6 +48,9 @@ namespace MotornaVozila
             this.s = new System.Windows.Forms.Button();
             this.btnModifikujKupovinu = new System.Windows.Forms.Button();
             this.btnIzbrisiKupovinu = new System.Windows.Forms.Button();
+            this.btnVratiKupce = new System.Windows.Forms.Button();
+            this.btnDodajKupca = new System.Windows.Forms.Button();
+            this.btnModifikujKupca = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVratiNezavisnogEkonomistu
@@ -259,11 +262,46 @@ namespace MotornaVozila
             this.btnIzbrisiKupovinu.UseVisualStyleBackColor = true;
             this.btnIzbrisiKupovinu.Click += new System.EventHandler(this.btnIzbrisiKupovinu_Click);
             // 
+            // btnVratiKupce
+            // 
+            this.btnVratiKupce.Location = new System.Drawing.Point(946, 27);
+            this.btnVratiKupce.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVratiKupce.Name = "btnVratiKupce";
+            this.btnVratiKupce.Size = new System.Drawing.Size(147, 66);
+            this.btnVratiKupce.TabIndex = 38;
+            this.btnVratiKupce.Text = "Vrati kupce";
+            this.btnVratiKupce.UseVisualStyleBackColor = true;
+            this.btnVratiKupce.Click += new System.EventHandler(this.btnVratiKupce_Click_1);
+            // 
+            // btnDodajKupca
+            // 
+            this.btnDodajKupca.Location = new System.Drawing.Point(946, 126);
+            this.btnDodajKupca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDodajKupca.Name = "btnDodajKupca";
+            this.btnDodajKupca.Size = new System.Drawing.Size(147, 66);
+            this.btnDodajKupca.TabIndex = 39;
+            this.btnDodajKupca.Text = "Dodaj kupca";
+            this.btnDodajKupca.UseVisualStyleBackColor = true;
+            this.btnDodajKupca.Click += new System.EventHandler(this.btnDodajKupca_Click);
+            // 
+            // btnModifikujKupca
+            // 
+            this.btnModifikujKupca.Location = new System.Drawing.Point(946, 223);
+            this.btnModifikujKupca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnModifikujKupca.Name = "btnModifikujKupca";
+            this.btnModifikujKupca.Size = new System.Drawing.Size(147, 66);
+            this.btnModifikujKupca.TabIndex = 40;
+            this.btnModifikujKupca.Text = "Modifikuj kupca";
+            this.btnModifikujKupca.UseVisualStyleBackColor = true;
+            // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1371, 569);
+            this.Controls.Add(this.btnModifikujKupca);
+            this.Controls.Add(this.btnDodajKupca);
+            this.Controls.Add(this.btnVratiKupce);
             this.Controls.Add(this.btnIzbrisiKupovinu);
             this.Controls.Add(this.btnModifikujKupovinu);
             this.Controls.Add(this.s);
@@ -312,6 +350,9 @@ namespace MotornaVozila
         private System.Windows.Forms.Button s;
         private System.Windows.Forms.Button btnModifikujKupovinu;
         private System.Windows.Forms.Button btnIzbrisiKupovinu;
+        private System.Windows.Forms.Button btnVratiKupce;
+        private System.Windows.Forms.Button btnDodajKupca;
+        private System.Windows.Forms.Button btnModifikujKupca;
     }
 }
 

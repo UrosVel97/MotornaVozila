@@ -34,6 +34,9 @@ namespace MotornaVozila.Mapiranja
             //Veza 1:N Kupac : RegistrovaniKupac
             HasMany(x => x.RegistrovaniKupci).KeyColumn("FK_ID_KUPCA").LazyLoad().Cascade.All().Inverse();
 
+            //Veza 1:N Kupac : TelefonKupac
+            HasMany(x => x.Telefoni).KeyColumn("FK_ID_KUPCA").LazyLoad().Cascade.All().Inverse();
+
         }
     }
 
@@ -47,7 +50,7 @@ namespace MotornaVozila.Mapiranja
             prosledjujemo vrednost koju kolona 'TIP_KUPCA' u tabeli 'KUPAC' moze da ima*/
             DiscriminatorValue("Fizicko lice");
             //Mapiramo proste atribute podklase ako ih ima
-            Map(x => x.Pib, "PIB");
+            Map(x => x.Jmbg, "JMBG");
         }
     }
 
@@ -59,7 +62,7 @@ namespace MotornaVozila.Mapiranja
             prosledjujemo vrednost koju kolona 'TIP_KUPCA' u tabeli 'KUPAC' moze da ima*/
             DiscriminatorValue("Pravno lice");
             //Mapiramo proste atribute podklase ako ih ima
-            Map(x => x.Jmbg, "JMBG");
+            Map(x => x.Pib, "PIB");
         }
     }
 }
