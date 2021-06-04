@@ -70,5 +70,36 @@ namespace MotornaVozila
             }
         }
 
+        public class PravnoLiceInfo
+        {
+            public int Id { get; set; }
+            public string Ime { get; set; }
+            public string Prezime { get; set; }
+            public int Pib { get; set; }
+            public PravnoLiceInfo(int id, string ime, string prezime,int pib)
+            {
+                this.Id = id;
+                this.Ime = ime;
+                this.Prezime = prezime;
+                this.Pib = pib;
+            }
+        }
+
+
+        public class FizickoLiceInfo
+        {
+            public int Id { get; set; }
+            public string Ime { get; set; }
+            public string Prezime { get; set; }
+            public int Jmbg { get; set; }
+            public FizickoLiceInfo(int id, string ime, string prezime, int jmbg)
+            {
+                this.Id = id;
+                this.Ime = ime;
+                this.Prezime = prezime;
+                this.Jmbg = jmbg;
+            }
+        }
+
     }
 }

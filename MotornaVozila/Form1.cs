@@ -651,5 +651,14 @@ namespace MotornaVozila
                 MessageBox.Show(ec.ToString());
             }
         }
+
+        private void btnModifikujKupca_Click(object sender, EventArgs e)
+        {
+            ModifikujKupca forma = new ModifikujKupca();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+
+        }
     }
 }

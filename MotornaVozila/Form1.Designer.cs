@@ -293,6 +293,7 @@ namespace MotornaVozila
             this.btnModifikujKupca.TabIndex = 40;
             this.btnModifikujKupca.Text = "Modifikuj kupca";
             this.btnModifikujKupca.UseVisualStyleBackColor = true;
+            this.btnModifikujKupca.Click += new System.EventHandler(this.btnModifikujKupca_Click);
             // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 

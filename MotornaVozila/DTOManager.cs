@@ -382,5 +382,48 @@ namespace MotornaVozila
             }
         }
 
+        public static IList<PravnoLiceInfo> VratiPravnaLica()
+        {
+
+            ISession s = DataLayer.GetSession();
+            IList<PravnoLice> kupci = s.QueryOver<Kupac>()
+                                        .Where(x=>x.GetType()==typeof(PravnoLice))    
+                                        .List<PravnoLice>();
+
+            IList<PravnoLiceInfo> kupciInfo = new List<PravnoLiceInfo>();
+            foreach (PravnoLice p in kupci)
+            {
+                kupciInfo.Add(new PravnoLiceInfo(p.Id, p.LicnoIme,p.Prezime,p.Pib));
+            }
+
+            s.Close();
+
+            return kupciInfo;
+
+
+        }
+
+
+        public static IList<FizickoLiceInfo> VratiFizickaLica()
+        {
+
+            ISession s = DataLayer.GetSession();
+            IList<FizickoLice> kupci = s.QueryOver<Kupac>()
+                                        .Where(x => x.GetType() == typeof(FizickoLice))
+                                        .List<FizickoLice>();
+
+            IList<FizickoLiceInfo> kupciInfo = new List<FizickoLiceInfo>();
+            foreach (FizickoLice f in kupci)
+            {
+                kupciInfo.Add(new FizickoLiceInfo(f.Id, f.LicnoIme, f.Prezime, f.Jmbg));
+            }
+
+            s.Close();
+
+            return kupciInfo;
+
+
+        }
+
     }
 }
