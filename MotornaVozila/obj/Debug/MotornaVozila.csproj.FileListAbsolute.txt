@@ -139,4 +139,9 @@ C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.e
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.pdb
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujSalon.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujSalon.resources
+<<<<<<< HEAD
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujKupovinu.resources
+=======
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajKupovinu.resources
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiKupovinu.resources
+>>>>>>> c8edebc1d6c3c8e7e43e498b191d318cdd275b0e

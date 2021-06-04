@@ -44,5 +44,31 @@ namespace MotornaVozila
                 SefServisa = sefServisa;
             }
         }
+
+        public class KupacInfo
+        {
+            public int Id { get; set; }
+            public string Ime { get; set; }
+            public string Prezime { get; set; }
+            public KupacInfo(int id,string ime,string prezime)
+            {
+                this.Id = id;
+                this.Ime = ime;
+                this.Prezime = prezime;
+            }
+        }
+
+        public class KupovinaInfo
+        {
+            public int Id { get; set; }
+            public DateTime Datum { get; set; }
+            public KupovinaInfo(int id, DateTime datum)
+            {
+                this.Id = id;
+                this.Datum = datum;
+                
+            }
+        }
+
     }
 }
