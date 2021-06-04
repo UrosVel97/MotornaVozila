@@ -245,6 +245,36 @@ namespace MotornaVozila
                             MessageBox.Show("Vozilo koje je prodato ima broj sasije " + vp.BrojSasije + " nema boju");
                         }
                     }
+
+                    else if (o.GetType() == typeof(VoziloKojeNijeProdato))
+                    {
+                        VoziloKojeNijeProdato vnp = (VoziloKojeNijeProdato)o;
+                        MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", model vozila je: " + vnp.ModelVozila + ". Vozilo je izlozeno u salonu sa id-jem: " + vnp.IzlozenUSalonu.Id + ", Salon se nalazi u gradu: " + vnp.IzlozenUSalonu.Grad);
+                        if (vnp.FPutnickoVozilo.Equals("Y") && vnp.FTeretnoVozilo.Equals("Y"))
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je i putnicko i teretno vozilo. Broj putnika: " + vnp.BrojPutnika + ", Nosivost: " + vnp.Nosivost + ", Tip prostora: " + vnp.TipProstora);
+
+                        }
+                        else if (vnp.FPutnickoVozilo.Equals("Y") && vnp.FTeretnoVozilo.Equals("N"))
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je putnicko. Broj putnika: " + vnp.BrojPutnika);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + ", vozilo je teretno. Nosivost: " + vnp.Nosivost + ", Tip prostora: " + vnp.TipProstora);
+                        }
+
+                        foreach (Boja b in vnp.Boje)
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + " je boje " + b.BojaVozila);
+                        }
+
+                        if (vnp.Boje.Count == 0)
+                        {
+                            MessageBox.Show("Vozilo koje nije prodato ima broj sasije " + vnp.BrojSasije + " nema boju");
+                        }
+
+                    }
                     else
                     {
                         throw new Exception("Greska");
@@ -1024,7 +1054,7 @@ namespace MotornaVozila
                     foreach (VoziloKojeNijeProdato vknp in o.VozilaKojaNisuProdata)
                     {
 
-                        
+
                         MessageBox.Show("Vozilo " + vknp.BrojSasije + " " + vknp.ModelVozila + " je izlozeno u salonu: " + o.Grad);
 
                     }
@@ -1038,7 +1068,7 @@ namespace MotornaVozila
             }
         }
 
-        
+
         private void btnVratiKupovine_Click_1(object sender, EventArgs e)
         {
             /*
