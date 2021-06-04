@@ -301,5 +301,25 @@ namespace MotornaVozila
             }
         }
 
+        public static IList<KupacInfo> VratiKupce()
+        {
+
+            ISession s = DataLayer.GetSession();
+            IList<Kupac> kupci = s.QueryOver<Kupac>()
+                            .List<Kupac>();
+
+            IList<KupacInfo> kupciInfo = new List<KupacInfo>(); 
+            foreach (Kupac k in kupci)
+            {
+                kupciInfo.Add(new KupacInfo(k.Id, k.LicnoIme, k.Prezime));
+            }
+
+            s.Close();
+
+            return kupciInfo;
+
+            
+        }
+
     }
 }

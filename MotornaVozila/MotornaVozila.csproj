@@ -98,6 +98,12 @@
     <Compile Include="Forme\DodajDrugogZaposlenog.Designer.cs">
       <DependentUpon>DodajDrugogZaposlenog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajKupovinu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajKupovinu.Designer.cs">
+      <DependentUpon>DodajKupovinu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajNezavisnogEkonomistu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajDrugogZaposlenog.resx">
       <DependentUpon>DodajDrugogZaposlenog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajKupovinu.resx">
+      <DependentUpon>DodajKupovinu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajNezavisnogEkonomistu.resx">
       <DependentUpon>DodajNezavisnogEkonomistu.cs</DependentUpon>

@@ -1104,5 +1104,13 @@ namespace MotornaVozila
                 MessageBox.Show(ec.ToString());
             }
         }
+
+        private void s_Click(object sender, EventArgs e)
+        {
+            DodajKupovinu forma = new DodajKupovinu();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
