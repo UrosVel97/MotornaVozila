@@ -51,12 +51,15 @@ namespace MotornaVozila
             this.btnVratiKupce = new System.Windows.Forms.Button();
             this.btnDodajKupca = new System.Windows.Forms.Button();
             this.btnModifikujKupca = new System.Windows.Forms.Button();
+            this.btnModifikujVlasnika = new System.Windows.Forms.Button();
+            this.btnDodajVlasnika = new System.Windows.Forms.Button();
+            this.btnVratiVlasnike = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVratiNezavisnogEkonomistu
             // 
             this.btnVratiNezavisnogEkonomistu.Location = new System.Drawing.Point(25, 22);
-            this.btnVratiNezavisnogEkonomistu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVratiNezavisnogEkonomistu.Margin = new System.Windows.Forms.Padding(2);
             this.btnVratiNezavisnogEkonomistu.Name = "btnVratiNezavisnogEkonomistu";
             this.btnVratiNezavisnogEkonomistu.Size = new System.Drawing.Size(110, 54);
             this.btnVratiNezavisnogEkonomistu.TabIndex = 0;
@@ -67,7 +70,7 @@ namespace MotornaVozila
             // btnKreirajNezavisnogEkonomistu
             // 
             this.btnKreirajNezavisnogEkonomistu.Location = new System.Drawing.Point(25, 102);
-            this.btnKreirajNezavisnogEkonomistu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKreirajNezavisnogEkonomistu.Margin = new System.Windows.Forms.Padding(2);
             this.btnKreirajNezavisnogEkonomistu.Name = "btnKreirajNezavisnogEkonomistu";
             this.btnKreirajNezavisnogEkonomistu.Size = new System.Drawing.Size(110, 54);
             this.btnKreirajNezavisnogEkonomistu.TabIndex = 1;
@@ -78,7 +81,7 @@ namespace MotornaVozila
             // btnVratiZaposlenog
             // 
             this.btnVratiZaposlenog.Location = new System.Drawing.Point(160, 22);
-            this.btnVratiZaposlenog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVratiZaposlenog.Margin = new System.Windows.Forms.Padding(2);
             this.btnVratiZaposlenog.Name = "btnVratiZaposlenog";
             this.btnVratiZaposlenog.Size = new System.Drawing.Size(110, 54);
             this.btnVratiZaposlenog.TabIndex = 2;
@@ -89,7 +92,7 @@ namespace MotornaVozila
             // btnDodajZaposlenog
             // 
             this.btnDodajZaposlenog.Location = new System.Drawing.Point(160, 102);
-            this.btnDodajZaposlenog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajZaposlenog.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajZaposlenog.Name = "btnDodajZaposlenog";
             this.btnDodajZaposlenog.Size = new System.Drawing.Size(110, 54);
             this.btnDodajZaposlenog.TabIndex = 3;
@@ -100,7 +103,7 @@ namespace MotornaVozila
             // btnVratiUvezenoVozilo
             // 
             this.btnVratiUvezenoVozilo.Location = new System.Drawing.Point(295, 22);
-            this.btnVratiUvezenoVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVratiUvezenoVozilo.Margin = new System.Windows.Forms.Padding(2);
             this.btnVratiUvezenoVozilo.Name = "btnVratiUvezenoVozilo";
             this.btnVratiUvezenoVozilo.Size = new System.Drawing.Size(110, 54);
             this.btnVratiUvezenoVozilo.TabIndex = 4;
@@ -111,7 +114,7 @@ namespace MotornaVozila
             // btnDodajUvezenoVozilo
             // 
             this.btnDodajUvezenoVozilo.Location = new System.Drawing.Point(295, 102);
-            this.btnDodajUvezenoVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajUvezenoVozilo.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajUvezenoVozilo.Name = "btnDodajUvezenoVozilo";
             this.btnDodajUvezenoVozilo.Size = new System.Drawing.Size(110, 54);
             this.btnDodajUvezenoVozilo.TabIndex = 5;
@@ -122,7 +125,7 @@ namespace MotornaVozila
             // btnModifikujNezavisnogEkonomistu
             // 
             this.btnModifikujNezavisnogEkonomistu.Location = new System.Drawing.Point(25, 181);
-            this.btnModifikujNezavisnogEkonomistu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModifikujNezavisnogEkonomistu.Margin = new System.Windows.Forms.Padding(2);
             this.btnModifikujNezavisnogEkonomistu.Name = "btnModifikujNezavisnogEkonomistu";
             this.btnModifikujNezavisnogEkonomistu.Size = new System.Drawing.Size(110, 54);
             this.btnModifikujNezavisnogEkonomistu.TabIndex = 24;
@@ -133,7 +136,7 @@ namespace MotornaVozila
             // btnObrisiNezavisnogEkonomistu
             // 
             this.btnObrisiNezavisnogEkonomistu.Location = new System.Drawing.Point(25, 261);
-            this.btnObrisiNezavisnogEkonomistu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnObrisiNezavisnogEkonomistu.Margin = new System.Windows.Forms.Padding(2);
             this.btnObrisiNezavisnogEkonomistu.Name = "btnObrisiNezavisnogEkonomistu";
             this.btnObrisiNezavisnogEkonomistu.Size = new System.Drawing.Size(110, 54);
             this.btnObrisiNezavisnogEkonomistu.TabIndex = 25;
@@ -144,7 +147,7 @@ namespace MotornaVozila
             // btnModifikujZaposlenog
             // 
             this.btnModifikujZaposlenog.Location = new System.Drawing.Point(160, 181);
-            this.btnModifikujZaposlenog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModifikujZaposlenog.Margin = new System.Windows.Forms.Padding(2);
             this.btnModifikujZaposlenog.Name = "btnModifikujZaposlenog";
             this.btnModifikujZaposlenog.Size = new System.Drawing.Size(110, 54);
             this.btnModifikujZaposlenog.TabIndex = 26;
@@ -155,7 +158,7 @@ namespace MotornaVozila
             // btnModifikujUvezenoVozilo
             // 
             this.btnModifikujUvezenoVozilo.Location = new System.Drawing.Point(295, 181);
-            this.btnModifikujUvezenoVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModifikujUvezenoVozilo.Margin = new System.Windows.Forms.Padding(2);
             this.btnModifikujUvezenoVozilo.Name = "btnModifikujUvezenoVozilo";
             this.btnModifikujUvezenoVozilo.Size = new System.Drawing.Size(110, 54);
             this.btnModifikujUvezenoVozilo.TabIndex = 27;
@@ -166,7 +169,7 @@ namespace MotornaVozila
             // btnObrisiUvezenoVozilo
             // 
             this.btnObrisiUvezenoVozilo.Location = new System.Drawing.Point(295, 261);
-            this.btnObrisiUvezenoVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnObrisiUvezenoVozilo.Margin = new System.Windows.Forms.Padding(2);
             this.btnObrisiUvezenoVozilo.Name = "btnObrisiUvezenoVozilo";
             this.btnObrisiUvezenoVozilo.Size = new System.Drawing.Size(110, 54);
             this.btnObrisiUvezenoVozilo.TabIndex = 28;
@@ -177,7 +180,7 @@ namespace MotornaVozila
             // btnVratiSalone
             // 
             this.btnVratiSalone.Location = new System.Drawing.Point(430, 22);
-            this.btnVratiSalone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVratiSalone.Margin = new System.Windows.Forms.Padding(2);
             this.btnVratiSalone.Name = "btnVratiSalone";
             this.btnVratiSalone.Size = new System.Drawing.Size(110, 54);
             this.btnVratiSalone.TabIndex = 30;
@@ -188,7 +191,7 @@ namespace MotornaVozila
             // btnDodajSaloon
             // 
             this.btnDodajSaloon.Location = new System.Drawing.Point(430, 102);
-            this.btnDodajSaloon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajSaloon.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajSaloon.Name = "btnDodajSaloon";
             this.btnDodajSaloon.Size = new System.Drawing.Size(110, 54);
             this.btnDodajSaloon.TabIndex = 31;
@@ -199,7 +202,7 @@ namespace MotornaVozila
             // btnModifikujSalon
             // 
             this.btnModifikujSalon.Location = new System.Drawing.Point(430, 181);
-            this.btnModifikujSalon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModifikujSalon.Margin = new System.Windows.Forms.Padding(2);
             this.btnModifikujSalon.Name = "btnModifikujSalon";
             this.btnModifikujSalon.Size = new System.Drawing.Size(110, 54);
             this.btnModifikujSalon.TabIndex = 32;
@@ -210,7 +213,7 @@ namespace MotornaVozila
             // btnIzbrisiSalon
             // 
             this.btnIzbrisiSalon.Location = new System.Drawing.Point(430, 261);
-            this.btnIzbrisiSalon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIzbrisiSalon.Margin = new System.Windows.Forms.Padding(2);
             this.btnIzbrisiSalon.Name = "btnIzbrisiSalon";
             this.btnIzbrisiSalon.Size = new System.Drawing.Size(110, 54);
             this.btnIzbrisiSalon.TabIndex = 33;
@@ -221,7 +224,7 @@ namespace MotornaVozila
             // btnVratiKupovine
             // 
             this.btnVratiKupovine.Location = new System.Drawing.Point(565, 22);
-            this.btnVratiKupovine.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVratiKupovine.Margin = new System.Windows.Forms.Padding(2);
             this.btnVratiKupovine.Name = "btnVratiKupovine";
             this.btnVratiKupovine.Size = new System.Drawing.Size(110, 54);
             this.btnVratiKupovine.TabIndex = 34;
@@ -232,7 +235,7 @@ namespace MotornaVozila
             // s
             // 
             this.s.Location = new System.Drawing.Point(565, 102);
-            this.s.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.s.Margin = new System.Windows.Forms.Padding(2);
             this.s.Name = "s";
             this.s.Size = new System.Drawing.Size(110, 54);
             this.s.TabIndex = 35;
@@ -243,7 +246,7 @@ namespace MotornaVozila
             // btnModifikujKupovinu
             // 
             this.btnModifikujKupovinu.Location = new System.Drawing.Point(565, 181);
-            this.btnModifikujKupovinu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModifikujKupovinu.Margin = new System.Windows.Forms.Padding(2);
             this.btnModifikujKupovinu.Name = "btnModifikujKupovinu";
             this.btnModifikujKupovinu.Size = new System.Drawing.Size(110, 54);
             this.btnModifikujKupovinu.TabIndex = 36;
@@ -254,7 +257,7 @@ namespace MotornaVozila
             // btnIzbrisiKupovinu
             // 
             this.btnIzbrisiKupovinu.Location = new System.Drawing.Point(565, 261);
-            this.btnIzbrisiKupovinu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIzbrisiKupovinu.Margin = new System.Windows.Forms.Padding(2);
             this.btnIzbrisiKupovinu.Name = "btnIzbrisiKupovinu";
             this.btnIzbrisiKupovinu.Size = new System.Drawing.Size(110, 54);
             this.btnIzbrisiKupovinu.TabIndex = 37;
@@ -265,7 +268,7 @@ namespace MotornaVozila
             // btnVratiKupce
             // 
             this.btnVratiKupce.Location = new System.Drawing.Point(700, 22);
-            this.btnVratiKupce.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVratiKupce.Margin = new System.Windows.Forms.Padding(2);
             this.btnVratiKupce.Name = "btnVratiKupce";
             this.btnVratiKupce.Size = new System.Drawing.Size(110, 54);
             this.btnVratiKupce.TabIndex = 38;
@@ -276,7 +279,7 @@ namespace MotornaVozila
             // btnDodajKupca
             // 
             this.btnDodajKupca.Location = new System.Drawing.Point(700, 102);
-            this.btnDodajKupca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajKupca.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajKupca.Name = "btnDodajKupca";
             this.btnDodajKupca.Size = new System.Drawing.Size(110, 54);
             this.btnDodajKupca.TabIndex = 39;
@@ -287,7 +290,7 @@ namespace MotornaVozila
             // btnModifikujKupca
             // 
             this.btnModifikujKupca.Location = new System.Drawing.Point(700, 181);
-            this.btnModifikujKupca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModifikujKupca.Margin = new System.Windows.Forms.Padding(2);
             this.btnModifikujKupca.Name = "btnModifikujKupca";
             this.btnModifikujKupca.Size = new System.Drawing.Size(110, 54);
             this.btnModifikujKupca.TabIndex = 40;
@@ -295,11 +298,45 @@ namespace MotornaVozila
             this.btnModifikujKupca.UseVisualStyleBackColor = true;
             this.btnModifikujKupca.Click += new System.EventHandler(this.btnModifikujKupca_Click);
             // 
+            // btnModifikujVlasnika
+            // 
+            this.btnModifikujVlasnika.Location = new System.Drawing.Point(835, 181);
+            this.btnModifikujVlasnika.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModifikujVlasnika.Name = "btnModifikujVlasnika";
+            this.btnModifikujVlasnika.Size = new System.Drawing.Size(110, 54);
+            this.btnModifikujVlasnika.TabIndex = 43;
+            this.btnModifikujVlasnika.Text = "Modifikuj vlasnika";
+            this.btnModifikujVlasnika.UseVisualStyleBackColor = true;
+            // 
+            // btnDodajVlasnika
+            // 
+            this.btnDodajVlasnika.Location = new System.Drawing.Point(835, 102);
+            this.btnDodajVlasnika.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDodajVlasnika.Name = "btnDodajVlasnika";
+            this.btnDodajVlasnika.Size = new System.Drawing.Size(110, 54);
+            this.btnDodajVlasnika.TabIndex = 42;
+            this.btnDodajVlasnika.Text = "Dodaj vlasnika";
+            this.btnDodajVlasnika.UseVisualStyleBackColor = true;
+            // 
+            // btnVratiVlasnike
+            // 
+            this.btnVratiVlasnike.Location = new System.Drawing.Point(835, 22);
+            this.btnVratiVlasnike.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVratiVlasnike.Name = "btnVratiVlasnike";
+            this.btnVratiVlasnike.Size = new System.Drawing.Size(110, 54);
+            this.btnVratiVlasnike.TabIndex = 41;
+            this.btnVratiVlasnike.Text = "Vrati vlasnike";
+            this.btnVratiVlasnike.UseVisualStyleBackColor = true;
+            this.btnVratiVlasnike.Click += new System.EventHandler(this.btnVratiVlasnike_Click);
+            // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 462);
+            this.Controls.Add(this.btnModifikujVlasnika);
+            this.Controls.Add(this.btnDodajVlasnika);
+            this.Controls.Add(this.btnVratiVlasnike);
             this.Controls.Add(this.btnModifikujKupca);
             this.Controls.Add(this.btnDodajKupca);
             this.Controls.Add(this.btnVratiKupce);
@@ -322,7 +359,7 @@ namespace MotornaVozila
             this.Controls.Add(this.btnVratiZaposlenog);
             this.Controls.Add(this.btnKreirajNezavisnogEkonomistu);
             this.Controls.Add(this.btnVratiNezavisnogEkonomistu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "btnVratiNezavisnogEkonomistuIAngazovanja";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.btnVratiNezavisnogEkonomistuIAngazovanja_Load);
@@ -354,6 +391,9 @@ namespace MotornaVozila
         private System.Windows.Forms.Button btnVratiKupce;
         private System.Windows.Forms.Button btnDodajKupca;
         private System.Windows.Forms.Button btnModifikujKupca;
+        private System.Windows.Forms.Button btnModifikujVlasnika;
+        private System.Windows.Forms.Button btnDodajVlasnika;
+        private System.Windows.Forms.Button btnVratiVlasnike;
     }
 }
 

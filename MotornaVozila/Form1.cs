@@ -660,5 +660,42 @@ namespace MotornaVozila
             this.Visible = true;
 
         }
+
+        private void btnVratiVlasnike_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ISession i = DataLayer.GetSession();
+
+                IList<Vlasnik> v = i.QueryOver<Vlasnik>()
+                                 .List<Vlasnik>();
+
+                foreach (Vlasnik o in v)
+                {
+                    if (o.GetType() == typeof(NeregistrovaniKupac))
+                    {
+                        NeregistrovaniKupac nk = (NeregistrovaniKupac)o;
+                        MessageBox.Show("Vlasnik " + o.Id + " " + nk.Ime + " " + nk.Prezime + " je neregistrovani kupac");
+                    }
+                    else
+                    {
+                        RegistrovaniKupac rk = (RegistrovaniKupac)o;
+                        MessageBox.Show("Vlasnik " + o.Id + " " + rk.Kupac.LicnoIme + " " + rk.Kupac.Prezime + " je registrovani kupac");
+                    }
+                    foreach (VozilaPrimljenaNaServis vp in o.JePoslaoVoziloNaServis)
+                    {
+                        MessageBox.Show("Vlasnik " + o.Id + " je datuma: " + vp.DatumPrijema + " poslao vozilo registarskog broja: " + vp.RegistarskiBroj + " " + vp.ModelVozila + " na servis zbog problema: " + vp.OpisProblema);
+                    }
+                }
+
+                i.Close();
+            }
+
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
     }
 }
