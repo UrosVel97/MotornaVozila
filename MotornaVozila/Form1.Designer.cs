@@ -257,6 +257,7 @@ namespace MotornaVozila
             this.btnIzbrisiKupovinu.TabIndex = 37;
             this.btnIzbrisiKupovinu.Text = "Obrisi kupovinu";
             this.btnIzbrisiKupovinu.UseVisualStyleBackColor = true;
+            this.btnIzbrisiKupovinu.Click += new System.EventHandler(this.btnIzbrisiKupovinu_Click);
             // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 

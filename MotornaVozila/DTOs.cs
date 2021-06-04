@@ -58,5 +58,17 @@ namespace MotornaVozila
             }
         }
 
+        public class KupovinaInfo
+        {
+            public int Id { get; set; }
+            public DateTime Datum { get; set; }
+            public KupovinaInfo(int id, DateTime datum)
+            {
+                this.Id = id;
+                this.Datum = datum;
+                
+            }
+        }
+
     }
 }

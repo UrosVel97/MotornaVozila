@@ -1112,5 +1112,13 @@ namespace MotornaVozila
             forma.ShowDialog();
             this.Visible = true;
         }
+
+        private void btnIzbrisiKupovinu_Click(object sender, EventArgs e)
+        {
+            ObrisiKupovinu forma = new ObrisiKupovinu();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

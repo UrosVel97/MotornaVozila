@@ -321,5 +321,66 @@ namespace MotornaVozila
             
         }
 
+
+        public static IList<KupovinaInfo> VratiKupovine()
+        {
+
+            ISession s = DataLayer.GetSession();
+            IList<Kupovina> kupovine= s.QueryOver<Kupovina>()
+                            .List<Kupovina>();
+
+            IList<KupovinaInfo> kupovineInfo = new List<KupovinaInfo>();
+            foreach (Kupovina k in kupovine)
+            {
+                kupovineInfo.Add(new KupovinaInfo(k.Id, k.DatumKupovine));
+            }
+
+            s.Close();
+
+            return kupovineInfo;
+
+
+        }
+
+        public static void ObrisiKupovinu(int id)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                Kupovina k = s.Load<Kupovina>(id);
+                Salon salon = s.Load<Salon>(k.IdSalona.Id);
+                Kupac kupac = s.Load<Kupac>(k.IdKupca.Id);
+
+                salon.Kupovine.Remove(k);
+                kupac.Kupovine.Remove(k);
+                s.SaveOrUpdate(salon);
+                s.SaveOrUpdate(kupac);
+
+                s.Flush();
+                IList<VoziloKojeJeProdato> vozila = k.ProdataVozila;
+                k.ProdataVozila = new List<VoziloKojeJeProdato>();
+                
+
+                foreach(VoziloKojeJeProdato vkp in vozila)
+                {
+                    RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(vkp.RadnikTehnStruke.Jmbg);
+                    rts.UvezenaVozila.Remove(vkp);
+                    s.SaveOrUpdate(rts);
+                    s.Flush();
+                    s.Delete(vkp);
+                    s.Flush();
+                }
+
+                s.Delete(k);
+                s.Flush();
+
+                s.Close();
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
     }
 }

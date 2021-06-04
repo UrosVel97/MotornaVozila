@@ -212,6 +212,12 @@
     <Compile Include="Forme\ModifikujUvezenoVozilo.Designer.cs">
       <DependentUpon>ModifikujUvezenoVozilo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\ObrisiKupovinu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiKupovinu.Designer.cs">
+      <DependentUpon>ObrisiKupovinu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\ObrisiNezavisnogEkonomistu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujUvezenoVozilo.resx">
       <DependentUpon>ModifikujUvezenoVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiKupovinu.resx">
+      <DependentUpon>ObrisiKupovinu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ObrisiNezavisnogEkonomistu.resx">
       <DependentUpon>ObrisiNezavisnogEkonomistu.cs</DependentUpon>
