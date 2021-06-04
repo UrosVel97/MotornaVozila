@@ -16,6 +16,7 @@ namespace MotornaVozila.Entiteti
         public virtual Kupac IdKupca { get; set; }
 
         public virtual IList<VoziloKojeJeProdato> ProdataVozila { get; set; }
+
         public Kupovina()
         {
             ProdataVozila = new List<VoziloKojeJeProdato>();

@@ -1022,8 +1022,6 @@ namespace MotornaVozila
                 IList<Salon> m = s.QueryOver<Salon>()
                                  .List<Salon>();
 
-
-
                 foreach (Salon o in m)
                 {
                     foreach (NezavisniEkonomista ne in o.NezavisniEkonomisti)
@@ -1069,15 +1067,42 @@ namespace MotornaVozila
         }
 
 
+        private void btnModifikujKupovinu_Click(object sender, EventArgs e)
+        {
+            ModifikujKupovinu forma = new ModifikujKupovinu();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+        }
+
         private void btnVratiKupovine_Click_1(object sender, EventArgs e)
         {
-            /*
-               // 123
-            1. Commit
-            2. Pull 
-            3. Push
-             
-             */
+            try
+            {
+
+                ISession i = DataLayer.GetSession();
+
+                IList<Kupovina> z = i.QueryOver<Kupovina>()
+                                 .List<Kupovina>();
+
+                foreach (Kupovina o in z)
+                {
+                    MessageBox.Show("Kupac " + o.IdKupca.LicnoIme + " " + o.IdKupca.Prezime + " je datuma " + o.DatumKupovine + " izvrsio kupovinu");
+
+                    MessageBox.Show("Salon " + o.IdSalona.Id + " je datuma " + o.DatumKupovine + " izvrsio prodaju vozila ");
+
+                    foreach(VoziloKojeJeProdato vk in o.ProdataVozila)
+                    {
+                        MessageBox.Show("Vozilo " + vk.BrojSasije + " " + vk.ModelVozila + " je kupljeno datuma " + o.DatumKupovine);
+                    }
+                }
+
+                i.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
         }
     }
 }

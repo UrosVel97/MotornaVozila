@@ -152,6 +152,12 @@
     <Compile Include="Forme\ModifikujDrugogZaposlenog.Designer.cs">
       <DependentUpon>ModifikujDrugogZaposlenog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\ModifikujKupovinu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujKupovinu.Designer.cs">
+      <DependentUpon>ModifikujKupovinu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\ModifikujNezavisnogEkonomistu.cs">
       <SubType>Form</SubType>
     </Compile>
