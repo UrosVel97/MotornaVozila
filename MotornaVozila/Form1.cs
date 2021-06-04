@@ -303,7 +303,7 @@ namespace MotornaVozila
 
 
 
-       
+
 
         private void btnVratiServis_Click(object sender, EventArgs e)
         {
@@ -334,7 +334,7 @@ namespace MotornaVozila
             }
         }
 
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -365,10 +365,10 @@ namespace MotornaVozila
             }
         }
 
-       
-        
 
-       
+
+
+
 
         private void btnModifikujNezavisnogEkonomistu_Click(object sender, EventArgs e)
         {
@@ -613,7 +613,43 @@ namespace MotornaVozila
 
         private void btnVratiKupce_Click_1(object sender, EventArgs e)
         {
+            try
+            {
 
+                ISession i = DataLayer.GetSession();
+
+                IList<Kupac> k = i.QueryOver<Kupac>()
+                                 .List<Kupac>();
+
+                foreach (Kupac o in k)
+                {
+                    if (o.GetType() == typeof(PravnoLice))
+                    {
+                        PravnoLice pl = (PravnoLice)o;
+                        MessageBox.Show("Kupac " + o.LicnoIme + " " + o.Prezime + " je pravno lice, Jmbg: " + pl.Pib);
+                    }
+                    else
+                    {
+                        FizickoLice fl = (FizickoLice)o;
+                        MessageBox.Show("Kupac " + o.LicnoIme + " " + o.Prezime + " je fizicko lice, PiB: " + fl.Jmbg);
+                    }
+                    foreach (Kupovina ku in o.Kupovine)
+                    {
+                        MessageBox.Show("Kupac " + o.LicnoIme + " " + o.Prezime + " je izvrsio kupovinu datuma: " + ku.DatumKupovine);
+                    }
+                    foreach (RegistrovaniKupac rk in o.RegistrovaniKupci)
+                    {
+                        MessageBox.Show(o.LicnoIme + " " + o.Prezime + " je registrovani kupac");
+                    }
+                }
+
+                i.Close();
+            }
+
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
         }
     }
 }
