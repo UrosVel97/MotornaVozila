@@ -1059,12 +1059,18 @@ namespace MotornaVozila
                 {
                     MessageBox.Show("Kupac " + o.IdKupca.LicnoIme + " " + o.IdKupca.Prezime + " je datuma " + o.DatumKupovine + " izvrsio kupovinu");
 
-                    MessageBox.Show("Salon " + o.IdSalona.Id + " je datuma " + o.DatumKupovine + " izvrsio prodaju vozila ");
+                    MessageBox.Show("Salon " + o.IdSalona.Id + ", stepen opremljenosti salona: " + o.IdSalona.StepenOpremljenostiServisa + ", u gradu: " + o.IdSalona.Grad + " " + o.IdSalona.Adresa + " je datuma " + o.DatumKupovine + " izvrsio prodaju vozila");
 
-                    foreach(VoziloKojeJeProdato vk in o.ProdataVozila)
+                    foreach (VoziloKojeJeProdato vk in o.ProdataVozila)
                     {
-                        MessageBox.Show("Vozilo " + vk.BrojSasije + " " + vk.ModelVozila + " je kupljeno datuma " + o.DatumKupovine);
+                        MessageBox.Show("Vozilo " + vk.BrojSasije + " " + vk.ModelVozila + ", kubikaza: " + vk.Kubikaza + ", je kupljeno datuma " + o.DatumKupovine);
                     }
+
+                    //if (o.IdKupca.TipKupca.GetType() == typeof(PravnoLice))
+                    //{
+                    //    PravnoLice pl = (PravnoLice)o.IdKupca;
+                    //    MessageBox.Show(o.IdKupca.LicnoIme + " " + pl.TipKupca);
+                    //}
                 }
 
                 i.Close();

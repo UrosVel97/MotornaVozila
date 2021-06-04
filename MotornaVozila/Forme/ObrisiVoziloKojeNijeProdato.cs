@@ -14,11 +14,9 @@ namespace MotornaVozila.Forme
 {
     public partial class ObrisiVoziloKojeNijeProdato : Form
     {
-        private VoziloKojeNijeProdato vknp;
         public ObrisiVoziloKojeNijeProdato()
         {
             InitializeComponent();
-            vknp = null;
         }
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)

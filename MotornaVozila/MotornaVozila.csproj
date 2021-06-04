@@ -284,6 +284,9 @@
     <EmbeddedResource Include="Forme\ModifikujDrugogZaposlenog.resx">
       <DependentUpon>ModifikujDrugogZaposlenog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujKupovinu.resx">
+      <DependentUpon>ModifikujKupovinu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujNezavisnogEkonomistu.resx">
       <DependentUpon>ModifikujNezavisnogEkonomistu.cs</DependentUpon>
     </EmbeddedResource>
