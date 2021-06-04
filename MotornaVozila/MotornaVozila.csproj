@@ -177,6 +177,18 @@
     <Compile Include="Forme\ModifikujDrugogZaposlenog.Designer.cs">
       <DependentUpon>ModifikujDrugogZaposlenog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\ModifikujFizickoLice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujFizickoLice.Designer.cs">
+      <DependentUpon>ModifikujFizickoLice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujKupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujKupca.Designer.cs">
+      <DependentUpon>ModifikujKupca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\ModifikujKupovinu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +200,12 @@
     </Compile>
     <Compile Include="Forme\ModifikujNezavisnogEkonomistu.Designer.cs">
       <DependentUpon>ModifikujNezavisnogEkonomistu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujPravnoLice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujPravnoLice.Designer.cs">
+      <DependentUpon>ModifikujPravnoLice.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\ModifikujRadnikaEkonomskeStruke.cs">
       <SubType>Form</SubType>
@@ -328,11 +346,20 @@
     <EmbeddedResource Include="Forme\ModifikujDrugogZaposlenog.resx">
       <DependentUpon>ModifikujDrugogZaposlenog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujFizickoLice.resx">
+      <DependentUpon>ModifikujFizickoLice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujKupca.resx">
+      <DependentUpon>ModifikujKupca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujKupovinu.resx">
       <DependentUpon>ModifikujKupovinu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujNezavisnogEkonomistu.resx">
       <DependentUpon>ModifikujNezavisnogEkonomistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujPravnoLice.resx">
+      <DependentUpon>ModifikujPravnoLice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujRadnikaEkonomskeStruke.resx">
       <DependentUpon>ModifikujRadnikaEkonomskeStruke.cs</DependentUpon>
