@@ -271,6 +271,7 @@ namespace MotornaVozila
             this.btnVratiKupce.TabIndex = 38;
             this.btnVratiKupce.Text = "Vrati kupce";
             this.btnVratiKupce.UseVisualStyleBackColor = true;
+            this.btnVratiKupce.Click += new System.EventHandler(this.btnVratiKupce_Click_1);
             // 
             // btnDodajKupca
             // 
@@ -281,6 +282,7 @@ namespace MotornaVozila
             this.btnDodajKupca.TabIndex = 39;
             this.btnDodajKupca.Text = "Dodaj kupca";
             this.btnDodajKupca.UseVisualStyleBackColor = true;
+            this.btnDodajKupca.Click += new System.EventHandler(this.btnDodajKupca_Click);
             // 
             // btnModifikujKupca
             // 

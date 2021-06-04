@@ -79,6 +79,7 @@
     <Compile Include="Entiteti\NezavisniEkonomista.cs" />
     <Compile Include="Entiteti\Salon.cs" />
     <Compile Include="Entiteti\Specijalnost.cs" />
+    <Compile Include="Entiteti\TelefonKupac.cs" />
     <Compile Include="Entiteti\TelefonNeregistrovaniKupac.cs" />
     <Compile Include="Entiteti\TelefonNezavisniEkonomista.cs" />
     <Compile Include="Entiteti\TipRadova.cs" />
@@ -98,6 +99,18 @@
     <Compile Include="Forme\DodajDrugogZaposlenog.Designer.cs">
       <DependentUpon>DodajDrugogZaposlenog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajFizikoLice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajFizikoLice.Designer.cs">
+      <DependentUpon>DodajFizikoLice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajKupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajKupca.Designer.cs">
+      <DependentUpon>DodajKupca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajKupovinu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +122,12 @@
     </Compile>
     <Compile Include="Forme\DodajNezavisnogEkonomistu.Designer.cs">
       <DependentUpon>DodajNezavisnogEkonomistu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajPravnoLice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajPravnoLice.Designer.cs">
+      <DependentUpon>DodajPravnoLice.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\DodajRadnikaEkonomskeStruke.cs">
       <SubType>Form</SubType>
@@ -254,6 +273,7 @@
     <Compile Include="Mapiranja\NezavisniEkonomistaMapiranje.cs" />
     <Compile Include="Mapiranja\SalonMapiranja.cs" />
     <Compile Include="Mapiranja\SpecijalnostMapiranje.cs" />
+    <Compile Include="Mapiranja\TelefonKupacMapiranje.cs" />
     <Compile Include="Mapiranja\TelefonNeregistrovaniKupacMapiranja.cs" />
     <Compile Include="Mapiranja\TelefonNezavisniEkonomistaMapiranje.cs" />
     <Compile Include="Mapiranja\TipRadovaMapiranje.cs" />
@@ -269,11 +289,20 @@
     <EmbeddedResource Include="Forme\DodajDrugogZaposlenog.resx">
       <DependentUpon>DodajDrugogZaposlenog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajFizikoLice.resx">
+      <DependentUpon>DodajFizikoLice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajKupca.resx">
+      <DependentUpon>DodajKupca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajKupovinu.resx">
       <DependentUpon>DodajKupovinu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajNezavisnogEkonomistu.resx">
       <DependentUpon>DodajNezavisnogEkonomistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajPravnoLice.resx">
+      <DependentUpon>DodajPravnoLice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajRadnikaEkonomskeStruke.resx">
       <DependentUpon>DodajRadnikaEkonomskeStruke.cs</DependentUpon>
