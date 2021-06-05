@@ -676,7 +676,11 @@ namespace MotornaVozila
                     if (o.GetType() == typeof(NeregistrovaniKupac))
                     {
                         NeregistrovaniKupac nk = (NeregistrovaniKupac)o;
-                        MessageBox.Show("Vlasnik " + o.Id + " " + nk.Ime + " " + nk.Prezime + " je neregistrovani kupac");
+
+                        foreach (TelefonNeregistrovaniKupac tnk in nk.Telefoni)
+                        {
+                            MessageBox.Show("Vlasnik " + o.Id + " " + nk.Ime + " " + nk.Prezime + " je neregistrovani kupac, kontakt telefon:" + tnk.BrojTelefona);
+                        }
                     }
                     else
                     {

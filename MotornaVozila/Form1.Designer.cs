@@ -47,13 +47,14 @@ namespace MotornaVozila
             this.btnVratiKupovine = new System.Windows.Forms.Button();
             this.s = new System.Windows.Forms.Button();
             this.btnModifikujKupovinu = new System.Windows.Forms.Button();
-            this.btnIzbrisiKupovinu = new System.Windows.Forms.Button();
             this.btnVratiKupce = new System.Windows.Forms.Button();
             this.btnDodajKupca = new System.Windows.Forms.Button();
             this.btnModifikujKupca = new System.Windows.Forms.Button();
             this.btnModifikujVlasnika = new System.Windows.Forms.Button();
             this.btnDodajVlasnika = new System.Windows.Forms.Button();
             this.btnVratiVlasnike = new System.Windows.Forms.Button();
+            this.btnIzbrisiKupovinu = new System.Windows.Forms.Button();
+            this.btnObrisiVlasnika = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVratiNezavisnogEkonomistu
@@ -254,17 +255,6 @@ namespace MotornaVozila
             this.btnModifikujKupovinu.UseVisualStyleBackColor = true;
             this.btnModifikujKupovinu.Click += new System.EventHandler(this.btnModifikujKupovinu_Click);
             // 
-            // btnIzbrisiKupovinu
-            // 
-            this.btnIzbrisiKupovinu.Location = new System.Drawing.Point(565, 261);
-            this.btnIzbrisiKupovinu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnIzbrisiKupovinu.Name = "btnIzbrisiKupovinu";
-            this.btnIzbrisiKupovinu.Size = new System.Drawing.Size(110, 54);
-            this.btnIzbrisiKupovinu.TabIndex = 37;
-            this.btnIzbrisiKupovinu.Text = "Obrisi kupovinu";
-            this.btnIzbrisiKupovinu.UseVisualStyleBackColor = true;
-            this.btnIzbrisiKupovinu.Click += new System.EventHandler(this.btnIzbrisiKupovinu_Click);
-            // 
             // btnVratiKupce
             // 
             this.btnVratiKupce.Location = new System.Drawing.Point(700, 22);
@@ -329,11 +319,33 @@ namespace MotornaVozila
             this.btnVratiVlasnike.UseVisualStyleBackColor = true;
             this.btnVratiVlasnike.Click += new System.EventHandler(this.btnVratiVlasnike_Click);
             // 
+            // btnIzbrisiKupovinu
+            // 
+            this.btnIzbrisiKupovinu.Location = new System.Drawing.Point(565, 261);
+            this.btnIzbrisiKupovinu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnIzbrisiKupovinu.Name = "btnIzbrisiKupovinu";
+            this.btnIzbrisiKupovinu.Size = new System.Drawing.Size(110, 54);
+            this.btnIzbrisiKupovinu.TabIndex = 37;
+            this.btnIzbrisiKupovinu.Text = "Obrisi kupovinu";
+            this.btnIzbrisiKupovinu.UseVisualStyleBackColor = true;
+            this.btnIzbrisiKupovinu.Click += new System.EventHandler(this.btnIzbrisiKupovinu_Click);
+            // 
+            // btnObrisiVlasnika
+            // 
+            this.btnObrisiVlasnika.Location = new System.Drawing.Point(835, 261);
+            this.btnObrisiVlasnika.Margin = new System.Windows.Forms.Padding(2);
+            this.btnObrisiVlasnika.Name = "btnObrisiVlasnika";
+            this.btnObrisiVlasnika.Size = new System.Drawing.Size(110, 54);
+            this.btnObrisiVlasnika.TabIndex = 44;
+            this.btnObrisiVlasnika.Text = "Obrisi vlasnika";
+            this.btnObrisiVlasnika.UseVisualStyleBackColor = true;
+            // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 462);
+            this.Controls.Add(this.btnObrisiVlasnika);
             this.Controls.Add(this.btnModifikujVlasnika);
             this.Controls.Add(this.btnDodajVlasnika);
             this.Controls.Add(this.btnVratiVlasnike);
@@ -387,13 +399,14 @@ namespace MotornaVozila
         private System.Windows.Forms.Button btnVratiKupovine;
         private System.Windows.Forms.Button s;
         private System.Windows.Forms.Button btnModifikujKupovinu;
-        private System.Windows.Forms.Button btnIzbrisiKupovinu;
         private System.Windows.Forms.Button btnVratiKupce;
         private System.Windows.Forms.Button btnDodajKupca;
         private System.Windows.Forms.Button btnModifikujKupca;
         private System.Windows.Forms.Button btnModifikujVlasnika;
         private System.Windows.Forms.Button btnDodajVlasnika;
         private System.Windows.Forms.Button btnVratiVlasnike;
+        private System.Windows.Forms.Button btnIzbrisiKupovinu;
+        private System.Windows.Forms.Button btnObrisiVlasnika;
     }
 }
 
