@@ -297,6 +297,7 @@ namespace MotornaVozila
             this.btnModifikujVlasnika.TabIndex = 43;
             this.btnModifikujVlasnika.Text = "Modifikuj vlasnika";
             this.btnModifikujVlasnika.UseVisualStyleBackColor = true;
+            this.btnModifikujVlasnika.Click += new System.EventHandler(this.btnModifikujVlasnika_Click);
             // 
             // btnDodajVlasnika
             // 
@@ -344,7 +345,7 @@ namespace MotornaVozila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 462);
+            this.ClientSize = new System.Drawing.Size(1113, 462);
             this.Controls.Add(this.btnObrisiVlasnika);
             this.Controls.Add(this.btnModifikujVlasnika);
             this.Controls.Add(this.btnDodajVlasnika);

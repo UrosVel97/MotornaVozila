@@ -701,5 +701,13 @@ namespace MotornaVozila
                 MessageBox.Show(ec.ToString());
             }
         }
+
+        private void btnModifikujVlasnika_Click(object sender, EventArgs e)
+        {
+            ModifikujVlasnika forma = new ModifikujVlasnika();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
