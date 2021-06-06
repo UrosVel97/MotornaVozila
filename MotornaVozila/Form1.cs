@@ -747,5 +747,13 @@ namespace MotornaVozila
                 MessageBox.Show(ec.ToString());
             }
         }
+
+        private void btnObrisiVlasnika_Click(object sender, EventArgs e)
+        {
+            ObrisiVlasnika forma = new ObrisiVlasnika();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

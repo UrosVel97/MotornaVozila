@@ -344,6 +344,7 @@ namespace MotornaVozila
             this.btnObrisiVlasnika.TabIndex = 44;
             this.btnObrisiVlasnika.Text = "Obrisi vlasnika";
             this.btnObrisiVlasnika.UseVisualStyleBackColor = true;
+            this.btnObrisiVlasnika.Click += new System.EventHandler(this.btnObrisiVlasnika_Click);
             // 
             // btnModifikujVoziloPrimljenoNaServis
             // 

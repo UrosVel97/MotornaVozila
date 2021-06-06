@@ -425,5 +425,125 @@ namespace MotornaVozila
 
         }
 
+        public static IList<KupacInfo> VratiNeregistrovaneKupce()
+        {
+
+            ISession s = DataLayer.GetSession();
+            IList<NeregistrovaniKupac> kupci = s.QueryOver<Vlasnik>()
+                                .Where(x=>x.GetType()==typeof(NeregistrovaniKupac))
+                                .List<NeregistrovaniKupac>();
+
+
+            IList<KupacInfo> kupciInfo = new List<KupacInfo>();
+            foreach (NeregistrovaniKupac k in kupci)
+            {
+                kupciInfo.Add(new KupacInfo(k.Id, k.Ime, k.Prezime));
+            }
+
+            s.Close();
+
+            return kupciInfo;
+
+
+        }
+
+        public static void ObrisiNeregistrovanogKupca(int id)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                NeregistrovaniKupac n = s.Load<NeregistrovaniKupac>(id);
+
+                IList<TelefonNeregistrovaniKupac> telefoni = n.Telefoni;
+                n.Telefoni = new List<TelefonNeregistrovaniKupac>();
+                foreach(TelefonNeregistrovaniKupac tel in telefoni)
+                {
+                    s.Delete(tel);
+                    s.Flush();
+                }
+
+                IList<VozilaPrimljenaNaServis> vozila = n.JePoslaoVoziloNaServis;
+                n.JePoslaoVoziloNaServis = new List<VozilaPrimljenaNaServis>();
+
+                foreach(VozilaPrimljenaNaServis v in vozila)
+                {
+                    v.Zaposleni.PrimioVoziloNaServis.Remove(v);
+                    s.SaveOrUpdate(v.Zaposleni);
+                    s.Delete(v);
+                    s.Flush();
+                }
+
+                s.Delete(n);
+                s.Flush();
+
+
+
+                s.Close();
+
+                
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
+        public static IList<KupacInfo> VratiRegistrovaneKupce()
+        {
+
+            ISession s = DataLayer.GetSession();
+            IList<RegistrovaniKupac> kupci = s.QueryOver<Vlasnik>()
+                                .Where(x => x.GetType() == typeof(RegistrovaniKupac))
+                                .List<RegistrovaniKupac>();
+
+
+            IList<KupacInfo> kupciInfo = new List<KupacInfo>();
+            foreach (RegistrovaniKupac k in kupci)
+            {
+                kupciInfo.Add(new KupacInfo(k.Id, k.Kupac.LicnoIme, k.Kupac.Prezime));
+            }
+
+            s.Close();
+
+            return kupciInfo;
+
+
+        }
+
+        public static void ObrisiRegistrovanogKupca(int id)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                RegistrovaniKupac n = s.Load<RegistrovaniKupac>(id);
+
+                IList<VozilaPrimljenaNaServis> vozila = n.JePoslaoVoziloNaServis;
+                n.JePoslaoVoziloNaServis = new List<VozilaPrimljenaNaServis>();
+
+                foreach (VozilaPrimljenaNaServis v in vozila)
+                {
+                    v.Zaposleni.PrimioVoziloNaServis.Remove(v);
+                    s.SaveOrUpdate(v.Zaposleni);
+                    s.Delete(v);
+                    s.Flush();
+                }
+
+                n.Kupac.RegistrovaniKupci.Remove(n);
+                s.SaveOrUpdate(n.Kupac);
+
+                s.Delete(n);
+                s.Flush();
+
+
+
+                s.Close();
+
+
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
     }
 }

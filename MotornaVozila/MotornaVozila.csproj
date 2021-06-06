@@ -279,11 +279,23 @@
     <Compile Include="Forme\ObrisiKupovinu.Designer.cs">
       <DependentUpon>ObrisiKupovinu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\ObrisiNeregistrovanogKupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiNeregistrovanogKupca.Designer.cs">
+      <DependentUpon>ObrisiNeregistrovanogKupca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\ObrisiNezavisnogEkonomistu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\ObrisiNezavisnogEkonomistu.Designer.cs">
       <DependentUpon>ObrisiNezavisnogEkonomistu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiRegistrovanogKupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiRegistrovanogKupca.Designer.cs">
+      <DependentUpon>ObrisiRegistrovanogKupca.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\ObrisiSalon.cs">
       <SubType>Form</SubType>
@@ -296,6 +308,12 @@
     </Compile>
     <Compile Include="Forme\ObrisiUvezenoVozilo.Designer.cs">
       <DependentUpon>ObrisiUvezenoVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiVlasnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiVlasnika.Designer.cs">
+      <DependentUpon>ObrisiVlasnika.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\ObrisiVoziloKojeJeProdato.cs">
       <SubType>Form</SubType>
@@ -421,14 +439,23 @@
     <EmbeddedResource Include="Forme\ObrisiKupovinu.resx">
       <DependentUpon>ObrisiKupovinu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiNeregistrovanogKupca.resx">
+      <DependentUpon>ObrisiNeregistrovanogKupca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\ObrisiNezavisnogEkonomistu.resx">
       <DependentUpon>ObrisiNezavisnogEkonomistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiRegistrovanogKupca.resx">
+      <DependentUpon>ObrisiRegistrovanogKupca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ObrisiSalon.resx">
       <DependentUpon>ObrisiSalon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ObrisiUvezenoVozilo.resx">
       <DependentUpon>ObrisiUvezenoVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiVlasnika.resx">
+      <DependentUpon>ObrisiVlasnika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ObrisiVoziloKojeJeProdato.resx">
       <DependentUpon>ObrisiVoziloKojeJeProdato.cs</DependentUpon>

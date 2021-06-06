@@ -98,9 +98,7 @@ C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\Motor
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujPravnoLice.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujRadnikaEkonomskeStruke.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujRadnikaTehnickeStruke.resources
-C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujRegistrovanogKupca.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujSalon.resources
-C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVlasnika.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVoziloKojeJeProdato.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVoziloKojeNijeProdato.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujZaposlenog.resources
@@ -120,3 +118,6 @@ C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\Motor
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajNergistrovanogKupca.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajVlasnika.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajRegistrovanogKupca.resources
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiVlasnika.resources
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiNeregistrovanogKupca.resources
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiRegistrovanogKupca.resources
