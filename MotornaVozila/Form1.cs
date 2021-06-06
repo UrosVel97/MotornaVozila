@@ -727,6 +727,22 @@ namespace MotornaVozila
                 {
                     MessageBox.Show("Vozilo registarskog broja: " + vozila.RegistarskiBroj + " " + vozila.ModelVozila + " je datuma: " + vozila.DatumPrijema + " primljen na servis zbog: " + vozila.OpisProblema);
                     MessageBox.Show("Vozilo " + vozila.RegistarskiBroj + " je primio " + vozila.Zaposleni.Ime + " " + vozila.Zaposleni.Prezime + ", strucna sprema: " + vozila.Zaposleni.StrucnaSprema + ", godine radnog staza: " + vozila.Zaposleni.GodineRadnogStaza);
+
+                    //foreach (Vlasnik vlasnik in vl)
+                    //{
+                    //    if (vlasnik.GetType() == typeof(NeregistrovaniKupac))
+                    //    {
+                    //        NeregistrovaniKupac nk = (NeregistrovaniKupac)vlasnik;
+
+                    //        MessageBox.Show("Vlasnik vozila " + vozila.RegistarskiBroj + " " + vozila.ModelVozila + " iz " + vozila.GodinaProizvodnje + " je " + nk.Ime + " " + nk.Prezime);
+                    //    }
+                    //    else
+                    //    {
+                    //        RegistrovaniKupac rk = (RegistrovaniKupac)vlasnik;
+
+                    //        MessageBox.Show("Vlasnik vozila " + vozila.RegistarskiBroj + " " + vozila.ModelVozila + " iz " + vozila.GodinaProizvodnje + " je " + rk.Kupac.LicnoIme + " " + rk.Kupac.Prezime);
+                    //    }
+                    //}
                     MessageBox.Show("Vlasnik vozila " + vozila.RegistarskiBroj + " je " + vozila.Vlasnik.Id);
                 }
 
@@ -738,6 +754,14 @@ namespace MotornaVozila
             {
                 MessageBox.Show(ec.ToString());
             }
+        }
+
+        private void btnModifikujVoziloPrimljenoNaServis_Click(object sender, EventArgs e)
+        {
+            ModifikujVozilaPrimljenaNaServis forma = new ModifikujVozilaPrimljenaNaServis();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
         }
     }
 }

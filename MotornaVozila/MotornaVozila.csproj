@@ -231,6 +231,12 @@
     <Compile Include="Forme\ModifikujSalon.Designer.cs">
       <DependentUpon>ModifikujSalon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\ModifikujVozilaPrimljenaNaServis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujVozilaPrimljenaNaServis.Designer.cs">
+      <DependentUpon>ModifikujVozilaPrimljenaNaServis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\ModifikujVoziloKojeJeProdato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -378,6 +384,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujSalon.resx">
       <DependentUpon>ModifikujSalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujVozilaPrimljenaNaServis.resx">
+      <DependentUpon>ModifikujVozilaPrimljenaNaServis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujVoziloKojeJeProdato.resx">
       <DependentUpon>ModifikujVoziloKojeJeProdato.cs</DependentUpon>

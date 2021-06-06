@@ -111,7 +111,7 @@ namespace MotornaVozila
             this.btnVratiUvezenoVozilo.Name = "btnVratiUvezenoVozilo";
             this.btnVratiUvezenoVozilo.Size = new System.Drawing.Size(110, 54);
             this.btnVratiUvezenoVozilo.TabIndex = 4;
-            this.btnVratiUvezenoVozilo.Text = "Vrati sva uvezena vozila i njihove veze";
+            this.btnVratiUvezenoVozilo.Text = "Vrati uvezena vozila";
             this.btnVratiUvezenoVozilo.UseVisualStyleBackColor = true;
             this.btnVratiUvezenoVozilo.Click += new System.EventHandler(this.btnVratiUvezenoVozilo_Click);
             // 
@@ -353,6 +353,7 @@ namespace MotornaVozila
             this.btnModifikujVoziloPrimljenoNaServis.TabIndex = 47;
             this.btnModifikujVoziloPrimljenoNaServis.Text = "Modifikuj vozilo primljeno na servis";
             this.btnModifikujVoziloPrimljenoNaServis.UseVisualStyleBackColor = true;
+            this.btnModifikujVoziloPrimljenoNaServis.Click += new System.EventHandler(this.btnModifikujVoziloPrimljenoNaServis_Click);
             // 
             // btnDodajVoziloPrimljenoNaServis
             // 
