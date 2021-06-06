@@ -117,6 +117,12 @@
     <Compile Include="Forme\DodajKupovinu.Designer.cs">
       <DependentUpon>DodajKupovinu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajNergistrovanogKupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajNergistrovanogKupca.Designer.cs">
+      <DependentUpon>DodajNergistrovanogKupca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajNezavisnogEkonomistu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,12 @@
     <Compile Include="Forme\DodajRadnikaTehnickeStruke.Designer.cs">
       <DependentUpon>DodajRadnikaTehnickeStruke.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajRegistrovanogKupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajRegistrovanogKupca.Designer.cs">
+      <DependentUpon>DodajRegistrovanogKupca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajSalon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +164,12 @@
     </Compile>
     <Compile Include="Forme\DodajUvezenoVozilo.Designer.cs">
       <DependentUpon>DodajUvezenoVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajVlasnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajVlasnika.Designer.cs">
+      <DependentUpon>DodajVlasnika.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\DodajVoziloKojeJeProdato.cs">
       <SubType>Form</SubType>
@@ -334,6 +352,9 @@
     <EmbeddedResource Include="Forme\DodajKupovinu.resx">
       <DependentUpon>DodajKupovinu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajNergistrovanogKupca.resx">
+      <DependentUpon>DodajNergistrovanogKupca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajNezavisnogEkonomistu.resx">
       <DependentUpon>DodajNezavisnogEkonomistu.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,11 +367,17 @@
     <EmbeddedResource Include="Forme\DodajRadnikaTehnickeStruke.resx">
       <DependentUpon>DodajRadnikaTehnickeStruke.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajRegistrovanogKupca.resx">
+      <DependentUpon>DodajRegistrovanogKupca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajSalon.resx">
       <DependentUpon>DodajSalon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajUvezenoVozilo.resx">
       <DependentUpon>DodajUvezenoVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajVlasnika.resx">
+      <DependentUpon>DodajVlasnika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajVoziloKojeJeProdato.resx">
       <DependentUpon>DodajVoziloKojeJeProdato.cs</DependentUpon>

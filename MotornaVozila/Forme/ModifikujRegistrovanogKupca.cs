@@ -61,11 +61,8 @@ namespace MotornaVozila.Forme
                 if (listView2.SelectedItems.Count > 0)
                 {
                     ISession s = DataLayer.GetSession();
-                    Vlasnik vl = s.Load<Vlasnik>(int.Parse(listView2.SelectedItems[0].Text));
-                    if(vl.GetType()==typeof(RegistrovaniKupac))
-                    {
-                        rk = (RegistrovaniKupac)vl;
-                    }
+                    rk = s.Load<RegistrovaniKupac>(int.Parse(listView2.SelectedItems[0].Text));
+                  
 
                     if (rk.Kupac.GetType() == typeof(FizickoLice))
                     {
