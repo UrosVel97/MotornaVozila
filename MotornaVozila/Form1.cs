@@ -704,10 +704,34 @@ namespace MotornaVozila
 
         private void btnModifikujVlasnika_Click(object sender, EventArgs e)
         {
-            ModifikujVlasnika forma = new ModifikujVlasnika();
+            ModifikujNeregistrovanogKupca forma = new ModifikujNeregistrovanogKupca();
             this.Visible = false;
             forma.ShowDialog();
             this.Visible = true;
+        }
+
+        private void btnVratiVozilaPrimljenaNaServis_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ISession i = DataLayer.GetSession();
+
+                IList<VozilaPrimljenaNaServis> v = i.QueryOver<VozilaPrimljenaNaServis>()
+                                 .List<VozilaPrimljenaNaServis>();
+
+                foreach(VozilaPrimljenaNaServis vozila in v)
+                {
+                    MessageBox.Show("");
+                } 
+
+                i.Close();
+            }
+
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
         }
     }
 }

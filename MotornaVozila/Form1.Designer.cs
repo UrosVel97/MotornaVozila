@@ -373,6 +373,7 @@ namespace MotornaVozila
             this.btnVratiVozilaPrimljenaNaServis.TabIndex = 45;
             this.btnVratiVozilaPrimljenaNaServis.Text = "Vrati vozila primljena na servis";
             this.btnVratiVozilaPrimljenaNaServis.UseVisualStyleBackColor = true;
+            this.btnVratiVozilaPrimljenaNaServis.Click += new System.EventHandler(this.btnVratiVozilaPrimljenaNaServis_Click);
             // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
