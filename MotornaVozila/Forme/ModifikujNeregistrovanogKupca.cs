@@ -30,12 +30,12 @@ namespace MotornaVozila.Forme
         {
             ISession s = DataLayer.GetSession();
 
-            IList<NeregistrovaniKupac> vozila = s.QueryOver<Vlasnik>()
+            IList<NeregistrovaniKupac> neregistrovaniKupacs = s.QueryOver<Vlasnik>()
                                                            .Where(x => x.GetType() == typeof(NeregistrovaniKupac))
                                                            .List<NeregistrovaniKupac>();
 
 
-            foreach (NeregistrovaniKupac nk in vozila)
+            foreach (NeregistrovaniKupac nk in neregistrovaniKupacs)
             {
                 ListViewItem item = new ListViewItem(new string[] { nk.Id.ToString(), nk.Ime, nk.Prezime });
 

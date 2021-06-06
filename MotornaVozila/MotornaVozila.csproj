@@ -388,6 +388,9 @@
     <EmbeddedResource Include="Forme\ModifikujRadnikaTehnickeStruke.resx">
       <DependentUpon>ModifikujRadnikaTehnickeStruke.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujRegistrovanogKupca.resx">
+      <DependentUpon>ModifikujRegistrovanogKupca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujSalon.resx">
       <DependentUpon>ModifikujSalon.cs</DependentUpon>
     </EmbeddedResource>

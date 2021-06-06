@@ -57,3 +57,4 @@ C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.p
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.csprojAssemblyReference.cache
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVlasnika.resources
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujNeregistrovanogKupca.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujRegistrovanogKupca.resources
