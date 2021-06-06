@@ -710,6 +710,14 @@ namespace MotornaVozila
             this.Visible = true;
         }
 
+        private void btnDodajVlasnika_Click(object sender, EventArgs e)
+        {
+            DodajVlasnika forma = new DodajVlasnika();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
+        }
+
         private void btnVratiVozilaPrimljenaNaServis_Click(object sender, EventArgs e)
         {
             try
