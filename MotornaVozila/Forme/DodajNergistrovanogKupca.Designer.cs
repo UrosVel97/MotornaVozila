@@ -89,7 +89,7 @@ namespace MotornaVozila.Forme
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 84);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Brojevi telefona (Opciono)";
+            this.label3.Text = "Brojevi telefona";
             // 
             // txtBroj
             // 
@@ -100,12 +100,11 @@ namespace MotornaVozila.Forme
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(37, 223);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 17);
+            this.label4.Size = new System.Drawing.Size(83, 55);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Dodaj broj";
+            this.label4.Text = "Dodaj broj (Opciono)";
             // 
             // btnDodajBroj
             // 
