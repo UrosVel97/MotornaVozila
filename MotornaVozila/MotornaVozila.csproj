@@ -213,11 +213,11 @@
     <Compile Include="Forme\ModifikujKupovinu.Designer.cs">
       <DependentUpon>ModifikujKupovinu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forme\ModifikujNeregistrovanogKupca.cs">
+    <Compile Include="Forme\ModifikujVlasnika.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forme\ModifikujNeregistrovanogKupca.Designer.cs">
-      <DependentUpon>ModifikujNeregistrovanogKupca.cs</DependentUpon>
+    <Compile Include="Forme\ModifikujVlasnika.Designer.cs">
+      <DependentUpon>ModifikujVlasnika.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\ModifikujNezavisnogEkonomistu.cs">
       <SubType>Form</SubType>
@@ -248,6 +248,12 @@
     </Compile>
     <Compile Include="Forme\ModifikujSalon.Designer.cs">
       <DependentUpon>ModifikujSalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ModifikujVozilaPrimljenaNaServis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ModifikujVozilaPrimljenaNaServis.Designer.cs">
+      <DependentUpon>ModifikujVozilaPrimljenaNaServis.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\ModifikujVoziloKojeJeProdato.cs">
       <SubType>Form</SubType>
@@ -406,8 +412,8 @@
     <EmbeddedResource Include="Forme\ModifikujKupovinu.resx">
       <DependentUpon>ModifikujKupovinu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forme\ModifikujNeregistrovanogKupca.resx">
-      <DependentUpon>ModifikujNeregistrovanogKupca.cs</DependentUpon>
+    <EmbeddedResource Include="Forme\ModifikujVlasnika.resx">
+      <DependentUpon>ModifikujVlasnika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujNezavisnogEkonomistu.resx">
       <DependentUpon>ModifikujNezavisnogEkonomistu.cs</DependentUpon>
@@ -423,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujSalon.resx">
       <DependentUpon>ModifikujSalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ModifikujVozilaPrimljenaNaServis.resx">
+      <DependentUpon>ModifikujVozilaPrimljenaNaServis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\ModifikujVoziloKojeJeProdato.resx">
       <DependentUpon>ModifikujVoziloKojeJeProdato.cs</DependentUpon>

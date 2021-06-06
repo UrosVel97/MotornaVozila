@@ -545,5 +545,21 @@ namespace MotornaVozila
                 MessageBox.Show(ec.ToString());
             }
         }
+        public static void AzurirajVozilaPrimljenaNaServis(VozilaPrimljenaNaServis vozilaPrimljenaNaServis)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                s.SaveOrUpdate(vozilaPrimljenaNaServis);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
+
     }
 }
