@@ -702,14 +702,12 @@ namespace MotornaVozila
             }
         }
 
-        private void btnDodajVlasnika_Click(object sender, EventArgs e)
+        private void btnModifikujVlasnika_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnObrisiVlasnika_Click(object sender, EventArgs e)
-        {
-
+            ModifikujVlasnika forma = new ModifikujVlasnika();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
         }
     }
 }
