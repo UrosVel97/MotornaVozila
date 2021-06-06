@@ -55,9 +55,6 @@ namespace MotornaVozila
             this.btnVratiVlasnike = new System.Windows.Forms.Button();
             this.btnIzbrisiKupovinu = new System.Windows.Forms.Button();
             this.btnObrisiVlasnika = new System.Windows.Forms.Button();
-            this.btnModifikujVoziloPrimljenoNaServis = new System.Windows.Forms.Button();
-            this.btnDodajVoziloPrimljenoNaServis = new System.Windows.Forms.Button();
-            this.btnVratiVozilaPrimljenaNaServis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVratiNezavisnogEkonomistu
@@ -311,7 +308,6 @@ namespace MotornaVozila
             this.btnDodajVlasnika.TabIndex = 42;
             this.btnDodajVlasnika.Text = "Dodaj vlasnika";
             this.btnDodajVlasnika.UseVisualStyleBackColor = true;
-            this.btnDodajVlasnika.Click += new System.EventHandler(this.btnDodajVlasnika_Click);
             // 
             // btnVratiVlasnike
             // 
@@ -344,46 +340,12 @@ namespace MotornaVozila
             this.btnObrisiVlasnika.TabIndex = 44;
             this.btnObrisiVlasnika.Text = "Obrisi vlasnika";
             this.btnObrisiVlasnika.UseVisualStyleBackColor = true;
-            this.btnObrisiVlasnika.Click += new System.EventHandler(this.btnObrisiVlasnika_Click);
-            // 
-            // btnModifikujVoziloPrimljenoNaServis
-            // 
-            this.btnModifikujVoziloPrimljenoNaServis.Location = new System.Drawing.Point(970, 181);
-            this.btnModifikujVoziloPrimljenoNaServis.Margin = new System.Windows.Forms.Padding(2);
-            this.btnModifikujVoziloPrimljenoNaServis.Name = "btnModifikujVoziloPrimljenoNaServis";
-            this.btnModifikujVoziloPrimljenoNaServis.Size = new System.Drawing.Size(110, 54);
-            this.btnModifikujVoziloPrimljenoNaServis.TabIndex = 47;
-            this.btnModifikujVoziloPrimljenoNaServis.Text = "Modifikuj vozilo primljeno na servis";
-            this.btnModifikujVoziloPrimljenoNaServis.UseVisualStyleBackColor = true;
-            // 
-            // btnDodajVoziloPrimljenoNaServis
-            // 
-            this.btnDodajVoziloPrimljenoNaServis.Location = new System.Drawing.Point(970, 102);
-            this.btnDodajVoziloPrimljenoNaServis.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDodajVoziloPrimljenoNaServis.Name = "btnDodajVoziloPrimljenoNaServis";
-            this.btnDodajVoziloPrimljenoNaServis.Size = new System.Drawing.Size(110, 54);
-            this.btnDodajVoziloPrimljenoNaServis.TabIndex = 46;
-            this.btnDodajVoziloPrimljenoNaServis.Text = "Dodaj vozilo primljeno na servis";
-            this.btnDodajVoziloPrimljenoNaServis.UseVisualStyleBackColor = true;
-            // 
-            // btnVratiVozilaPrimljenaNaServis
-            // 
-            this.btnVratiVozilaPrimljenaNaServis.Location = new System.Drawing.Point(970, 22);
-            this.btnVratiVozilaPrimljenaNaServis.Margin = new System.Windows.Forms.Padding(2);
-            this.btnVratiVozilaPrimljenaNaServis.Name = "btnVratiVozilaPrimljenaNaServis";
-            this.btnVratiVozilaPrimljenaNaServis.Size = new System.Drawing.Size(110, 54);
-            this.btnVratiVozilaPrimljenaNaServis.TabIndex = 45;
-            this.btnVratiVozilaPrimljenaNaServis.Text = "Vrati vozila primljena na servis";
-            this.btnVratiVozilaPrimljenaNaServis.UseVisualStyleBackColor = true;
             // 
             // btnVratiNezavisnogEkonomistuIAngazovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 462);
-            this.Controls.Add(this.btnModifikujVoziloPrimljenoNaServis);
-            this.Controls.Add(this.btnDodajVoziloPrimljenoNaServis);
-            this.Controls.Add(this.btnVratiVozilaPrimljenaNaServis);
+            this.ClientSize = new System.Drawing.Size(1357, 462);
             this.Controls.Add(this.btnObrisiVlasnika);
             this.Controls.Add(this.btnModifikujVlasnika);
             this.Controls.Add(this.btnDodajVlasnika);
@@ -446,9 +408,6 @@ namespace MotornaVozila
         private System.Windows.Forms.Button btnVratiVlasnike;
         private System.Windows.Forms.Button btnIzbrisiKupovinu;
         private System.Windows.Forms.Button btnObrisiVlasnika;
-        private System.Windows.Forms.Button btnModifikujVoziloPrimljenoNaServis;
-        private System.Windows.Forms.Button btnDodajVoziloPrimljenoNaServis;
-        private System.Windows.Forms.Button btnVratiVozilaPrimljenaNaServis;
     }
 }
 
