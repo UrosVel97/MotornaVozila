@@ -704,7 +704,7 @@ namespace MotornaVozila
 
         private void btnModifikujVlasnika_Click(object sender, EventArgs e)
         {
-            ModifikujVlasnika forma = new ModifikujVlasnika();
+            ModifikujNeregistrovanogKupca forma = new ModifikujNeregistrovanogKupca();
             this.Visible = false;
             forma.ShowDialog();
             this.Visible = true;
@@ -716,6 +716,36 @@ namespace MotornaVozila
             this.Visible = false;
             forma.ShowDialog();
             this.Visible = true;
+        }
+
+        private void btnVratiVozilaPrimljenaNaServis_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ISession i = DataLayer.GetSession();
+
+                IList<VozilaPrimljenaNaServis> v = i.QueryOver<VozilaPrimljenaNaServis>()
+                                 .List<VozilaPrimljenaNaServis>();
+
+                IList<Vlasnik> vl = i.QueryOver<Vlasnik>()
+                                 .List<Vlasnik>();
+
+                foreach (VozilaPrimljenaNaServis vozila in v)
+                {
+                    MessageBox.Show("Vozilo registarskog broja: " + vozila.RegistarskiBroj + " " + vozila.ModelVozila + " je datuma: " + vozila.DatumPrijema + " primljen na servis zbog: " + vozila.OpisProblema);
+                    MessageBox.Show("Vozilo " + vozila.RegistarskiBroj + " je primio " + vozila.Zaposleni.Ime + " " + vozila.Zaposleni.Prezime + ", strucna sprema: " + vozila.Zaposleni.StrucnaSprema + ", godine radnog staza: " + vozila.Zaposleni.GodineRadnogStaza);
+                    MessageBox.Show("Vlasnik vozila " + vozila.RegistarskiBroj + " je " + vozila.Vlasnik.Id);
+                }
+
+
+                i.Close();
+            }
+
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
         }
     }
 }
