@@ -704,7 +704,7 @@ namespace MotornaVozila
 
         private void btnModifikujVlasnika_Click(object sender, EventArgs e)
         {
-            ModifikujNeregistrovanogKupca forma = new ModifikujNeregistrovanogKupca();
+            ModifikujVlasnika forma = new ModifikujVlasnika();
             this.Visible = false;
             forma.ShowDialog();
             this.Visible = true;

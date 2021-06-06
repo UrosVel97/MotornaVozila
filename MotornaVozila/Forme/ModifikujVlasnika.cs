@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace MotornaVozila.Forme
 {
-    public partial class ModifikujNeregistrovanogKupca : Form
+    public partial class ModifikujVlasnika : Form
     {
         private NeregistrovaniKupac nk;
-        public ModifikujNeregistrovanogKupca()
+        public ModifikujVlasnika()
         {
             InitializeComponent();
             nk = null;

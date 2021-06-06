@@ -1,7 +1,7 @@
 ﻿
 namespace MotornaVozila.Forme
 {
-    partial class ModifikujNeregistrovanogKupca
+    partial class ModifikujVlasnika
     {
         /// <summary>
         /// Required designer variable.
@@ -89,7 +89,7 @@ namespace MotornaVozila.Forme
             this.txtPrezime.Location = new System.Drawing.Point(102, 232);
             this.txtPrezime.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrezime.Name = "txtPrezime";
-            this.txtPrezime.Size = new System.Drawing.Size(152, 20);
+            this.txtPrezime.Size = new System.Drawing.Size(155, 20);
             this.txtPrezime.TabIndex = 65;
             // 
             // label4
@@ -107,7 +107,7 @@ namespace MotornaVozila.Forme
             this.txtIme.Location = new System.Drawing.Point(102, 192);
             this.txtIme.Margin = new System.Windows.Forms.Padding(2);
             this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(152, 20);
+            this.txtIme.Size = new System.Drawing.Size(155, 20);
             this.txtIme.TabIndex = 63;
             // 
             // label3
@@ -122,10 +122,10 @@ namespace MotornaVozila.Forme
             // 
             // btnSnimi
             // 
-            this.btnSnimi.Location = new System.Drawing.Point(219, 385);
+            this.btnSnimi.Location = new System.Drawing.Point(212, 364);
             this.btnSnimi.Margin = new System.Windows.Forms.Padding(2);
             this.btnSnimi.Name = "btnSnimi";
-            this.btnSnimi.Size = new System.Drawing.Size(97, 33);
+            this.btnSnimi.Size = new System.Drawing.Size(117, 45);
             this.btnSnimi.TabIndex = 61;
             this.btnSnimi.Text = "Snimi";
             this.btnSnimi.UseVisualStyleBackColor = true;
@@ -145,14 +145,14 @@ namespace MotornaVozila.Forme
             this.listBoxTelefoni.FormattingEnabled = true;
             this.listBoxTelefoni.Location = new System.Drawing.Point(102, 272);
             this.listBoxTelefoni.Name = "listBoxTelefoni";
-            this.listBoxTelefoni.Size = new System.Drawing.Size(152, 95);
+            this.listBoxTelefoni.Size = new System.Drawing.Size(155, 69);
             this.listBoxTelefoni.TabIndex = 78;
             // 
-            // ModifikujNeregistrovanogKupca
+            // ModifikujVlasnika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 443);
+            this.ClientSize = new System.Drawing.Size(540, 434);
             this.Controls.Add(this.listBoxTelefoni);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listView2);
@@ -162,7 +162,7 @@ namespace MotornaVozila.Forme
             this.Controls.Add(this.txtIme);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSnimi);
-            this.Name = "ModifikujNeregistrovanogKupca";
+            this.Name = "ModifikujVlasnika";
             this.Text = "ModifikujNeregistrovanogKupca";
             this.Load += new System.EventHandler(this.ModifikujNeregistrovanogKupca_Load);
             this.ResumeLayout(false);

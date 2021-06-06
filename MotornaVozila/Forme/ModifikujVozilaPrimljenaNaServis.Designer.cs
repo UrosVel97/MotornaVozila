@@ -33,14 +33,14 @@ namespace MotornaVozila.Forme
             this.columnModel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnRegistarskiBroj = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView2 = new System.Windows.Forms.ListView();
+            this.columnDatumPrijema = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnProblem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.txtModelVozila = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtRegistarskiBroj = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSnimi = new System.Windows.Forms.Button();
-            this.columnDatumPrijema = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnProblem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePickerDatumPrijema = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@ namespace MotornaVozila.Forme
             // 
             // columnModel
             // 
-            this.columnModel.Text = "Model";
+            this.columnModel.Text = "Model vozila";
             this.columnModel.Width = 107;
             // 
             // columnRegistarskiBroj
@@ -81,6 +81,16 @@ namespace MotornaVozila.Forme
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
+            // 
+            // columnDatumPrijema
+            // 
+            this.columnDatumPrijema.Text = "Datum prijema";
+            this.columnDatumPrijema.Width = 129;
+            // 
+            // columnProblem
+            // 
+            this.columnProblem.Text = "Opis problema";
+            this.columnProblem.Width = 154;
             // 
             // label1
             // 
@@ -139,16 +149,6 @@ namespace MotornaVozila.Forme
             this.btnSnimi.Text = "Snimi";
             this.btnSnimi.UseVisualStyleBackColor = true;
             this.btnSnimi.Click += new System.EventHandler(this.btnSnimi_Click);
-            // 
-            // columnDatumPrijema
-            // 
-            this.columnDatumPrijema.Text = "Datum prijema";
-            this.columnDatumPrijema.Width = 129;
-            // 
-            // columnProblem
-            // 
-            this.columnProblem.Text = "Opis problema";
-            this.columnProblem.Width = 154;
             // 
             // label2
             // 
