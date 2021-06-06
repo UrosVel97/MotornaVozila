@@ -701,5 +701,15 @@ namespace MotornaVozila
                 MessageBox.Show(ec.ToString());
             }
         }
+
+        private void btnDodajVlasnika_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnObrisiVlasnika_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
