@@ -65,7 +65,7 @@ namespace MotornaVozila.Forme
                     txtRegistarskiBroj.Text = ne.RegistarskiBroj.ToString();
                     txtModelVozila.Text = ne.ModelVozila;
                     txtGodinaProizvodnje.Text = ne.GodinaProizvodnje.ToString();
-                    dateTimePickerDatumPrijema.Value = (ne.DatumPrijema == null ? DateTime.Now : (DateTime)ne.DatumPrijema);
+                    //dateTimePickerDatumPrijema.Value = (ne.DatumPrijema == null ? DateTime.Now : (DateTime)ne.DatumPrijema);
                     txtOpisProblema.Text = ne.OpisProblema;
                     
                     s.Close();
@@ -84,7 +84,7 @@ namespace MotornaVozila.Forme
 
                 ne.ModelVozila = txtModelVozila.Text;
                 ne.GodinaProizvodnje = int.Parse(txtGodinaProizvodnje.Text);
-                ne.DatumPrijema = DateTime.ParseExact(dateTimePickerDatumPrijema.Value.ToString("dd-MM-yyyy"), "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                //ne.DatumPrijema = DateTime.ParseExact(dateTimePickerDatumPrijema.Value.ToString("dd-MM-yyyy"), "dd-MM-yyyy", CultureInfo.InvariantCulture);
                 ne.OpisProblema = txtOpisProblema.Text;
 
                 DTOManager.AzurirajVozilaPrimljenaNaServis(ne);

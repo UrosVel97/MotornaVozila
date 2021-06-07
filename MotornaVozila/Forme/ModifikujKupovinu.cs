@@ -39,12 +39,11 @@ namespace MotornaVozila.Forme
 
                 foreach (Kupovina k in z)
                 {
-                    foreach (VoziloKojeJeProdato vp in k.ProdataVozila)
-                    {
-                        ListViewItem item = new ListViewItem(new string[] { k.Id.ToString(), k.DatumKupovine.ToString(), k.IdKupca.LicnoIme + " " + k.IdKupca.Prezime, vp.ModelVozila, k.IdSalona.Grad + " " + k.IdSalona.Adresa, vp.DatumUvoza.ToString() });
+
+                        ListViewItem item = new ListViewItem(new string[] { k.Id.ToString(), k.DatumKupovine.ToString()});
 
                         listView2.Items.Add(item);
-                    }
+                    
                 }
                 listView2.Refresh();
 

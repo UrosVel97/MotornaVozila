@@ -173,7 +173,7 @@ namespace MotornaVozila
                 IList<Salon> sal = s.QueryOver<Salon>()
                                 .List<Salon>();
 
-                foreach(Salon salon in sal)
+                foreach (Salon salon in sal)
                 {
                     saloni.Add(new SalonZaBrisanje(salon.Id, salon.Grad, salon.Adresa));
                 }
@@ -191,7 +191,7 @@ namespace MotornaVozila
                 return null;
             }
 
-            
+
         }
 
         public static void IzbrisiVoziloKojeNijeProdatoZaSalon(int idSalona)
@@ -206,10 +206,10 @@ namespace MotornaVozila
                 {
                     VoziloKojeNijeProdato vknp = s.Load<VoziloKojeNijeProdato>(v.BrojSasije);
                     RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(vknp.RadnikTehnStruke.Jmbg);
-                    
+
 
                     rts.UvezenaVozila.Remove(vknp);
-                    
+
                     s.SaveOrUpdate(rts);
                     s.Flush();
                     s.Delete(vknp);
@@ -238,17 +238,17 @@ namespace MotornaVozila
                 {
                     Kupovina k = s.Load<Kupovina>(kupovina.Id);
                     Kupac kupac = s.Load<Kupac>(k.IdKupca.Id);
-                    
+
                     kupac.Kupovine.Remove(k);
                     s.SaveOrUpdate(kupac);
-                    
+
                     s.Flush();
 
                     IList<VoziloKojeJeProdato> prodata = k.ProdataVozila;
                     k.ProdataVozila = new List<VoziloKojeJeProdato>();
                     foreach (VoziloKojeJeProdato vkp in prodata)
                     {
-                        
+
                         RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(vkp.RadnikTehnStruke.Jmbg);
                         rts.UvezenaVozila.Remove(vkp);
                         s.SaveOrUpdate(rts);
@@ -261,7 +261,7 @@ namespace MotornaVozila
                     s.Flush();
                     s.Delete(k);
                     s.Flush();
-                    
+
                 }
 
                 s.SaveOrUpdate(salonZaBrisanje);
@@ -269,7 +269,7 @@ namespace MotornaVozila
                 s.Close();
             }
 
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -308,7 +308,7 @@ namespace MotornaVozila
             IList<Kupac> kupci = s.QueryOver<Kupac>()
                             .List<Kupac>();
 
-            IList<KupacInfo> kupciInfo = new List<KupacInfo>(); 
+            IList<KupacInfo> kupciInfo = new List<KupacInfo>();
             foreach (Kupac k in kupci)
             {
                 kupciInfo.Add(new KupacInfo(k.Id, k.LicnoIme, k.Prezime));
@@ -318,7 +318,7 @@ namespace MotornaVozila
 
             return kupciInfo;
 
-            
+
         }
 
 
@@ -326,7 +326,7 @@ namespace MotornaVozila
         {
 
             ISession s = DataLayer.GetSession();
-            IList<Kupovina> kupovine= s.QueryOver<Kupovina>()
+            IList<Kupovina> kupovine = s.QueryOver<Kupovina>()
                             .List<Kupovina>();
 
             IList<KupovinaInfo> kupovineInfo = new List<KupovinaInfo>();
@@ -359,9 +359,9 @@ namespace MotornaVozila
                 s.Flush();
                 IList<VoziloKojeJeProdato> vozila = k.ProdataVozila;
                 k.ProdataVozila = new List<VoziloKojeJeProdato>();
-                
 
-                foreach(VoziloKojeJeProdato vkp in vozila)
+
+                foreach (VoziloKojeJeProdato vkp in vozila)
                 {
                     RadnikTehnickeStruke rts = s.Load<RadnikTehnickeStruke>(vkp.RadnikTehnStruke.Jmbg);
                     rts.UvezenaVozila.Remove(vkp);
@@ -376,7 +376,7 @@ namespace MotornaVozila
 
                 s.Close();
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -387,13 +387,13 @@ namespace MotornaVozila
 
             ISession s = DataLayer.GetSession();
             IList<PravnoLice> kupci = s.QueryOver<Kupac>()
-                                        .Where(x=>x.GetType()==typeof(PravnoLice))    
+                                        .Where(x => x.GetType() == typeof(PravnoLice))
                                         .List<PravnoLice>();
 
             IList<PravnoLiceInfo> kupciInfo = new List<PravnoLiceInfo>();
             foreach (PravnoLice p in kupci)
             {
-                kupciInfo.Add(new PravnoLiceInfo(p.Id, p.LicnoIme,p.Prezime,p.Pib));
+                kupciInfo.Add(new PravnoLiceInfo(p.Id, p.LicnoIme, p.Prezime, p.Pib));
             }
 
             s.Close();
@@ -430,7 +430,7 @@ namespace MotornaVozila
 
             ISession s = DataLayer.GetSession();
             IList<NeregistrovaniKupac> kupci = s.QueryOver<Vlasnik>()
-                                .Where(x=>x.GetType()==typeof(NeregistrovaniKupac))
+                                .Where(x => x.GetType() == typeof(NeregistrovaniKupac))
                                 .List<NeregistrovaniKupac>();
 
 
@@ -456,7 +456,7 @@ namespace MotornaVozila
 
                 IList<TelefonNeregistrovaniKupac> telefoni = n.Telefoni;
                 n.Telefoni = new List<TelefonNeregistrovaniKupac>();
-                foreach(TelefonNeregistrovaniKupac tel in telefoni)
+                foreach (TelefonNeregistrovaniKupac tel in telefoni)
                 {
                     s.Delete(tel);
                     s.Flush();
@@ -465,7 +465,7 @@ namespace MotornaVozila
                 IList<VozilaPrimljenaNaServis> vozila = n.JePoslaoVoziloNaServis;
                 n.JePoslaoVoziloNaServis = new List<VozilaPrimljenaNaServis>();
 
-                foreach(VozilaPrimljenaNaServis v in vozila)
+                foreach (VozilaPrimljenaNaServis v in vozila)
                 {
                     v.Zaposleni.PrimioVoziloNaServis.Remove(v);
                     s.SaveOrUpdate(v.Zaposleni);
@@ -480,9 +480,9 @@ namespace MotornaVozila
 
                 s.Close();
 
-                
+
             }
-            catch(Exception ec)
+            catch (Exception ec)
             {
                 MessageBox.Show(ec.ToString());
             }
@@ -561,5 +561,84 @@ namespace MotornaVozila
             }
         }
 
+        public static IList<VlasnikInfo> VratiVlasnike()
+        {
+
+            ISession s = DataLayer.GetSession();
+            IList<Vlasnik> vlasnici = s.QueryOver<Vlasnik>()
+                                .List<Vlasnik>();
+
+
+            IList<VlasnikInfo> vlasniciInfo = new List<VlasnikInfo>();
+            foreach (Vlasnik k in vlasnici)
+            {
+                if (k.GetType() == typeof(RegistrovaniKupac))
+                {
+                    RegistrovaniKupac k1 = (RegistrovaniKupac)k;
+                    vlasniciInfo.Add(new VlasnikInfo(k1.Id, k1.Kupac.LicnoIme, k1.Kupac.Prezime));
+                }
+                else if (k.GetType() == typeof(NeregistrovaniKupac))
+                {
+                    NeregistrovaniKupac k1 = (NeregistrovaniKupac)k;
+                    vlasniciInfo.Add(new VlasnikInfo(k1.Id, k1.Ime, k1.Prezime));
+                }
+            }
+
+            s.Close();
+
+            return vlasniciInfo;
+
+
+        }
+
+        public static IList<ZaposleniInfo> VratiZaposlene()
+        {
+
+            ISession s = DataLayer.GetSession();
+            IList<Zaposleni> zaposleni = s.QueryOver<Zaposleni>()
+                                .List<Zaposleni>();
+
+
+            IList<ZaposleniInfo> zaposleniInfo = new List<ZaposleniInfo>();
+            foreach (Zaposleni k in zaposleni)
+            {
+
+                zaposleniInfo.Add(new ZaposleniInfo(k.Jmbg, k.Ime, k.Prezime));
+
+            }
+
+            s.Close();
+
+            return zaposleniInfo;
+
+
+        }
+
+        public static void DodajVoziloPrimljenoNaServis(VozilaPrimljenaNaServis uv,int idVlasnika, int jmbgZaposleni)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Zaposleni z = s.Load<Zaposleni>(jmbgZaposleni);
+                Vlasnik v = s.Load<Vlasnik>(idVlasnika);
+                uv.Vlasnik = v;
+                v.JePoslaoVoziloNaServis.Add(uv);
+                uv.Zaposleni = z;
+                z.PrimioVoziloNaServis.Add(uv);
+                s.Save(uv);
+                s.Save(z);
+                s.Save(v);
+                s.Flush();
+
+                
+
+                s.Close();
+            }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.ToString());
+            }
+        }
     }
 }

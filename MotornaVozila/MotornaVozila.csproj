@@ -183,6 +183,12 @@
     <Compile Include="Forme\DodajVoziloKojeNijeProdato.Designer.cs">
       <DependentUpon>DodajVoziloKojeNijeProdato.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajVoziloNaServis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajVoziloNaServis.Designer.cs">
+      <DependentUpon>DodajVoziloNaServis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajZaposlenog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -396,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajVoziloKojeNijeProdato.resx">
       <DependentUpon>DodajVoziloKojeNijeProdato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajVoziloNaServis.resx">
+      <DependentUpon>DodajVoziloNaServis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajZaposlenog.resx">
       <DependentUpon>DodajZaposlenog.cs</DependentUpon>

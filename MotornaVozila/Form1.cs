@@ -766,7 +766,10 @@ namespace MotornaVozila
 
         private void btnDodajVoziloPrimljenoNaServis_Click(object sender, EventArgs e)
         {
-
+            DodajVoziloNaServis forma = new DodajVoziloNaServis();
+            this.Visible = false;
+            forma.ShowDialog();
+            this.Visible = true;
         }
     }
 }

@@ -91,7 +91,6 @@ C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\Motor
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujFizickoLice.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujKupca.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujKupovinu.resources
-C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujNeregistrovanogKupca.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujNezavisnogEkonomistu.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujPravnoLice.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujRadnikaEkonomskeStruke.resources
@@ -127,3 +126,6 @@ C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.F
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiNeregistrovanogKupca.resources
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiRegistrovanogKupca.resources
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiVlasnika.resources
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajVoziloNaServis.resources
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVlasnika.resources
+C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVozilaPrimljenaNaServis.resources

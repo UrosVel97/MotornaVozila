@@ -101,5 +101,34 @@ namespace MotornaVozila
             }
         }
 
+        public class VlasnikInfo
+        {
+            public int Id { get; set; }
+            public string Ime { get; set; }
+            public string Prezime { get; set; }
+
+            public VlasnikInfo(int id, string ime, string prezime)
+            {
+                this.Id = id;
+                this.Ime = ime;
+                this.Prezime = prezime;
+            }
+        }
+
+
+        public class ZaposleniInfo
+        {
+            public int Jmbg { get; set; }
+            public string Ime { get; set; }
+            public string Prezime { get; set; }
+
+            public ZaposleniInfo(int jmbg, string ime, string prezime)
+            {
+                this.Jmbg = jmbg;
+                this.Ime = ime;
+                this.Prezime = prezime;
+            }
+        }
+
     }
 }

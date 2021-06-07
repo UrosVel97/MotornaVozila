@@ -42,8 +42,6 @@ namespace MotornaVozila.Forme
             this.label3 = new System.Windows.Forms.Label();
             this.btnSnimi = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePickerDatumPrijema = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtGodinaProizvodnje = new System.Windows.Forms.TextBox();
             this.txtOpisProblema = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,10 +71,10 @@ namespace MotornaVozila.Forme
             this.columnDatumPrijema,
             this.columnProblem});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(10, 50);
-            this.listView2.Margin = new System.Windows.Forms.Padding(2);
+            this.listView2.Location = new System.Drawing.Point(13, 62);
+            this.listView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(692, 123);
+            this.listView2.Size = new System.Drawing.Size(921, 150);
             this.listView2.TabIndex = 85;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -95,56 +93,53 @@ namespace MotornaVozila.Forme
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(13, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(749, 27);
+            this.label1.Size = new System.Drawing.Size(999, 33);
             this.label1.TabIndex = 84;
             this.label1.Text = "Izaberite vozilo primljeno na servis koje zelite da modifikujete";
             // 
             // txtModelVozila
             // 
-            this.txtModelVozila.Location = new System.Drawing.Point(125, 240);
-            this.txtModelVozila.Margin = new System.Windows.Forms.Padding(2);
+            this.txtModelVozila.Location = new System.Drawing.Point(167, 295);
+            this.txtModelVozila.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtModelVozila.Name = "txtModelVozila";
-            this.txtModelVozila.Size = new System.Drawing.Size(187, 20);
+            this.txtModelVozila.Size = new System.Drawing.Size(248, 22);
             this.txtModelVozila.TabIndex = 83;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 240);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(13, 295);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.Size = new System.Drawing.Size(86, 17);
             this.label4.TabIndex = 82;
             this.label4.Text = "Model vozila";
             // 
             // txtRegistarskiBroj
             // 
-            this.txtRegistarskiBroj.Location = new System.Drawing.Point(125, 200);
-            this.txtRegistarskiBroj.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegistarskiBroj.Location = new System.Drawing.Point(167, 246);
+            this.txtRegistarskiBroj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRegistarskiBroj.Name = "txtRegistarskiBroj";
             this.txtRegistarskiBroj.ReadOnly = true;
-            this.txtRegistarskiBroj.Size = new System.Drawing.Size(187, 20);
+            this.txtRegistarskiBroj.Size = new System.Drawing.Size(248, 22);
             this.txtRegistarskiBroj.TabIndex = 81;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 200);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(13, 246);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 13);
+            this.label3.Size = new System.Drawing.Size(106, 17);
             this.label3.TabIndex = 80;
             this.label3.Text = "Registarski broj";
             // 
             // btnSnimi
             // 
-            this.btnSnimi.Location = new System.Drawing.Point(321, 400);
-            this.btnSnimi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSnimi.Location = new System.Drawing.Point(426, 454);
+            this.btnSnimi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSnimi.Name = "btnSnimi";
-            this.btnSnimi.Size = new System.Drawing.Size(116, 43);
+            this.btnSnimi.Size = new System.Drawing.Size(155, 53);
             this.btnSnimi.TabIndex = 79;
             this.btnSnimi.Text = "Snimi";
             this.btnSnimi.UseVisualStyleBackColor = true;
@@ -153,66 +148,45 @@ namespace MotornaVozila.Forme
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 280);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(13, 345);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 13);
+            this.label2.Size = new System.Drawing.Size(131, 17);
             this.label2.TabIndex = 86;
             this.label2.Text = "Godina proizvodnje";
             // 
-            // dateTimePickerDatumPrijema
-            // 
-            this.dateTimePickerDatumPrijema.Location = new System.Drawing.Point(125, 320);
-            this.dateTimePickerDatumPrijema.Name = "dateTimePickerDatumPrijema";
-            this.dateTimePickerDatumPrijema.Size = new System.Drawing.Size(187, 20);
-            this.dateTimePickerDatumPrijema.TabIndex = 87;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 320);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 13);
-            this.label5.TabIndex = 88;
-            this.label5.Text = "Datum prijema";
-            // 
             // txtGodinaProizvodnje
             // 
-            this.txtGodinaProizvodnje.Location = new System.Drawing.Point(125, 280);
-            this.txtGodinaProizvodnje.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGodinaProizvodnje.Location = new System.Drawing.Point(167, 345);
+            this.txtGodinaProizvodnje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGodinaProizvodnje.Name = "txtGodinaProizvodnje";
-            this.txtGodinaProizvodnje.Size = new System.Drawing.Size(187, 20);
+            this.txtGodinaProizvodnje.Size = new System.Drawing.Size(248, 22);
             this.txtGodinaProizvodnje.TabIndex = 89;
             // 
             // txtOpisProblema
             // 
-            this.txtOpisProblema.Location = new System.Drawing.Point(125, 360);
-            this.txtOpisProblema.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOpisProblema.Location = new System.Drawing.Point(167, 391);
+            this.txtOpisProblema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOpisProblema.Name = "txtOpisProblema";
-            this.txtOpisProblema.Size = new System.Drawing.Size(187, 20);
+            this.txtOpisProblema.Size = new System.Drawing.Size(248, 22);
             this.txtOpisProblema.TabIndex = 90;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 360);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(13, 391);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 13);
+            this.label6.Size = new System.Drawing.Size(100, 17);
             this.label6.TabIndex = 91;
             this.label6.Text = "Opis problema";
             // 
             // ModifikujVozilaPrimljenaNaServis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 469);
+            this.ClientSize = new System.Drawing.Size(968, 577);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtOpisProblema);
             this.Controls.Add(this.txtGodinaProizvodnje);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePickerDatumPrijema);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.label1);
@@ -221,6 +195,7 @@ namespace MotornaVozila.Forme
             this.Controls.Add(this.txtRegistarskiBroj);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSnimi);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ModifikujVozilaPrimljenaNaServis";
             this.Text = "ModifikujVozilaPrimljenaNaServis";
             this.Load += new System.EventHandler(this.ModifikujVozilaPrimljenaNaServis_Load);
@@ -244,8 +219,6 @@ namespace MotornaVozila.Forme
         private System.Windows.Forms.ColumnHeader columnDatumPrijema;
         private System.Windows.Forms.ColumnHeader columnProblem;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePickerDatumPrijema;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtGodinaProizvodnje;
         private System.Windows.Forms.TextBox txtOpisProblema;
         private System.Windows.Forms.Label label6;
