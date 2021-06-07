@@ -779,5 +779,10 @@ namespace MotornaVozila
             forma.ShowDialog();
             this.Visible = true;
         }
+
+        private void btnDodajVoziloPrimljenoNaServis_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
