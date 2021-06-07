@@ -55,8 +55,6 @@ C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.c
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.exe
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.pdb
 C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.csprojAssemblyReference.cache
-C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujNeregistrovanogKupca.resources
-C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujRegistrovanogKupca.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\bin\Debug\MotornaVozila.exe.config
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\bin\Debug\MotornaVozila.exe
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\bin\Debug\MotornaVozila.pdb
@@ -121,3 +119,11 @@ C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\Motor
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiVlasnika.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiNeregistrovanogKupca.resources
 C:\Users\Uros\Desktop\MotornaVozila_Reporzitorijum\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiRegistrovanogKupca.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajNergistrovanogKupca.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajRegistrovanogKupca.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.DodajVlasnika.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVlasnika.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ModifikujVozilaPrimljenaNaServis.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiNeregistrovanogKupca.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiRegistrovanogKupca.resources
+C:\Users\dimci\Desktop\SBP\MotornaVozila\MotornaVozila\obj\Debug\MotornaVozila.Forme.ObrisiVlasnika.resources
